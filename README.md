@@ -1,7 +1,5 @@
 # Image Level Supervision for Remote Sensing Building Segmentation
 
-# Installation
-
 ## Usage
 
 #### Step 1. 以VOC数据集风格整理数据集
