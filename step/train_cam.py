@@ -108,9 +108,9 @@ def run(args):
             # else:
             #     validate(model, val_data_loader)
             #     timer.reset_stage()
-        save_name = args.cam_weights_name.split('.pth')[0] + '_epoch' + str(ep) + '.pth'
-        torch.save(model.module.state_dict(), save_name)
-        print('Model saved to ' + save_name)
+    save_name = args.cam_weights_name
+    torch.save(model.module.state_dict(), save_name)
+    print('Model saved to ' + save_name)
     total_time = 0.0
     for time in time_list:
         total_time += time

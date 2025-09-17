@@ -18,7 +18,7 @@ IMG_FOLDER_NAME = "JPEGImages"
 ANNOT_FOLDER_NAME = "Annotations"
 
 
-cls_labels_dict = np.load(r"C:\ZTB\Dataset\VOC_vaihingen\cls_labels.npy", allow_pickle=True).item()
+#cls_labels_dict = np.load(r"C:\ZTB\Dataset\VOC_vaihingen\cls_labels.npy", allow_pickle=True).item()
 
 
 def load_img_name_list(dataset_path):
@@ -41,8 +41,7 @@ def decode_int_filename(int_filename):
 
     return [load_image_label_from_xml(img_name, voc12_root) for img_name in img_name_list]'''
 
-def load_image_label_list_from_npy(img_name_list):
-    # print(len(img_name_list))
+def load_image_label_list_from_npy(img_name_list, cls_labels_dict):
     a = np.array([cls_labels_dict[img_name] for img_name in img_name_list])
     # print(a)
     a = a.astype('float32')
@@ -157,8 +156,8 @@ class VOC12ClassificationDataset(VOC12ImageDataset):
         super().__init__(img_name_list_path, voc12_root,
                  resize_long, rescale, img_normal, hor_flip,
                  crop_size, crop_method)
-        # print(self.img_name_list[0])
-        self.label_list = load_image_label_list_from_npy(self.img_name_list)
+        self.cls_label_dict = np.load(os.path.join(self.voc12_root, 'cls_labels.npy'), allow_pickle=True).item()
+        self.label_list = load_image_label_list_from_npy(self.img_name_list, self.cls_label_dict)
 
     def __getitem__(self, idx):
         out = super().__getitem__(idx)
