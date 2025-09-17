@@ -1,11 +1,7 @@
-# Improved Pseudomasks Generation for Weakly Supervised Building Extraction From High-Resolution Remote Sensing Imagery
-
-The implementation of Improved Pseudomasks Generation for Weakly Supervised Building Extraction From High-Resolution Remote Sensing Imagery, Fang Fang, Daoyuan Zheng, IJSTAR 2022. [[paper](https://ieeexplore.ieee.org/abstract/document/9684996/)]
+# Image Level Supervision for Remote Sensing Building Segmentation
 
 # Installation
 
-- We kindly refer to the offical implementation of [IRN ](https://github.com/jiwoon-ahn/irn) and  [AdvCAM ](https://github.com/jbeomlee93/AdvCAM).
-- This repository is tested on Ubuntu 18.04, with Python 3.6, PyTorch 1.4, pydensecrf, scipy, chaniercv, imageio, and opencv-python.
 ## Usage
 
 #### Step 1. 上传数据和标签(上传路径Dataset/potsdam/)
