@@ -12,7 +12,4 @@
 #### Step 2. 运行xxx.bat文件，开始训练
 
 在.bat文件中编辑数据集根目录、权重输出路径等，一键运行，依次执行CAM训练、CAM生成、CAM评估、IRN label生成、IRN训练、伪标签生成步骤。
-'''
-train_potsdam.bat
-进行potsdam数据集上的训练。
-'''
+
