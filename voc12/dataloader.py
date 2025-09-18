@@ -9,16 +9,8 @@ import os.path
 import imageio
 from misc import imutils
 
-# load_image_label_from_xml 这个函数是用来从xml文件中获取某张图像的标签
-# load_image_label_list_from_xml 调用上面函数，获取列表
-# 注意生成的npy文件最后会用于VOC12ClassificationDataset这个基类
-# VOC12ClassificationDataset这个类在train_cam中作为model
-
 IMG_FOLDER_NAME = "JPEGImages"
 ANNOT_FOLDER_NAME = "Annotations"
-
-
-#cls_labels_dict = np.load(r"C:\ZTB\Dataset\VOC_vaihingen\cls_labels.npy", allow_pickle=True).item()
 
 
 def load_img_name_list(dataset_path):
@@ -36,10 +28,6 @@ def decode_int_filename(int_filename):
     s = str(int(int_filename))
     return s[:4] + '_' + s[4:]
 
-
-'''def load_image_label_list_from_xml(img_name_list, voc12_root):
-
-    return [load_image_label_from_xml(img_name, voc12_root) for img_name in img_name_list]'''
 
 def load_image_label_list_from_npy(img_name_list, cls_labels_dict):
     a = np.array([cls_labels_dict[img_name] for img_name in img_name_list])
@@ -161,12 +149,8 @@ class VOC12ClassificationDataset(VOC12ImageDataset):
 
     def __getitem__(self, idx):
         out = super().__getitem__(idx)
-        # print(self.label_list[idx])
+
         out['label'] = torch.from_numpy(self.label_list[idx])
-        # print(self.label_list[idx])
-        # torch.tensor()和torch.Tensor()有区别
-        # out['label'] = torch.tensor(int(self.label_list[idx]))
-        # print(out['label'])
 
         return out
 
@@ -199,7 +183,6 @@ class VOC12ClassificationDatasetMSF(VOC12ClassificationDataset):
             ms_img_list = ms_img_list[0]
         out = {"name": name_str, "img": ms_img_list, "size": np.array((img.shape[0], img.shape[1])),
                "label": torch.from_numpy(self.label_list[idx])}
-        #print('shape before collate fn:', out['size'])
         return out
 
 class VOC12SegmentationDataset(Dataset):
