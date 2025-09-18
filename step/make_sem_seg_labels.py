@@ -50,7 +50,7 @@ def _work(process_id, model, dataset, args):
             #     continue
 
             if not os.path.exists(os.path.join(args.cam_out_dir, img_name + '.npy')):
-                #print(os.path.join(args.cam_out_dir, img_name + '.npy') + ' does not contain foreground, skipped')
+                print(os.path.join(args.cam_out_dir, img_name + '.npy') + ' does not contain foreground, skipped')
                 continue
             cam_dict = np.load(args.cam_out_dir + '/' + img_name + '.npy', allow_pickle=True).item()
 
@@ -85,7 +85,10 @@ def _work(process_id, model, dataset, args):
         time_totao = 0.0
         for t in time_list:
             time_totao += t
-        print('time', (time_totao-time_list[0]) / (len(time_list)-1))
+        if len(time_list)>0:
+            print('time', (time_totao-time_list[0]) / (len(time_list)-1))
+        else:
+            print('no images processed')
 
 def run(args):
     model = getattr(importlib.import_module(args.irn_network), 'EdgeDisplacement')()

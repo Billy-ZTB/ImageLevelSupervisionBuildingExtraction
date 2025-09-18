@@ -39,6 +39,7 @@ def run(args):
             cls_labels[cls_labels == 255] = 0
             preds.append(cls_labels.copy())
             n_img += 1
+    print('length of preds and labels:', len(preds), len(labels))
     confusion = calc_semantic_segmentation_confusion(preds, labels)[:2, :2]
     print(confusion)
     gtj = confusion.sum(axis=1)
