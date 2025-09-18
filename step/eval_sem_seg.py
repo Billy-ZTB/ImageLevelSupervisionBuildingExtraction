@@ -23,7 +23,7 @@ def run(args):
             file[i] = file[i].rstrip('\n')
             flag = file[i].split('_')[-1]
             if not flag == 'non':
-                img = cv2.imread(os.path.join(root,file[i]+'.png'),cv2.IMREAD_GRAYSCALE)  # 洪旺的数据集只能用最后一个通道，DLRSD数据集可以用任意一个通道
+                img = cv2.imread(os.path.join(root,file[i]+'.png'),cv2.IMREAD_GRAYSCALE)
                 ids.append(file[i])
                 # img是0和22
                 new_img = img.copy()
@@ -39,6 +39,7 @@ def run(args):
             cls_labels[cls_labels == 255] = 0
             preds.append(cls_labels.copy())
             n_img += 1
+    #print("len(preds), len(labels):", len(preds), len(labels))
     confusion = calc_semantic_segmentation_confusion(preds, labels)[:2, :2]
     print(confusion)
     gtj = confusion.sum(axis=1)
