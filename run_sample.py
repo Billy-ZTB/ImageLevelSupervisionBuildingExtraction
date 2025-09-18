@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
         timer = pyutils.Timer('step.eval_cam:')
         final_miou = []
-        for i in range(33, 70):
+        for i in range(33, 55):
             t = i/100.0
             args.cam_eval_thres = t
             miou = step.eval_cam.run(args)
