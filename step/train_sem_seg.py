@@ -63,7 +63,7 @@ def evaluate(model, loader):
 
 
 def run(args):
-    result_dir = './results/semantic_segmentation/'  # create_directory(f'./experiments/{args.tag}/logs/')
+    result_dir = './result/semantic_segmentation/'  # create_directory(f'./experiments/{args.tag}/logs/')
     log_path = result_dir + f'{args.tag}/logs.txt'
     log_func = lambda string='': log_print(string, log_path)
     model_output_dir = create_directory(result_dir + f'/{args.tag}/models/')
