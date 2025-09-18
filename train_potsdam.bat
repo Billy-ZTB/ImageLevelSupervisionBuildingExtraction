@@ -14,13 +14,13 @@ set SEM_SEG_OUT=result/sem_seg_potsdam
 ::    --cam_learning_rate 0.001 ^
 ::    --cam_weights_name %CAM_WEIGHTS%
 
-python obtain_CAM_masking.py --adv_iter 2 --AD_coeff 7 --AD_stepsize 0.08 --score_th 0.6 ^
-    --voc12_root %DATA_ROOT% ^
-    --train_list %TRAIN_LIST% ^
-    --cam_weights_name %CAM_WEIGHTS% ^
-    --cam_out_dir %CAM_OUT%
+::python obtain_CAM_masking.py --adv_iter 2 --AD_coeff 7 --AD_stepsize 0.08 --score_th 0.6 ^
+::    --voc12_root %DATA_ROOT% ^
+::    --train_list %TRAIN_LIST% ^
+::    --cam_weights_name %CAM_WEIGHTS% ^
+::    --cam_out_dir %CAM_OUT%
 
-python run_sample.py --eval_cam_pass True --cam_out_dir %CAM_OUT%
+python run_sample.py --eval_cam_pass True --cam_out_dir %CAM_OUT% --voc12_root %DATA_ROOT% --infer_list %TRAIN_LIST%
 
 python run_sample.py --cam_to_ir_label_pass True --conf_fg_thres 0.5 --conf_bg_thres 0.4 ^
     --cam_out_dir %CAM_OUT% ^

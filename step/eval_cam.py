@@ -20,14 +20,13 @@ def run(args):
     labels = []
     ids = []
     # ---------------------------------------------------------------------------------------
-    root = 'C:\ZTB\Dataset\VOC_vaihingen\SegmentationClassAug'
-    with open(r"C:\ZTB\Dataset\VOC_vaihingen\train.txt", 'r') as f:
+    root = f'{args.voc12_root}/SegmentationClassAug'
+    with open(args.infer_list, 'r') as f:
         file = f.readlines()
         for i in range(0, len(file)):
             file[i] = file[i].rstrip('\n')
-            img = cv2.imread(os.path.join(root,file[i]+'.png'),cv2.IMREAD_GRAYSCALE)  # 洪旺的数据集只能用最后一个通道，DLRSD数据集可以用任意一个通道
+            img = cv2.imread(os.path.join(root,file[i]+'.png'),cv2.IMREAD_GRAYSCALE)
             if (img == 0).all():
-            	# print('全为背景！！')
             	continue
             ids.append(file[i])
             # img是0和22
@@ -153,10 +152,10 @@ def run(args):
 #                              ' be same.')
 #         pred_label = pred_label.flatten()
 #         gt_label = gt_label.flatten()
-        
+
 #         # Dynamically expand the confusion matrix if necessary.
 #         lb_max = np.max((pred_label, gt_label))
-        
+
 #         if lb_max >= n_class:
 #             expanded_confusion = np.zeros((lb_max + 1, lb_max + 1), dtype=np.int64)
 #             # sys.exit(0)
