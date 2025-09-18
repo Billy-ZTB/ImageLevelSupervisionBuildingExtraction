@@ -12,8 +12,6 @@ def count_building(label, txt_path):
             print(filenames[i])
             png = os.path.join(label, filenames[i])  # png
             img = cv2.imread(png, -1)
-            assert img.shape[0] == 256 and img.shape[1] == 256,'图片尺寸不对，请检查'
-            No_building = np.sum(img == 0)  # 统计背景像素
             building = np.sum(img != 0)  # 统计建筑物像素
             if building >= 256 * 256 / 4:
                 e[filenames[i].split('.')[0]] = [1,]
