@@ -1810,4 +1810,696 @@ Epoch 4/10
 step: 3100/10190 loss:0.4192 0.3575 2.7915 0.3313 imps:65.5 lr: 0.0721 etc:Thu Sep 18 18:09:36 2025
 step: 3150/10190 loss:0.4241 0.3544 2.7875 0.3604 imps:114.2 lr: 0.0717 etc:Thu Sep 18 18:09:30 2025
 step: 3200/10190 loss:0.4148 0.3459 2.7746 0.3400 imps:144.2 lr: 0.0712 etc:Thu Sep 18 18:09:26 2025
-step: 3250/10190 loss:0.4233 0.3520 2.7934 0.3374 imps:164.3 lr: 0.0708 
+step: 3250/10190 loss:0.4233 0.3520 2.7934 0.3374 imps:164.3 lr: 0.0708 {'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train_aug.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 32, 'cam_num_epochs': 100, 'cam_learning_rate': 0.001, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.35, 'conf_bg_thres': 0.15, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam_potsdam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam_adv_mask', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': False, 'eval_cam_pass': False, 'cam_to_ir_label_pass': False, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+step.train_cam: Thu Sep 18 19:22:46 2025
+model pretrained initialized
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epochs': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.35, 'conf_bg_thres': 0.15, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam_adv_mask_potsdam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': False, 'make_cam_pass': False, 'eval_cam_pass': True, 'cam_to_ir_label_pass': False, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epochs': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.35, 'conf_bg_thres': 0.15, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam_adv_mask_potsdam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': False, 'make_cam_pass': False, 'eval_cam_pass': True, 'cam_to_ir_label_pass': False, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train_aug.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 32, 'cam_num_epochs': 100, 'cam_learning_rate': 0.001, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.35, 'conf_bg_thres': 0.15, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam_potsdam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam_adv_mask', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': False, 'eval_cam_pass': False, 'cam_to_ir_label_pass': False, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+step.train_cam: Thu Sep 18 19:24:11 2025
+model pretrained initialized
+Epoch 1/100
+step:    0/101900 loss:0.7121 imps:2.1 lr: 0.0010 etc:Mon Oct  6 17:22:02 2025
+step:  100/101900 loss:0.4021 imps:151.1 lr: 0.0010 etc:Fri Sep 19 01:23:51 2025
+step:  200/101900 loss:0.2697 imps:233.2 lr: 0.0010 etc:Thu Sep 18 23:17:15 2025
+step:  300/101900 loss:0.2257 imps:285.1 lr: 0.0010 etc:Thu Sep 18 22:34:47 2025
+step:  400/101900 loss:0.2298 imps:321.0 lr: 0.0010 etc:Thu Sep 18 22:13:31 2025
+step:  500/101900 loss:0.2077 imps:347.2 lr: 0.0010 etc:Thu Sep 18 22:00:45 2025
+step:  600/101900 loss:0.2133 imps:367.1 lr: 0.0010 etc:Thu Sep 18 21:52:14 2025
+step:  700/101900 loss:0.1721 imps:382.8 lr: 0.0010 etc:Thu Sep 18 21:46:10 2025
+step:  800/101900 loss:0.1687 imps:395.5 lr: 0.0010 etc:Thu Sep 18 21:41:36 2025
+step:  900/101900 loss:0.1636 imps:406.0 lr: 0.0010 etc:Thu Sep 18 21:38:03 2025
+step: 1000/101900 loss:0.1503 imps:414.9 lr: 0.0010 etc:Thu Sep 18 21:35:12 2025
+78.88618516921997
+Epoch 2/100
+step: 1100/101900 loss:0.1543 imps:26.6 lr: 0.0010 etc:Thu Sep 18 21:56:37 2025
+step: 1200/101900 loss:0.1433 imps:55.5 lr: 0.0010 etc:Thu Sep 18 21:52:42 2025
+step: 1300/101900 loss:0.1305 imps:81.1 lr: 0.0010 etc:Thu Sep 18 21:49:24 2025
+step: 1400/101900 loss:0.1348 imps:104.1 lr: 0.0010 etc:Thu Sep 18 21:46:34 2025
+step: 1500/101900 loss:0.1281 imps:124.7 lr: 0.0010 etc:Thu Sep 18 21:44:06 2025
+step: 1600/101900 loss:0.1230 imps:143.4 lr: 0.0010 etc:Thu Sep 18 21:41:57 2025
+step: 1700/101900 loss:0.1269 imps:160.4 lr: 0.0010 etc:Thu Sep 18 21:40:04 2025
+step: 1800/101900 loss:0.1214 imps:175.9 lr: 0.0010 etc:Thu Sep 18 21:38:23 2025
+step: 1900/101900 loss:0.1194 imps:190.0 lr: 0.0010 etc:Thu Sep 18 21:36:53 2025
+step: 2000/101900 loss:0.1309 imps:203.1 lr: 0.0010 etc:Thu Sep 18 21:35:32 2025
+78.73109436035156
+Epoch 3/100
+step: 2100/101900 loss:0.1108 imps:11.3 lr: 0.0010 etc:Thu Sep 18 21:48:47 2025
+step: 2200/101900 loss:0.1154 imps:28.1 lr: 0.0010 etc:Thu Sep 18 21:47:25 2025
+step: 2300/101900 loss:0.1064 imps:43.7 lr: 0.0010 etc:Thu Sep 18 21:46:12 2025
+step: 2400/101900 loss:0.1103 imps:58.3 lr: 0.0010 etc:Thu Sep 18 21:45:06 2025
+step: 2500/101900 loss:0.0992 imps:71.9 lr: 0.0010 etc:Thu Sep 18 21:44:06 2025
+step: 2600/101900 loss:0.0976 imps:84.7 lr: 0.0010 etc:Thu Sep 18 21:43:08 2025
+step: 2700/101900 loss:0.1042 imps:96.6 lr: 0.0010 etc:Thu Sep 18 21:42:17 2025
+step: 2800/101900 loss:0.0949 imps:107.8 lr: 0.0010 etc:Thu Sep 18 21:41:30 2025
+step: 2900/101900 loss:0.0872 imps:118.4 lr: 0.0010 etc:Thu Sep 18 21:40:45 2025
+step: 3000/101900 loss:0.0933 imps:128.4 lr: 0.0010 etc:Thu Sep 18 21:40:03 2025
+86.8022735118866
+Epoch 4/100
+step: 3100/101900 loss:0.0856 imps:5.3 lr: 0.0010 etc:Thu Sep 18 21:48:33 2025
+step: 3200/101900 loss:0.0790 imps:17.1 lr: 0.0010 etc:Thu Sep 18 21:47:35 2025
+step: 3300/101900 loss:0.0813 imps:28.2 lr: 0.0010 etc:Thu Sep 18 21:46:35 2025
+step: 3400/101900 loss:0.0738 imps:38.8 lr: 0.0010 etc:Thu Sep 18 21:45:47 2025
+step: 3500/101900 loss:0.0704 imps:48.9 lr: 0.0010 etc:Thu Sep 18 21:45:03 2025
+step: 3600/101900 loss:0.0823 imps:58.6 lr: 0.0010 etc:Thu Sep 18 21:44:19 2025
+step: 3700/101900 loss:0.0864 imps:67.8 lr: 0.0010 etc:Thu Sep 18 21:43:37 2025
+step: 3800/101900 loss:0.0779 imps:76.7 lr: 0.0010 etc:Thu Sep 18 21:42:56 2025
+step: 3900/101900 loss:0.0827 imps:85.2 lr: 0.0010 etc:Thu Sep 18 21:42:13 2025
+step: 4000/101900 loss:0.0664 imps:93.4 lr: 0.0010 etc:Thu Sep 18 21:41:33 2025
+84.57200479507446
+Epoch 5/100
+step: 4100/101900 loss:0.0680 imps:2.3 lr: 0.0010 etc:Thu Sep 18 21:47:42 2025
+step: 4200/101900 loss:0.0731 imps:11.3 lr: 0.0010 etc:Thu Sep 18 21:47:02 2025
+step: 4300/101900 loss:0.0649 imps:20.0 lr: 0.0010 etc:Thu Sep 18 21:46:18 2025
+step: 4400/101900 loss:0.0726 imps:28.4 lr: 0.0010 etc:Thu Sep 18 21:45:35 2025
+step: 4500/101900 loss:0.0585 imps:36.4 lr: 0.0010 etc:Thu Sep 18 21:45:00 2025
+step: 4600/101900 loss:0.0485 imps:44.2 lr: 0.0010 etc:Thu Sep 18 21:44:29 2025
+step: 4700/101900 loss:0.0584 imps:51.7 lr: 0.0010 etc:Thu Sep 18 21:43:53 2025
+step: 4800/101900 loss:0.0625 imps:59.0 lr: 0.0010 etc:Thu Sep 18 21:43:17 2025
+step: 4900/101900 loss:0.0609 imps:66.0 lr: 0.0010 etc:Thu Sep 18 21:42:43 2025
+step: 5000/101900 loss:0.0661 imps:72.8 lr: 0.0010 etc:Thu Sep 18 21:42:14 2025
+84.4238874912262
+Epoch 6/100
+step: 5100/101900 loss:0.0632 imps:0.4 lr: 0.0010 etc:Thu Sep 18 21:47:18 2025
+step: 5200/101900 loss:0.0554 imps:7.8 lr: 0.0010 etc:Thu Sep 18 21:46:46 2025
+step: 5300/101900 loss:0.0606 imps:14.9 lr: 0.0010 etc:Thu Sep 18 21:46:12 2025
+step: 5400/101900 loss:0.0459 imps:21.8 lr: 0.0010 etc:Thu Sep 18 21:45:37 2025
+step: 5500/101900 loss:0.0447 imps:28.5 lr: 0.0010 etc:Thu Sep 18 21:45:04 2025
+step: 5600/101900 loss:0.0408 imps:35.0 lr: 0.0010 etc:Thu Sep 18 21:44:32 2025
+step: 5700/101900 loss:0.0409 imps:41.3 lr: 0.0009 etc:Thu Sep 18 21:44:01 2025
+step: 5800/101900 loss:0.0486 imps:47.5 lr: 0.0009 etc:Thu Sep 18 21:43:33 2025
+step: 5900/101900 loss:0.0567 imps:53.4 lr: 0.0009 etc:Thu Sep 18 21:43:09 2025
+step: 6000/101900 loss:0.0427 imps:59.2 lr: 0.0009 etc:Thu Sep 18 21:42:45 2025
+step: 6100/101900 loss:0.0545 imps:64.9 lr: 0.0009 etc:Thu Sep 18 21:42:22 2025
+84.35813903808594
+Epoch 7/100
+step: 6200/101900 loss:0.0404 imps:5.4 lr: 0.0009 etc:Thu Sep 18 21:46:43 2025
+step: 6300/101900 loss:0.0486 imps:11.4 lr: 0.0009 etc:Thu Sep 18 21:46:18 2025
+step: 6400/101900 loss:0.0296 imps:17.2 lr: 0.0009 etc:Thu Sep 18 21:45:53 2025
+step: 6500/101900 loss:0.0429 imps:22.9 lr: 0.0009 etc:Thu Sep 18 21:45:29 2025
+step: 6600/101900 loss:0.0432 imps:28.5 lr: 0.0009 etc:Thu Sep 18 21:45:06 2025
+step: 6700/101900 loss:0.0427 imps:33.9 lr: 0.0009 etc:Thu Sep 18 21:44:43 2025
+step: 6800/101900 loss:0.0440 imps:39.2 lr: 0.0009 etc:Thu Sep 18 21:44:22 2025
+step: 6900/101900 loss:0.0514 imps:44.3 lr: 0.0009 etc:Thu Sep 18 21:44:01 2025
+step: 7000/101900 loss:0.0325 imps:49.4 lr: 0.0009 etc:Thu Sep 18 21:43:40 2025
+step: 7100/101900 loss:0.0521 imps:54.3 lr: 0.0009 etc:Thu Sep 18 21:43:20 2025
+86.7318811416626
+Epoch 8/100
+step: 7200/101900 loss:0.0373 imps:3.6 lr: 0.0009 etc:Thu Sep 18 21:46:59 2025
+step: 7300/101900 loss:0.0423 imps:8.8 lr: 0.0009 etc:Thu Sep 18 21:46:37 2025
+step: 7400/101900 loss:0.0444 imps:13.9 lr: 0.0009 etc:Thu Sep 18 21:46:15 2025
+step: 7500/101900 loss:0.0249 imps:18.8 lr: 0.0009 etc:Thu Sep 18 21:45:55 2025
+step: 7600/101900 loss:0.0395 imps:23.7 lr: 0.0009 etc:Thu Sep 18 21:45:34 2025
+step: 7700/101900 loss:0.0301 imps:28.4 lr: 0.0009 etc:Thu Sep 18 21:45:14 2025
+step: 7800/101900 loss:0.0466 imps:33.1 lr: 0.0009 etc:Thu Sep 18 21:44:55 2025
+step: 7900/101900 loss:0.0428 imps:37.6 lr: 0.0009 etc:Thu Sep 18 21:44:36 2025
+step: 8000/101900 loss:0.0353 imps:42.1 lr: 0.0009 etc:Thu Sep 18 21:44:16 2025
+step: 8100/101900 loss:0.0317 imps:46.5 lr: 0.0009 etc:Thu Sep 18 21:43:55 2025
+85.97502756118774
+Epoch 9/100
+step: 8200/101900 loss:0.0234 imps:2.3 lr: 0.0009 etc:Thu Sep 18 21:47:07 2025
+step: 8300/101900 loss:0.0371 imps:6.8 lr: 0.0009 etc:Thu Sep 18 21:46:48 2025
+step: 8400/101900 loss:0.0263 imps:11.3 lr: 0.0009 etc:Thu Sep 18 21:46:29 2025
+step: 8500/101900 loss:0.0399 imps:15.7 lr: 0.0009 etc:Thu Sep 18 21:46:11 2025
+step: 8600/101900 loss:0.0296 imps:20.0 lr: 0.0009 etc:Thu Sep 18 21:45:52 2025
+step: 8700/101900 loss:0.0308 imps:24.3 lr: 0.0009 etc:Thu Sep 18 21:45:34 2025
+step: 8800/101900 loss:0.0331 imps:28.4 lr: 0.0009 etc:Thu Sep 18 21:45:15 2025
+step: 8900/101900 loss:0.0365 imps:32.5 lr: 0.0009 etc:Thu Sep 18 21:44:59 2025
+step: 9000/101900 loss:0.0330 imps:36.5 lr: 0.0009 etc:Thu Sep 18 21:44:41 2025
+step: 9100/101900 loss:0.0298 imps:40.4 lr: 0.0009 etc:Thu Sep 18 21:44:23 2025
+85.80685138702393
+Epoch 10/100
+step: 9200/101900 loss:0.0297 imps:1.2 lr: 0.0009 etc:Thu Sep 18 21:46:58 2025
+step: 9300/101900 loss:0.0333 imps:5.3 lr: 0.0009 etc:Thu Sep 18 21:46:35 2025
+step: 9400/101900 loss:0.0259 imps:9.4 lr: 0.0009 etc:Thu Sep 18 21:46:14 2025
+step: 9500/101900 loss:0.0269 imps:13.3 lr: 0.0009 etc:Thu Sep 18 21:45:52 2025
+step: 9600/101900 loss:0.0251 imps:17.2 lr: 0.0009 etc:Thu Sep 18 21:45:31 2025
+step: 9700/101900 loss:0.0219 imps:21.1 lr: 0.0009 etc:Thu Sep 18 21:45:11 2025
+step: 9800/101900 loss:0.0247 imps:24.8 lr: 0.0009 etc:Thu Sep 18 21:44:50 2025
+step: 9900/101900 loss:0.0279 imps:28.6 lr: 0.0009 etc:Thu Sep 18 21:44:31 2025
+step:10000/101900 loss:0.0292 imps:32.2 lr: 0.0009 etc:Thu Sep 18 21:44:11 2025
+step:10100/101900 loss:0.0220 imps:35.8 lr: 0.0009 etc:Thu Sep 18 21:43:53 2025
+80.64402318000793
+Epoch 11/100
+step:10200/101900 loss:0.0249 imps:0.4 lr: 0.0009 etc:Thu Sep 18 21:46:11 2025
+step:10300/101900 loss:0.0259 imps:4.1 lr: 0.0009 etc:Thu Sep 18 21:45:52 2025
+step:10400/101900 loss:0.0210 imps:7.8 lr: 0.0009 etc:Thu Sep 18 21:45:32 2025
+step:10500/101900 loss:0.0347 imps:11.4 lr: 0.0009 etc:Thu Sep 18 21:45:13 2025
+step:10600/101900 loss:0.0250 imps:15.0 lr: 0.0009 etc:Thu Sep 18 21:44:54 2025
+step:10700/101900 loss:0.0212 imps:18.5 lr: 0.0009 etc:Thu Sep 18 21:44:36 2025
+step:10800/101900 loss:0.0328 imps:21.9 lr: 0.0009 etc:Thu Sep 18 21:44:18 2025
+step:10900/101900 loss:0.0259 imps:25.4 lr: 0.0009 etc:Thu Sep 18 21:44:00 2025
+step:11000/101900 loss:0.0294 imps:28.7 lr: 0.0009 etc:Thu Sep 18 21:43:43 2025
+step:11100/101900 loss:0.0216 imps:32.0 lr: 0.0009 etc:Thu Sep 18 21:43:26 2025
+step:11200/101900 loss:0.0265 imps:35.3 lr: 0.0009 etc:Thu Sep 18 21:43:10 2025
+80.6343502998352
+Epoch 12/100
+step:11300/101900 loss:0.0235 imps:3.1 lr: 0.0009 etc:Thu Sep 18 21:45:22 2025
+step:11400/101900 loss:0.0215 imps:6.5 lr: 0.0009 etc:Thu Sep 18 21:45:05 2025
+step:11500/101900 loss:0.0200 imps:9.8 lr: 0.0009 etc:Thu Sep 18 21:44:47 2025
+step:11600/101900 loss:0.0190 imps:13.1 lr: 0.0009 etc:Thu Sep 18 21:44:31 2025
+step:11700/101900 loss:0.0251 imps:16.3 lr: 0.0009 etc:Thu Sep 18 21:44:14 2025
+step:11800/101900 loss:0.0182 imps:19.5 lr: 0.0009 etc:Thu Sep 18 21:43:58 2025
+step:11900/101900 loss:0.0301 imps:22.7 lr: 0.0009 etc:Thu Sep 18 21:43:42 2025
+step:12000/101900 loss:0.0169 imps:25.8 lr: 0.0009 etc:Thu Sep 18 21:43:26 2025
+step:12100/101900 loss:0.0207 imps:28.8 lr: 0.0009 etc:Thu Sep 18 21:43:11 2025
+step:12200/101900 loss:0.0204 imps:31.9 lr: 0.0009 etc:Thu Sep 18 21:42:56 2025
+81.21064853668213
+Epoch 13/100
+step:12300/101900 loss:0.0287 imps:2.3 lr: 0.0009 etc:Thu Sep 18 21:44:55 2025
+step:12400/101900 loss:0.0193 imps:5.4 lr: 0.0009 etc:Thu Sep 18 21:44:39 2025
+step:12500/101900 loss:0.0264 imps:8.5 lr: 0.0009 etc:Thu Sep 18 21:44:24 2025
+step:12600/101900 loss:0.0128 imps:11.5 lr: 0.0009 etc:Thu Sep 18 21:44:09 2025
+step:12700/101900 loss:0.0171 imps:14.5 lr: 0.0009 etc:Thu Sep 18 21:43:54 2025
+step:12800/101900 loss:0.0227 imps:17.4 lr: 0.0009 etc:Thu Sep 18 21:43:40 2025
+step:12900/101900 loss:0.0226 imps:20.4 lr: 0.0009 etc:Thu Sep 18 21:43:25 2025
+step:13000/101900 loss:0.0167 imps:23.2 lr: 0.0009 etc:Thu Sep 18 21:43:11 2025
+step:13100/101900 loss:0.0263 imps:26.1 lr: 0.0009 etc:Thu Sep 18 21:42:57 2025
+step:13200/101900 loss:0.0172 imps:28.9 lr: 0.0009 etc:Thu Sep 18 21:42:44 2025
+81.57398533821106
+Epoch 14/100
+step:13300/101900 loss:0.0122 imps:1.6 lr: 0.0009 etc:Thu Sep 18 21:44:38 2025
+step:13400/101900 loss:0.0149 imps:4.5 lr: 0.0009 etc:Thu Sep 18 21:44:26 2025
+step:13500/101900 loss:0.0145 imps:7.3 lr: 0.0009 etc:Thu Sep 18 21:44:14 2025
+step:13600/101900 loss:0.0163 imps:10.1 lr: 0.0009 etc:Thu Sep 18 21:44:01 2025
+step:13700/101900 loss:0.0193 imps:12.9 lr: 0.0009 etc:Thu Sep 18 21:43:48 2025
+step:13800/101900 loss:0.0140 imps:15.7 lr: 0.0009 etc:Thu Sep 18 21:43:36 2025
+step:13900/101900 loss:0.0102 imps:18.4 lr: 0.0009 etc:Thu Sep 18 21:43:25 2025
+step:14000/101900 loss:0.0222 imps:21.1 lr: 0.0009 etc:Thu Sep 18 21:43:14 2025
+step:14100/101900 loss:0.0148 imps:23.7 lr: 0.0009 etc:Thu Sep 18 21:43:02 2025
+step:14200/101900 loss:0.0155 imps:26.3 lr: 0.0009 etc:Thu Sep 18 21:42:50 2025
+83.57708144187927
+Epoch 15/100
+step:14300/101900 loss:0.0170 imps:0.9 lr: 0.0009 etc:Thu Sep 18 21:44:36 2025
+step:14400/101900 loss:0.0190 imps:3.6 lr: 0.0009 etc:Thu Sep 18 21:44:23 2025
+step:14500/101900 loss:0.0116 imps:6.3 lr: 0.0009 etc:Thu Sep 18 21:44:11 2025
+step:14600/101900 loss:0.0138 imps:8.9 lr: 0.0009 etc:Thu Sep 18 21:43:59 2025
+step:14700/101900 loss:0.0144 imps:11.5 lr: 0.0009 etc:Thu Sep 18 21:43:46 2025
+step:14800/101900 loss:0.0139 imps:14.1 lr: 0.0009 etc:Thu Sep 18 21:43:34 2025
+step:14900/101900 loss:0.0097 imps:16.6 lr: 0.0009 etc:Thu Sep 18 21:43:22 2025
+step:15000/101900 loss:0.0235 imps:19.2 lr: 0.0009 etc:Thu Sep 18 21:43:10 2025
+step:15100/101900 loss:0.0106 imps:21.7 lr: 0.0009 etc:Thu Sep 18 21:42:59 2025
+step:15200/101900 loss:0.0121 imps:24.1 lr: 0.0009 etc:Thu Sep 18 21:42:47 2025
+82.3830554485321
+Epoch 16/100
+step:15300/101900 loss:0.0117 imps:0.4 lr: 0.0009 etc:Thu Sep 18 21:44:26 2025
+step:15400/101900 loss:0.0097 imps:2.9 lr: 0.0009 etc:Thu Sep 18 21:44:14 2025
+step:15500/101900 loss:0.0150 imps:5.4 lr: 0.0009 etc:Thu Sep 18 21:44:02 2025
+step:15600/101900 loss:0.0101 imps:7.9 lr: 0.0009 etc:Thu Sep 18 21:43:51 2025
+step:15700/101900 loss:0.0157 imps:10.3 lr: 0.0009 etc:Thu Sep 18 21:43:39 2025
+step:15800/101900 loss:0.0169 imps:12.7 lr: 0.0009 etc:Thu Sep 18 21:43:28 2025
+step:15900/101900 loss:0.0119 imps:15.1 lr: 0.0009 etc:Thu Sep 18 21:43:17 2025
+step:16000/101900 loss:0.0101 imps:17.5 lr: 0.0009 etc:Thu Sep 18 21:43:06 2025
+step:16100/101900 loss:0.0104 imps:19.8 lr: 0.0009 etc:Thu Sep 18 21:42:58 2025
+step:16200/101900 loss:0.0264 imps:22.2 lr: 0.0009 etc:Thu Sep 18 21:42:48 2025
+step:16300/101900 loss:0.0208 imps:24.5 lr: 0.0009 etc:Thu Sep 18 21:42:38 2025
+83.10605812072754
+Epoch 17/100
+step:16400/101900 loss:0.0110 imps:2.3 lr: 0.0009 etc:Thu Sep 18 21:44:09 2025
+step:16500/101900 loss:0.0119 imps:4.6 lr: 0.0009 etc:Thu Sep 18 21:43:58 2025
+step:16600/101900 loss:0.0094 imps:7.0 lr: 0.0009 etc:Thu Sep 18 21:43:47 2025
+step:16700/101900 loss:0.0149 imps:9.3 lr: 0.0009 etc:Thu Sep 18 21:43:36 2025
+step:16800/101900 loss:0.0100 imps:11.5 lr: 0.0009 etc:Thu Sep 18 21:43:25 2025
+step:16900/101900 loss:0.0071 imps:13.8 lr: 0.0008 etc:Thu Sep 18 21:43:15 2025
+step:17000/101900 loss:0.0135 imps:16.0 lr: 0.0008 etc:Thu Sep 18 21:43:05 2025
+step:17100/101900 loss:0.0097 imps:18.3 lr: 0.0008 etc:Thu Sep 18 21:42:54 2025
+step:17200/101900 loss:0.0160 imps:20.5 lr: 0.0008 etc:Thu Sep 18 21:42:44 2025
+step:17300/101900 loss:0.0124 imps:22.6 lr: 0.0008 etc:Thu Sep 18 21:42:34 2025
+82.054940700531
+Epoch 18/100
+step:17400/101900 loss:0.0064 imps:1.7 lr: 0.0008 etc:Thu Sep 18 21:44:00 2025
+step:17500/101900 loss:0.0112 imps:4.0 lr: 0.0008 etc:Thu Sep 18 21:43:50 2025
+step:17600/101900 loss:0.0093 imps:6.2 lr: 0.0008 etc:Thu Sep 18 21:43:40 2025
+step:17700/101900 loss:0.0094 imps:8.3 lr: 0.0008 etc:Thu Sep 18 21:43:30 2025
+step:17800/101900 loss:0.0157 imps:10.5 lr: 0.0008 etc:Thu Sep 18 21:43:21 2025
+step:17900/101900 loss:0.0063 imps:12.6 lr: 0.0008 etc:Thu Sep 18 21:43:11 2025
+step:18000/101900 loss:0.0072 imps:14.7 lr: 0.0008 etc:Thu Sep 18 21:43:01 2025
+step:18100/101900 loss:0.0132 imps:16.8 lr: 0.0008 etc:Thu Sep 18 21:42:52 2025
+step:18200/101900 loss:0.0090 imps:18.9 lr: 0.0008 etc:Thu Sep 18 21:42:43 2025
+step:18300/101900 loss:0.0069 imps:21.0 lr: 0.0008 etc:Thu Sep 18 21:42:33 2025
+82.32912683486938
+Epoch 19/100
+step:18400/101900 loss:0.0108 imps:1.2 lr: 0.0008 etc:Thu Sep 18 21:43:50 2025
+step:18500/101900 loss:0.0134 imps:3.3 lr: 0.0008 etc:Thu Sep 18 21:43:40 2025
+step:18600/101900 loss:0.0149 imps:5.4 lr: 0.0008 etc:Thu Sep 18 21:43:30 2025
+step:18700/101900 loss:0.0073 imps:7.5 lr: 0.0008 etc:Thu Sep 18 21:43:20 2025
+step:18800/101900 loss:0.0074 imps:9.5 lr: 0.0008 etc:Thu Sep 18 21:43:10 2025
+step:18900/101900 loss:0.0067 imps:11.6 lr: 0.0008 etc:Thu Sep 18 21:43:00 2025
+step:19000/101900 loss:0.0104 imps:13.6 lr: 0.0008 etc:Thu Sep 18 21:42:50 2025
+step:19100/101900 loss:0.0135 imps:15.6 lr: 0.0008 etc:Thu Sep 18 21:42:41 2025
+step:19200/101900 loss:0.0063 imps:17.6 lr: 0.0008 etc:Thu Sep 18 21:42:31 2025
+step:19300/101900 loss:0.0105 imps:19.5 lr: 0.0008 etc:Thu Sep 18 21:42:22 2025
+80.62779998779297
+Epoch 20/100
+step:19400/101900 loss:0.0081 imps:0.8 lr: 0.0008 etc:Thu Sep 18 21:43:35 2025
+step:19500/101900 loss:0.0047 imps:2.8 lr: 0.0008 etc:Thu Sep 18 21:43:25 2025
+step:19600/101900 loss:0.0095 imps:4.8 lr: 0.0008 etc:Thu Sep 18 21:43:16 2025
+step:19700/101900 loss:0.0079 imps:6.8 lr: 0.0008 etc:Thu Sep 18 21:43:06 2025
+step:19800/101900 loss:0.0048 imps:8.7 lr: 0.0008 etc:Thu Sep 18 21:42:57 2025
+step:19900/101900 loss:0.0040 imps:10.6 lr: 0.0008 etc:Thu Sep 18 21:42:48 2025
+step:20000/101900 loss:0.0227 imps:12.6 lr: 0.0008 etc:Thu Sep 18 21:42:38 2025
+step:20100/101900 loss:0.0093 imps:14.5 lr: 0.0008 etc:Thu Sep 18 21:42:29 2025
+step:20200/101900 loss:0.0040 imps:16.4 lr: 0.0008 etc:Thu Sep 18 21:42:20 2025
+step:20300/101900 loss:0.0116 imps:18.2 lr: 0.0008 etc:Thu Sep 18 21:42:12 2025
+80.49025964736938
+Epoch 21/100
+step:20400/101900 loss:0.0064 imps:0.4 lr: 0.0008 etc:Thu Sep 18 21:43:21 2025
+step:20500/101900 loss:0.0056 imps:2.3 lr: 0.0008 etc:Thu Sep 18 21:43:11 2025
+step:20600/101900 loss:0.0101 imps:4.2 lr: 0.0008 etc:Thu Sep 18 21:43:02 2025
+step:20700/101900 loss:0.0114 imps:6.1 lr: 0.0008 etc:Thu Sep 18 21:42:54 2025
+step:20800/101900 loss:0.0112 imps:7.9 lr: 0.0008 etc:Thu Sep 18 21:42:45 2025
+step:20900/101900 loss:0.0051 imps:9.8 lr: 0.0008 etc:Thu Sep 18 21:42:36 2025
+step:21000/101900 loss:0.0039 imps:11.6 lr: 0.0008 etc:Thu Sep 18 21:42:27 2025
+step:21100/101900 loss:0.0072 imps:13.4 lr: 0.0008 etc:Thu Sep 18 21:42:19 2025
+step:21200/101900 loss:0.0043 imps:15.3 lr: 0.0008 etc:Thu Sep 18 21:42:10 2025
+step:21300/101900 loss:0.0035 imps:17.0 lr: 0.0008 etc:Thu Sep 18 21:42:02 2025
+80.4435167312622
+Epoch 22/100
+step:21400/101900 loss:0.0168 imps:0.0 lr: 0.0008 etc:Thu Sep 18 21:43:09 2025
+step:21500/101900 loss:0.0030 imps:1.9 lr: 0.0008 etc:Thu Sep 18 21:43:02 2025
+step:21600/101900 loss:0.0111 imps:3.7 lr: 0.0008 etc:Thu Sep 18 21:42:54 2025
+step:21700/101900 loss:0.0061 imps:5.5 lr: 0.0008 etc:Thu Sep 18 21:42:45 2025
+step:21800/101900 loss:0.0065 imps:7.2 lr: 0.0008 etc:Thu Sep 18 21:42:37 2025
+step:21900/101900 loss:0.0075 imps:9.0 lr: 0.0008 etc:Thu Sep 18 21:42:29 2025
+step:22000/101900 loss:0.0122 imps:10.8 lr: 0.0008 etc:Thu Sep 18 21:42:21 2025
+step:22100/101900 loss:0.0224 imps:12.5 lr: 0.0008 etc:Thu Sep 18 21:42:14 2025
+step:22200/101900 loss:0.0065 imps:14.2 lr: 0.0008 etc:Thu Sep 18 21:42:06 2025
+step:22300/101900 loss:0.0148 imps:16.0 lr: 0.0008 etc:Thu Sep 18 21:41:58 2025
+step:22400/101900 loss:0.0052 imps:17.7 lr: 0.0008 etc:Thu Sep 18 21:41:51 2025
+81.61751079559326
+Epoch 23/100
+step:22500/101900 loss:0.0020 imps:1.4 lr: 0.0008 etc:Thu Sep 18 21:42:57 2025
+step:22600/101900 loss:0.0131 imps:3.2 lr: 0.0008 etc:Thu Sep 18 21:42:49 2025
+step:22700/101900 loss:0.0066 imps:4.9 lr: 0.0008 etc:Thu Sep 18 21:42:41 2025
+step:22800/101900 loss:0.0045 imps:6.6 lr: 0.0008 etc:Thu Sep 18 21:42:34 2025
+step:22900/101900 loss:0.0054 imps:8.3 lr: 0.0008 etc:Thu Sep 18 21:42:27 2025
+step:23000/101900 loss:0.0039 imps:10.0 lr: 0.0008 etc:Thu Sep 18 21:42:20 2025
+step:23100/101900 loss:0.0032 imps:11.6 lr: 0.0008 etc:Thu Sep 18 21:42:13 2025
+step:23200/101900 loss:0.0126 imps:13.3 lr: 0.0008 etc:Thu Sep 18 21:42:06 2025
+step:23300/101900 loss:0.0063 imps:14.9 lr: 0.0008 etc:Thu Sep 18 21:41:58 2025
+step:23400/101900 loss:0.0058 imps:16.6 lr: 0.0008 etc:Thu Sep 18 21:41:52 2025
+82.51976418495178
+Epoch 24/100
+step:23500/101900 loss:0.0059 imps:1.1 lr: 0.0008 etc:Thu Sep 18 21:42:57 2025
+step:23600/101900 loss:0.0034 imps:2.7 lr: 0.0008 etc:Thu Sep 18 21:42:51 2025
+step:23700/101900 loss:0.0021 imps:4.4 lr: 0.0008 etc:Thu Sep 18 21:42:44 2025
+step:23800/101900 loss:0.0051 imps:6.0 lr: 0.0008 etc:Thu Sep 18 21:42:37 2025
+step:23900/101900 loss:0.0055 imps:7.6 lr: 0.0008 etc:Thu Sep 18 21:42:30 2025
+step:24000/101900 loss:0.0023 imps:9.2 lr: 0.0008 etc:Thu Sep 18 21:42:23 2025
+step:24100/101900 loss:0.0137 imps:10.8 lr: 0.0008 etc:Thu Sep 18 21:42:16 2025
+step:24200/101900 loss:0.0115 imps:12.4 lr: 0.0008 etc:Thu Sep 18 21:42:09 2025
+step:24300/101900 loss:0.0060 imps:14.0 lr: 0.0008 etc:Thu Sep 18 21:42:02 2025
+step:24400/101900 loss:0.0088 imps:15.6 lr: 0.0008 etc:Thu Sep 18 21:41:55 2025
+83.21888852119446
+Epoch 25/100
+step:24500/101900 loss:0.0097 imps:0.7 lr: 0.0008 etc:Thu Sep 18 21:42:59 2025
+step:24600/101900 loss:0.0032 imps:2.3 lr: 0.0008 etc:Thu Sep 18 21:42:52 2025
+step:24700/101900 loss:0.0091 imps:3.9 lr: 0.0008 etc:Thu Sep 18 21:42:45 2025
+step:24800/101900 loss:0.0098 imps:5.5 lr: 0.0008 etc:Thu Sep 18 21:42:38 2025
+step:24900/101900 loss:0.0056 imps:7.0 lr: 0.0008 etc:Thu Sep 18 21:42:31 2025
+step:25000/101900 loss:0.0062 imps:8.6 lr: 0.0008 etc:Thu Sep 18 21:42:24 2025
+step:25100/101900 loss:0.0030 imps:10.1 lr: 0.0008 etc:Thu Sep 18 21:42:18 2025
+step:25200/101900 loss:0.0092 imps:11.6 lr: 0.0008 etc:Thu Sep 18 21:42:11 2025
+step:25300/101900 loss:0.0095 imps:13.2 lr: 0.0008 etc:Thu Sep 18 21:42:04 2025
+step:25400/101900 loss:0.0075 imps:14.7 lr: 0.0008 etc:Thu Sep 18 21:41:57 2025
+82.75044202804565
+Epoch 26/100
+step:25500/101900 loss:0.0054 imps:0.4 lr: 0.0008 etc:Thu Sep 18 21:43:00 2025
+step:25600/101900 loss:0.0049 imps:1.9 lr: 0.0008 etc:Thu Sep 18 21:42:53 2025
+step:25700/101900 loss:0.0021 imps:3.4 lr: 0.0008 etc:Thu Sep 18 21:42:46 2025
+step:25800/101900 loss:0.0079 imps:5.0 lr: 0.0008 etc:Thu Sep 18 21:42:40 2025
+step:25900/101900 loss:0.0044 imps:6.5 lr: 0.0008 etc:Thu Sep 18 21:42:33 2025
+step:26000/101900 loss:0.0056 imps:8.0 lr: 0.0008 etc:Thu Sep 18 21:42:26 2025
+step:26100/101900 loss:0.0057 imps:9.4 lr: 0.0008 etc:Thu Sep 18 21:42:19 2025
+step:26200/101900 loss:0.0049 imps:10.9 lr: 0.0008 etc:Thu Sep 18 21:42:13 2025
+step:26300/101900 loss:0.0052 imps:12.4 lr: 0.0008 etc:Thu Sep 18 21:42:06 2025
+step:26400/101900 loss:0.0073 imps:13.8 lr: 0.0008 etc:Thu Sep 18 21:42:00 2025
+82.95982265472412
+Epoch 27/100
+step:26500/101900 loss:0.0024 imps:0.1 lr: 0.0008 etc:Thu Sep 18 21:42:57 2025
+step:26600/101900 loss:0.0058 imps:1.6 lr: 0.0008 etc:Thu Sep 18 21:42:51 2025
+step:26700/101900 loss:0.0051 imps:3.0 lr: 0.0008 etc:Thu Sep 18 21:42:44 2025
+step:26800/101900 loss:0.0121 imps:4.5 lr: 0.0008 etc:Thu Sep 18 21:42:37 2025
+step:26900/101900 loss:0.0068 imps:5.9 lr: 0.0008 etc:Thu Sep 18 21:42:30 2025
+step:27000/101900 loss:0.0083 imps:7.4 lr: 0.0008 etc:Thu Sep 18 21:42:24 2025
+step:27100/101900 loss:0.0054 imps:8.8 lr: 0.0008 etc:Thu Sep 18 21:42:17 2025
+step:27200/101900 loss:0.0051 imps:10.2 lr: 0.0008 etc:Thu Sep 18 21:42:11 2025
+step:27300/101900 loss:0.0019 imps:11.7 lr: 0.0008 etc:Thu Sep 18 21:42:04 2025
+step:27400/101900 loss:0.0033 imps:13.1 lr: 0.0008 etc:Thu Sep 18 21:41:58 2025
+step:27500/101900 loss:0.0037 imps:14.5 lr: 0.0008 etc:Thu Sep 18 21:41:52 2025
+81.75351095199585
+Epoch 28/100
+step:27600/101900 loss:0.0055 imps:1.3 lr: 0.0008 etc:Thu Sep 18 21:42:46 2025
+step:27700/101900 loss:0.0040 imps:2.7 lr: 0.0008 etc:Thu Sep 18 21:42:40 2025
+step:27800/101900 loss:0.0012 imps:4.1 lr: 0.0008 etc:Thu Sep 18 21:42:34 2025
+step:27900/101900 loss:0.0036 imps:5.5 lr: 0.0007 etc:Thu Sep 18 21:42:27 2025
+step:28000/101900 loss:0.0055 imps:6.9 lr: 0.0007 etc:Thu Sep 18 21:42:21 2025
+step:28100/101900 loss:0.0208 imps:8.2 lr: 0.0007 etc:Thu Sep 18 21:42:14 2025
+step:28200/101900 loss:0.0036 imps:9.6 lr: 0.0007 etc:Thu Sep 18 21:42:08 2025
+step:28300/101900 loss:0.0046 imps:11.0 lr: 0.0007 etc:Thu Sep 18 21:42:02 2025
+step:28400/101900 loss:0.0023 imps:12.3 lr: 0.0007 etc:Thu Sep 18 21:41:55 2025
+step:28500/101900 loss:0.0083 imps:13.7 lr: 0.0007 etc:Thu Sep 18 21:41:49 2025
+81.50191164016724
+Epoch 29/100
+step:28600/101900 loss:0.0036 imps:0.9 lr: 0.0007 etc:Thu Sep 18 21:42:41 2025
+step:28700/101900 loss:0.0068 imps:2.3 lr: 0.0007 etc:Thu Sep 18 21:42:34 2025
+step:28800/101900 loss:0.0040 imps:3.7 lr: 0.0007 etc:Thu Sep 18 21:42:28 2025
+step:28900/101900 loss:0.0040 imps:5.0 lr: 0.0007 etc:Thu Sep 18 21:42:21 2025
+step:29000/101900 loss:0.0036 imps:6.4 lr: 0.0007 etc:Thu Sep 18 21:42:15 2025
+step:29100/101900 loss:0.0020 imps:7.7 lr: 0.0007 etc:Thu Sep 18 21:42:09 2025
+step:29200/101900 loss:0.0034 imps:9.0 lr: 0.0007 etc:Thu Sep 18 21:42:03 2025
+step:29300/101900 loss:0.0121 imps:10.4 lr: 0.0007 etc:Thu Sep 18 21:41:56 2025
+step:29400/101900 loss:0.0054 imps:11.7 lr: 0.0007 etc:Thu Sep 18 21:41:50 2025
+step:29500/101900 loss:0.0033 imps:13.0 lr: 0.0007 etc:Thu Sep 18 21:41:44 2025
+81.08992052078247
+Epoch 30/100
+step:29600/101900 loss:0.0036 imps:0.7 lr: 0.0007 etc:Thu Sep 18 21:42:35 2025
+step:29700/101900 loss:0.0063 imps:2.0 lr: 0.0007 etc:Thu Sep 18 21:42:28 2025
+step:29800/101900 loss:0.0018 imps:3.3 lr: 0.0007 etc:Thu Sep 18 21:42:22 2025
+step:29900/101900 loss:0.0012 imps:4.6 lr: 0.0007 etc:Thu Sep 18 21:42:16 2025
+step:30000/101900 loss:0.0020 imps:5.9 lr: 0.0007 etc:Thu Sep 18 21:42:10 2025
+step:30100/101900 loss:0.0075 imps:7.2 lr: 0.0007 etc:Thu Sep 18 21:42:04 2025
+step:30200/101900 loss:0.0039 imps:8.5 lr: 0.0007 etc:Thu Sep 18 21:41:58 2025
+step:30300/101900 loss:0.0701 imps:9.8 lr: 0.0007 etc:Thu Sep 18 21:41:52 2025
+step:30400/101900 loss:0.0126 imps:11.0 lr: 0.0007 etc:Thu Sep 18 21:41:47 2025
+step:30500/101900 loss:0.0116 imps:12.3 lr: 0.0007 etc:Thu Sep 18 21:41:41 2025
+81.0068531036377
+Epoch 31/100
+step:30600/101900 loss:0.0055 imps:0.4 lr: 0.0007 etc:Thu Sep 18 21:42:30 2025
+step:30700/101900 loss:0.0048 imps:1.7 lr: 0.0007 etc:Thu Sep 18 21:42:24 2025
+step:30800/101900 loss:0.0043 imps:3.0 lr: 0.0007 etc:Thu Sep 18 21:42:18 2025
+step:30900/101900 loss:0.0032 imps:4.2 lr: 0.0007 etc:Thu Sep 18 21:42:12 2025
+step:31000/101900 loss:0.0078 imps:5.5 lr: 0.0007 etc:Thu Sep 18 21:42:06 2025
+step:31100/101900 loss:0.0034 imps:6.7 lr: 0.0007 etc:Thu Sep 18 21:42:01 2025
+step:31200/101900 loss:0.0043 imps:8.0 lr: 0.0007 etc:Thu Sep 18 21:41:55 2025
+step:31300/101900 loss:0.0017 imps:9.2 lr: 0.0007 etc:Thu Sep 18 21:41:49 2025
+step:31400/101900 loss:0.0058 imps:10.5 lr: 0.0007 etc:Thu Sep 18 21:41:44 2025
+step:31500/101900 loss:0.0023 imps:11.7 lr: 0.0007 etc:Thu Sep 18 21:41:38 2025
+81.4279294013977
+Epoch 32/100
+step:31600/101900 loss:0.0061 imps:0.1 lr: 0.0007 etc:Thu Sep 18 21:42:27 2025
+step:31700/101900 loss:0.0026 imps:1.4 lr: 0.0007 etc:Thu Sep 18 21:42:21 2025
+step:31800/101900 loss:0.0014 imps:2.6 lr: 0.0007 etc:Thu Sep 18 21:42:15 2025
+step:31900/101900 loss:0.0089 imps:3.9 lr: 0.0007 etc:Thu Sep 18 21:42:10 2025
+step:32000/101900 loss:0.0053 imps:5.1 lr: 0.0007 etc:Thu Sep 18 21:42:04 2025
+step:32100/101900 loss:0.0070 imps:6.3 lr: 0.0007 etc:Thu Sep 18 21:41:59 2025
+step:32200/101900 loss:0.0019 imps:7.5 lr: 0.0007 etc:Thu Sep 18 21:41:53 2025
+step:32300/101900 loss:0.0023 imps:8.7 lr: 0.0007 etc:Thu Sep 18 21:41:48 2025
+step:32400/101900 loss:0.0043 imps:9.9 lr: 0.0007 etc:Thu Sep 18 21:41:42 2025
+step:32500/101900 loss:0.0045 imps:11.1 lr: 0.0007 etc:Thu Sep 18 21:41:37 2025
+step:32600/101900 loss:0.0018 imps:12.3 lr: 0.0007 etc:Thu Sep 18 21:41:31 2025
+81.52030491828918
+Epoch 33/100
+step:32700/101900 loss:0.0052 imps:1.1 lr: 0.0007 etc:Thu Sep 18 21:42:17 2025
+step:32800/101900 loss:0.0021 imps:2.3 lr: 0.0007 etc:Thu Sep 18 21:42:11 2025
+step:32900/101900 loss:0.0026 imps:3.5 lr: 0.0007 etc:Thu Sep 18 21:42:06 2025
+step:33000/101900 loss:0.0030 imps:4.7 lr: 0.0007 etc:Thu Sep 18 21:42:01 2025
+step:33100/101900 loss:0.0035 imps:5.9 lr: 0.0007 etc:Thu Sep 18 21:41:55 2025
+step:33200/101900 loss:0.0023 imps:7.1 lr: 0.0007 etc:Thu Sep 18 21:41:50 2025
+step:33300/101900 loss:0.0015 imps:8.2 lr: 0.0007 etc:Thu Sep 18 21:41:45 2025
+step:33400/101900 loss:0.0015 imps:9.4 lr: 0.0007 etc:Thu Sep 18 21:41:40 2025
+step:33500/101900 loss:0.0034 imps:10.5 lr: 0.0007 etc:Thu Sep 18 21:41:35 2025
+step:33600/101900 loss:0.0050 imps:11.7 lr: 0.0007 etc:Thu Sep 18 21:41:29 2025
+81.3624095916748
+Epoch 34/100
+step:33700/101900 loss:0.0043 imps:0.9 lr: 0.0007 etc:Thu Sep 18 21:42:14 2025
+step:33800/101900 loss:0.0016 imps:2.0 lr: 0.0007 etc:Thu Sep 18 21:42:09 2025
+step:33900/101900 loss:0.0035 imps:3.2 lr: 0.0007 etc:Thu Sep 18 21:42:03 2025
+step:34000/101900 loss:0.0014 imps:4.3 lr: 0.0007 etc:Thu Sep 18 21:41:58 2025
+step:34100/101900 loss:0.0106 imps:5.5 lr: 0.0007 etc:Thu Sep 18 21:41:53 2025
+step:34200/101900 loss:0.0051 imps:6.6 lr: 0.0007 etc:Thu Sep 18 21:41:48 2025
+step:34300/101900 loss:0.0025 imps:7.8 lr: 0.0007 etc:Thu Sep 18 21:41:43 2025
+step:34400/101900 loss:0.0092 imps:8.9 lr: 0.0007 etc:Thu Sep 18 21:41:38 2025
+step:34500/101900 loss:0.0021 imps:10.0 lr: 0.0007 etc:Thu Sep 18 21:41:33 2025
+step:34600/101900 loss:0.0032 imps:11.1 lr: 0.0007 etc:Thu Sep 18 21:41:28 2025
+81.49787664413452
+Epoch 35/100
+step:34700/101900 loss:0.0023 imps:0.6 lr: 0.0007 etc:Thu Sep 18 21:42:11 2025
+step:34800/101900 loss:0.0021 imps:1.8 lr: 0.0007 etc:Thu Sep 18 21:42:05 2025
+step:34900/101900 loss:0.0027 imps:2.9 lr: 0.0007 etc:Thu Sep 18 21:42:00 2025
+step:35000/101900 loss:0.0011 imps:4.0 lr: 0.0007 etc:Thu Sep 18 21:41:55 2025
+step:35100/101900 loss:0.0025 imps:5.1 lr: 0.0007 etc:Thu Sep 18 21:41:50 2025
+step:35200/101900 loss:0.0025 imps:6.2 lr: 0.0007 etc:Thu Sep 18 21:41:45 2025
+step:35300/101900 loss:0.0050 imps:7.3 lr: 0.0007 etc:Thu Sep 18 21:41:40 2025
+step:35400/101900 loss:0.0058 imps:8.4 lr: 0.0007 etc:Thu Sep 18 21:41:34 2025
+step:35500/101900 loss:0.0022 imps:9.5 lr: 0.0007 etc:Thu Sep 18 21:41:29 2025
+step:35600/101900 loss:0.0018 imps:10.6 lr: 0.0007 etc:Thu Sep 18 21:41:24 2025
+80.94834542274475
+Epoch 36/100
+step:35700/101900 loss:0.0019 imps:0.4 lr: 0.0007 etc:Thu Sep 18 21:42:05 2025
+step:35800/101900 loss:0.0032 imps:1.5 lr: 0.0007 etc:Thu Sep 18 21:42:00 2025
+step:35900/101900 loss:0.0018 imps:2.6 lr: 0.0007 etc:Thu Sep 18 21:41:55 2025
+step:36000/101900 loss:0.0028 imps:3.7 lr: 0.0007 etc:Thu Sep 18 21:41:49 2025
+step:36100/101900 loss:0.0086 imps:4.8 lr: 0.0007 etc:Thu Sep 18 21:41:44 2025
+step:36200/101900 loss:0.0022 imps:5.9 lr: 0.0007 etc:Thu Sep 18 21:41:39 2025
+step:36300/101900 loss:0.0059 imps:6.9 lr: 0.0007 etc:Thu Sep 18 21:41:34 2025
+step:36400/101900 loss:0.0019 imps:8.0 lr: 0.0007 etc:Thu Sep 18 21:41:28 2025
+step:36500/101900 loss:0.0041 imps:9.1 lr: 0.0007 etc:Thu Sep 18 21:41:23 2025
+step:36600/101900 loss:0.0029 imps:10.1 lr: 0.0007 etc:Thu Sep 18 21:41:18 2025
+79.55582165718079
+Epoch 37/100
+step:36700/101900 loss:0.0047 imps:0.2 lr: 0.0007 etc:Thu Sep 18 21:41:57 2025
+step:36800/101900 loss:0.0064 imps:1.3 lr: 0.0007 etc:Thu Sep 18 21:41:52 2025
+step:36900/101900 loss:0.0030 imps:2.3 lr: 0.0007 etc:Thu Sep 18 21:41:47 2025
+step:37000/101900 loss:0.0017 imps:3.4 lr: 0.0007 etc:Thu Sep 18 21:41:42 2025
+step:37100/101900 loss:0.0011 imps:4.4 lr: 0.0007 etc:Thu Sep 18 21:41:37 2025
+step:37200/101900 loss:0.0024 imps:5.5 lr: 0.0007 etc:Thu Sep 18 21:41:32 2025
+step:37300/101900 loss:0.0007 imps:6.6 lr: 0.0007 etc:Thu Sep 18 21:41:27 2025
+step:37400/101900 loss:0.0016 imps:7.6 lr: 0.0007 etc:Thu Sep 18 21:41:22 2025
+step:37500/101900 loss:0.0003 imps:8.6 lr: 0.0007 etc:Thu Sep 18 21:41:17 2025
+step:37600/101900 loss:0.0012 imps:9.7 lr: 0.0007 etc:Thu Sep 18 21:41:12 2025
+step:37700/101900 loss:0.0016 imps:10.7 lr: 0.0007 etc:Thu Sep 18 21:41:07 2025
+79.54815173149109
+Epoch 38/100
+step:37800/101900 loss:0.0013 imps:1.0 lr: 0.0007 etc:Thu Sep 18 21:41:46 2025
+step:37900/101900 loss:0.0032 imps:2.1 lr: 0.0007 etc:Thu Sep 18 21:41:41 2025
+step:38000/101900 loss:0.0007 imps:3.1 lr: 0.0007 etc:Thu Sep 18 21:41:37 2025
+step:38100/101900 loss:0.0031 imps:4.1 lr: 0.0007 etc:Thu Sep 18 21:41:32 2025
+step:38200/101900 loss:0.0018 imps:5.2 lr: 0.0007 etc:Thu Sep 18 21:41:27 2025
+step:38300/101900 loss:0.0016 imps:6.2 lr: 0.0007 etc:Thu Sep 18 21:41:23 2025
+step:38400/101900 loss:0.0014 imps:7.2 lr: 0.0007 etc:Thu Sep 18 21:41:19 2025
+step:38500/101900 loss:0.0033 imps:8.2 lr: 0.0007 etc:Thu Sep 18 21:41:14 2025
+step:38600/101900 loss:0.0270 imps:9.2 lr: 0.0007 etc:Thu Sep 18 21:41:10 2025
+step:38700/101900 loss:0.0053 imps:10.2 lr: 0.0007 etc:Thu Sep 18 21:41:05 2025
+81.28674530982971
+Epoch 39/100
+step:38800/101900 loss:0.0014 imps:0.8 lr: 0.0006 etc:Thu Sep 18 21:41:44 2025
+step:38900/101900 loss:0.0032 imps:1.8 lr: 0.0006 etc:Thu Sep 18 21:41:40 2025
+step:39000/101900 loss:0.0009 imps:2.8 lr: 0.0006 etc:Thu Sep 18 21:41:35 2025
+step:39100/101900 loss:0.0013 imps:3.8 lr: 0.0006 etc:Thu Sep 18 21:41:31 2025
+step:39200/101900 loss:0.0039 imps:4.8 lr: 0.0006 etc:Thu Sep 18 21:41:27 2025
+step:39300/101900 loss:0.0030 imps:5.8 lr: 0.0006 etc:Thu Sep 18 21:41:22 2025
+step:39400/101900 loss:0.0021 imps:6.8 lr: 0.0006 etc:Thu Sep 18 21:41:18 2025
+step:39500/101900 loss:0.0015 imps:7.8 lr: 0.0006 etc:Thu Sep 18 21:41:13 2025
+step:39600/101900 loss:0.0008 imps:8.8 lr: 0.0006 etc:Thu Sep 18 21:41:09 2025
+step:39700/101900 loss:0.0014 imps:9.8 lr: 0.0006 etc:Thu Sep 18 21:41:05 2025
+81.63131952285767
+Epoch 40/100
+step:39800/101900 loss:0.0013 imps:0.6 lr: 0.0006 etc:Thu Sep 18 21:41:43 2025
+step:39900/101900 loss:0.0032 imps:1.6 lr: 0.0006 etc:Thu Sep 18 21:41:38 2025
+step:40000/101900 loss:0.0021 imps:2.6 lr: 0.0006 etc:Thu Sep 18 21:41:34 2025
+step:40100/101900 loss:0.0015 imps:3.6 lr: 0.0006 etc:Thu Sep 18 21:41:29 2025
+step:40200/101900 loss:0.0018 imps:4.5 lr: 0.0006 etc:Thu Sep 18 21:41:25 2025
+step:40300/101900 loss:0.0016 imps:5.5 lr: 0.0006 etc:Thu Sep 18 21:41:20 2025
+step:40400/101900 loss:0.0007 imps:6.5 lr: 0.0006 etc:Thu Sep 18 21:41:16 2025
+step:40500/101900 loss:0.0006 imps:7.4 lr: 0.0006 etc:Thu Sep 18 21:41:12 2025
+step:40600/101900 loss:0.0015 imps:8.4 lr: 0.0006 etc:Thu Sep 18 21:41:07 2025
+step:40700/101900 loss:0.0063 imps:9.4 lr: 0.0006 etc:Thu Sep 18 21:41:03 2025
+81.07787656784058
+Epoch 41/100
+step:40800/101900 loss:0.0017 imps:0.4 lr: 0.0006 etc:Thu Sep 18 21:41:40 2025
+step:40900/101900 loss:0.0007 imps:1.4 lr: 0.0006 etc:Thu Sep 18 21:41:35 2025
+step:41000/101900 loss:0.0017 imps:2.3 lr: 0.0006 etc:Thu Sep 18 21:41:31 2025
+step:41100/101900 loss:0.0011 imps:3.3 lr: 0.0006 etc:Thu Sep 18 21:41:27 2025
+step:41200/101900 loss:0.0033 imps:4.2 lr: 0.0006 etc:Thu Sep 18 21:41:22 2025
+step:41300/101900 loss:0.0016 imps:5.2 lr: 0.0006 etc:Thu Sep 18 21:41:18 2025
+step:41400/101900 loss:0.0009 imps:6.1 lr: 0.0006 etc:Thu Sep 18 21:41:14 2025
+step:41500/101900 loss:0.0010 imps:7.1 lr: 0.0006 etc:Thu Sep 18 21:41:09 2025
+step:41600/101900 loss:0.0010 imps:8.0 lr: 0.0006 etc:Thu Sep 18 21:41:05 2025
+step:41700/101900 loss:0.0051 imps:9.0 lr: 0.0006 etc:Thu Sep 18 21:41:01 2025
+81.19148516654968
+Epoch 42/100
+step:41800/101900 loss:0.0043 imps:0.2 lr: 0.0006 etc:Thu Sep 18 21:41:38 2025
+step:41900/101900 loss:0.0022 imps:1.2 lr: 0.0006 etc:Thu Sep 18 21:41:34 2025
+step:42000/101900 loss:0.0031 imps:2.1 lr: 0.0006 etc:Thu Sep 18 21:41:30 2025
+step:42100/101900 loss:0.0016 imps:3.0 lr: 0.0006 etc:Thu Sep 18 21:41:26 2025
+step:42200/101900 loss:0.0008 imps:4.0 lr: 0.0006 etc:Thu Sep 18 21:41:21 2025
+step:42300/101900 loss:0.0028 imps:4.9 lr: 0.0006 etc:Thu Sep 18 21:41:17 2025
+step:42400/101900 loss:0.0028 imps:5.8 lr: 0.0006 etc:Thu Sep 18 21:41:13 2025
+step:42500/101900 loss:0.0041 imps:6.7 lr: 0.0006 etc:Thu Sep 18 21:41:09 2025
+step:42600/101900 loss:0.0016 imps:7.7 lr: 0.0006 etc:Thu Sep 18 21:41:05 2025
+step:42700/101900 loss:0.0011 imps:8.6 lr: 0.0006 etc:Thu Sep 18 21:41:02 2025
+81.77627563476562
+Epoch 43/100
+step:42800/101900 loss:0.0019 imps:0.0 lr: 0.0006 etc:Thu Sep 18 21:41:37 2025
+step:42900/101900 loss:0.0005 imps:0.9 lr: 0.0006 etc:Thu Sep 18 21:41:34 2025
+step:43000/101900 loss:0.0008 imps:1.9 lr: 0.0006 etc:Thu Sep 18 21:41:30 2025
+step:43100/101900 loss:0.0049 imps:2.8 lr: 0.0006 etc:Thu Sep 18 21:41:26 2025
+step:43200/101900 loss:0.0010 imps:3.7 lr: 0.0006 etc:Thu Sep 18 21:41:23 2025
+step:43300/101900 loss:0.0022 imps:4.6 lr: 0.0006 etc:Thu Sep 18 21:41:20 2025
+step:43400/101900 loss:0.0012 imps:5.5 lr: 0.0006 etc:Thu Sep 18 21:41:17 2025
+step:43500/101900 loss:0.0034 imps:6.4 lr: 0.0006 etc:Thu Sep 18 21:41:14 2025
+step:43600/101900 loss:0.0013 imps:7.3 lr: 0.0006 etc:Thu Sep 18 21:41:10 2025
+step:43700/101900 loss:0.0019 imps:8.2 lr: 0.0006 etc:Thu Sep 18 21:41:06 2025
+step:43800/101900 loss:0.0027 imps:9.1 lr: 0.0006 etc:Thu Sep 18 21:41:02 2025
+83.46347379684448
+Epoch 44/100
+step:43900/101900 loss:0.0037 imps:0.8 lr: 0.0006 etc:Thu Sep 18 21:41:37 2025
+step:44000/101900 loss:0.0012 imps:1.7 lr: 0.0006 etc:Thu Sep 18 21:41:33 2025
+step:44100/101900 loss:0.0030 imps:2.5 lr: 0.0006 etc:Thu Sep 18 21:41:29 2025
+step:44200/101900 loss:0.0015 imps:3.4 lr: 0.0006 etc:Thu Sep 18 21:41:25 2025
+step:44300/101900 loss:0.0003 imps:4.3 lr: 0.0006 etc:Thu Sep 18 21:41:20 2025
+step:44400/101900 loss:0.0004 imps:5.2 lr: 0.0006 etc:Thu Sep 18 21:41:16 2025
+step:44500/101900 loss:0.0012 imps:6.1 lr: 0.0006 etc:Thu Sep 18 21:41:12 2025
+step:44600/101900 loss:0.0006 imps:7.0 lr: 0.0006 etc:Thu Sep 18 21:41:07 2025
+step:44700/101900 loss:0.0004 imps:7.9 lr: 0.0006 etc:Thu Sep 18 21:41:03 2025
+step:44800/101900 loss:0.0006 imps:8.7 lr: 0.0006 etc:Thu Sep 18 21:40:59 2025
+80.45366191864014
+Epoch 45/100
+step:44900/101900 loss:0.0016 imps:0.6 lr: 0.0006 etc:Thu Sep 18 21:41:29 2025
+step:45000/101900 loss:0.0006 imps:1.5 lr: 0.0006 etc:Thu Sep 18 21:41:25 2025
+step:45100/101900 loss:0.0024 imps:2.3 lr: 0.0006 etc:Thu Sep 18 21:41:21 2025
+step:45200/101900 loss:0.0005 imps:3.2 lr: 0.0006 etc:Thu Sep 18 21:41:17 2025
+step:45300/101900 loss:0.0011 imps:4.1 lr: 0.0006 etc:Thu Sep 18 21:41:13 2025
+step:45400/101900 loss:0.0022 imps:4.9 lr: 0.0006 etc:Thu Sep 18 21:41:08 2025
+step:45500/101900 loss:0.0034 imps:5.8 lr: 0.0006 etc:Thu Sep 18 21:41:04 2025
+step:45600/101900 loss:0.0013 imps:6.7 lr: 0.0006 etc:Thu Sep 18 21:41:00 2025
+step:45700/101900 loss:0.0031 imps:7.5 lr: 0.0006 etc:Thu Sep 18 21:40:56 2025
+step:45800/101900 loss:0.0058 imps:8.4 lr: 0.0006 etc:Thu Sep 18 21:40:52 2025
+78.64910507202148
+Epoch 46/100
+step:45900/101900 loss:0.0047 imps:0.4 lr: 0.0006 etc:Thu Sep 18 21:41:22 2025
+step:46000/101900 loss:0.0016 imps:1.3 lr: 0.0006 etc:Thu Sep 18 21:41:18 2025
+step:46100/101900 loss:0.0012 imps:2.1 lr: 0.0006 etc:Thu Sep 18 21:41:14 2025
+step:46200/101900 loss:0.0056 imps:3.0 lr: 0.0006 etc:Thu Sep 18 21:41:09 2025
+step:46300/101900 loss:0.0024 imps:3.8 lr: 0.0006 etc:Thu Sep 18 21:41:05 2025
+step:46400/101900 loss:0.0011 imps:4.7 lr: 0.0006 etc:Thu Sep 18 21:41:01 2025
+step:46500/101900 loss:0.0016 imps:5.5 lr: 0.0006 etc:Thu Sep 18 21:40:57 2025
+step:46600/101900 loss:0.0004 imps:6.4 lr: 0.0006 etc:Thu Sep 18 21:40:53 2025
+step:46700/101900 loss:0.0021 imps:7.2 lr: 0.0006 etc:Thu Sep 18 21:40:49 2025
+step:46800/101900 loss:0.0033 imps:8.0 lr: 0.0006 etc:Thu Sep 18 21:40:45 2025
+78.55070471763611
+Epoch 47/100
+step:46900/101900 loss:0.0013 imps:0.2 lr: 0.0006 etc:Thu Sep 18 21:41:15 2025
+step:47000/101900 loss:0.0006 imps:1.1 lr: 0.0006 etc:Thu Sep 18 21:41:11 2025
+step:47100/101900 loss:0.0008 imps:1.9 lr: 0.0006 etc:Thu Sep 18 21:41:07 2025
+step:47200/101900 loss:0.0008 imps:2.8 lr: 0.0006 etc:Thu Sep 18 21:41:03 2025
+step:47300/101900 loss:0.0028 imps:3.6 lr: 0.0006 etc:Thu Sep 18 21:40:59 2025
+step:47400/101900 loss:0.0057 imps:4.4 lr: 0.0006 etc:Thu Sep 18 21:40:55 2025
+step:47500/101900 loss:0.0028 imps:5.2 lr: 0.0006 etc:Thu Sep 18 21:40:51 2025
+step:47600/101900 loss:0.0011 imps:6.1 lr: 0.0006 etc:Thu Sep 18 21:40:47 2025
+step:47700/101900 loss:0.0026 imps:6.9 lr: 0.0006 etc:Thu Sep 18 21:40:43 2025
+step:47800/101900 loss:0.0018 imps:7.7 lr: 0.0006 etc:Thu Sep 18 21:40:39 2025
+78.7665376663208
+Epoch 48/100
+step:47900/101900 loss:0.0009 imps:0.1 lr: 0.0006 etc:Thu Sep 18 21:41:08 2025
+step:48000/101900 loss:0.0006 imps:0.9 lr: 0.0006 etc:Thu Sep 18 21:41:04 2025
+step:48100/101900 loss:0.0010 imps:1.7 lr: 0.0006 etc:Thu Sep 18 21:41:00 2025
+step:48200/101900 loss:0.0004 imps:2.5 lr: 0.0006 etc:Thu Sep 18 21:40:56 2025
+step:48300/101900 loss:0.0026 imps:3.4 lr: 0.0006 etc:Thu Sep 18 21:40:52 2025
+step:48400/101900 loss:0.0016 imps:4.2 lr: 0.0006 etc:Thu Sep 18 21:40:48 2025
+step:48500/101900 loss:0.0005 imps:5.0 lr: 0.0006 etc:Thu Sep 18 21:40:45 2025
+step:48600/101900 loss:0.0022 imps:5.8 lr: 0.0006 etc:Thu Sep 18 21:40:41 2025
+step:48700/101900 loss:0.0008 imps:6.6 lr: 0.0006 etc:Thu Sep 18 21:40:37 2025
+step:48800/101900 loss:0.0030 imps:7.4 lr: 0.0006 etc:Thu Sep 18 21:40:33 2025
+step:48900/101900 loss:0.0021 imps:8.2 lr: 0.0006 etc:Thu Sep 18 21:40:30 2025
+78.8293936252594
+Epoch 49/100
+step:49000/101900 loss:0.0016 imps:0.7 lr: 0.0006 etc:Thu Sep 18 21:40:59 2025
+step:49100/101900 loss:0.0042 imps:1.5 lr: 0.0006 etc:Thu Sep 18 21:40:55 2025
+step:49200/101900 loss:0.0026 imps:2.3 lr: 0.0006 etc:Thu Sep 18 21:40:51 2025
+step:49300/101900 loss:0.0012 imps:3.1 lr: 0.0006 etc:Thu Sep 18 21:40:47 2025
+step:49400/101900 loss:0.0006 imps:3.9 lr: 0.0006 etc:Thu Sep 18 21:40:44 2025
+step:49500/101900 loss:0.0007 imps:4.7 lr: 0.0005 etc:Thu Sep 18 21:40:40 2025
+step:49600/101900 loss:0.0012 imps:5.5 lr: 0.0005 etc:Thu Sep 18 21:40:36 2025
+step:49700/101900 loss:0.0015 imps:6.3 lr: 0.0005 etc:Thu Sep 18 21:40:33 2025
+step:49800/101900 loss:0.0014 imps:7.1 lr: 0.0005 etc:Thu Sep 18 21:40:29 2025
+step:49900/101900 loss:0.0010 imps:7.9 lr: 0.0005 etc:Thu Sep 18 21:40:26 2025
+79.42406344413757
+Epoch 50/100
+step:50000/101900 loss:0.0008 imps:0.6 lr: 0.0005 etc:Thu Sep 18 21:40:54 2025
+step:50100/101900 loss:0.0006 imps:1.3 lr: 0.0005 etc:Thu Sep 18 21:40:50 2025
+step:50200/101900 loss:0.0003 imps:2.1 lr: 0.0005 etc:Thu Sep 18 21:40:47 2025
+step:50300/101900 loss:0.0003 imps:2.9 lr: 0.0005 etc:Thu Sep 18 21:40:43 2025
+step:50400/101900 loss:0.0005 imps:3.7 lr: 0.0005 etc:Thu Sep 18 21:40:39 2025
+step:50500/101900 loss:0.0004 imps:4.5 lr: 0.0005 etc:Thu Sep 18 21:40:35 2025
+step:50600/101900 loss:0.0039 imps:5.3 lr: 0.0005 etc:Thu Sep 18 21:40:32 2025
+step:50700/101900 loss:0.0014 imps:6.1 lr: 0.0005 etc:Thu Sep 18 21:40:28 2025
+step:50800/101900 loss:0.0005 imps:6.8 lr: 0.0005 etc:Thu Sep 18 21:40:25 2025
+step:50900/101900 loss:0.0008 imps:7.6 lr: 0.0005 etc:Thu Sep 18 21:40:21 2025
+78.95633935928345
+Epoch 51/100
+step:51000/101900 loss:0.0024 imps:0.4 lr: 0.0005 etc:Thu Sep 18 21:40:48 2025
+step:51100/101900 loss:0.0010 imps:1.2 lr: 0.0005 etc:Thu Sep 18 21:40:44 2025
+step:51200/101900 loss:0.0004 imps:2.0 lr: 0.0005 etc:Thu Sep 18 21:40:41 2025
+step:51300/101900 loss:0.0009 imps:2.7 lr: 0.0005 etc:Thu Sep 18 21:40:37 2025
+step:51400/101900 loss:0.0003 imps:3.5 lr: 0.0005 etc:Thu Sep 18 21:40:34 2025
+step:51500/101900 loss:0.0007 imps:4.3 lr: 0.0005 etc:Thu Sep 18 21:40:30 2025
+step:51600/101900 loss:0.0006 imps:5.0 lr: 0.0005 etc:Thu Sep 18 21:40:26 2025
+step:51700/101900 loss:0.0004 imps:5.8 lr: 0.0005 etc:Thu Sep 18 21:40:23 2025
+step:51800/101900 loss:0.0006 imps:6.6 lr: 0.0005 etc:Thu Sep 18 21:40:19 2025
+step:51900/101900 loss:0.0005 imps:7.3 lr: 0.0005 etc:Thu Sep 18 21:40:16 2025
+78.70303845405579
+Epoch 52/100
+step:52000/101900 loss:0.0003 imps:0.2 lr: 0.0005 etc:Thu Sep 18 21:40:44 2025
+step:52100/101900 loss:0.0002 imps:1.0 lr: 0.0005 etc:Thu Sep 18 21:40:40 2025
+step:52200/101900 loss:0.0001 imps:1.8 lr: 0.0005 etc:Thu Sep 18 21:40:36 2025
+step:52300/101900 loss:0.0028 imps:2.5 lr: 0.0005 etc:Thu Sep 18 21:40:33 2025
+step:52400/101900 loss:0.0009 imps:3.3 lr: 0.0005 etc:Thu Sep 18 21:40:29 2025
+step:52500/101900 loss:0.0007 imps:4.0 lr: 0.0005 etc:Thu Sep 18 21:40:26 2025
+step:52600/101900 loss:0.0009 imps:4.8 lr: 0.0005 etc:Thu Sep 18 21:40:22 2025
+step:52700/101900 loss:0.0013 imps:5.5 lr: 0.0005 etc:Thu Sep 18 21:40:19 2025
+step:52800/101900 loss:0.0063 imps:6.3 lr: 0.0005 etc:Thu Sep 18 21:40:16 2025
+step:52900/101900 loss:0.0007 imps:7.0 lr: 0.0005 etc:Thu Sep 18 21:40:12 2025
+79.46902060508728
+Epoch 53/100
+step:53000/101900 loss:0.0003 imps:0.1 lr: 0.0005 etc:Thu Sep 18 21:40:39 2025
+step:53100/101900 loss:0.0016 imps:0.8 lr: 0.0005 etc:Thu Sep 18 21:40:36 2025
+step:53200/101900 loss:0.0002 imps:1.6 lr: 0.0005 etc:Thu Sep 18 21:40:32 2025
+step:53300/101900 loss:0.0020 imps:2.3 lr: 0.0005 etc:Thu Sep 18 21:40:29 2025
+step:53400/101900 loss:0.0008 imps:3.1 lr: 0.0005 etc:Thu Sep 18 21:40:25 2025
+step:53500/101900 loss:0.0008 imps:3.8 lr: 0.0005 etc:Thu Sep 18 21:40:22 2025
+step:53600/101900 loss:0.0014 imps:4.6 lr: 0.0005 etc:Thu Sep 18 21:40:19 2025
+step:53700/101900 loss:0.0006 imps:5.3 lr: 0.0005 etc:Thu Sep 18 21:40:15 2025
+step:53800/101900 loss:0.0002 imps:6.0 lr: 0.0005 etc:Thu Sep 18 21:40:12 2025
+step:53900/101900 loss:0.0003 imps:6.8 lr: 0.0005 etc:Thu Sep 18 21:40:09 2025
+step:54000/101900 loss:0.0004 imps:7.5 lr: 0.0005 etc:Thu Sep 18 21:40:05 2025
+79.38064217567444
+Epoch 54/100
+step:54100/101900 loss:0.0002 imps:0.7 lr: 0.0005 etc:Thu Sep 18 21:40:32 2025
+step:54200/101900 loss:0.0006 imps:1.4 lr: 0.0005 etc:Thu Sep 18 21:40:28 2025
+step:54300/101900 loss:0.0005 imps:2.2 lr: 0.0005 etc:Thu Sep 18 21:40:25 2025
+step:54400/101900 loss:0.0008 imps:2.9 lr: 0.0005 etc:Thu Sep 18 21:40:22 2025
+step:54500/101900 loss:0.0009 imps:3.6 lr: 0.0005 etc:Thu Sep 18 21:40:18 2025
+step:54600/101900 loss:0.0006 imps:4.3 lr: 0.0005 etc:Thu Sep 18 21:40:15 2025
+step:54700/101900 loss:0.0024 imps:5.1 lr: 0.0005 etc:Thu Sep 18 21:40:12 2025
+step:54800/101900 loss:0.0009 imps:5.8 lr: 0.0005 etc:Thu Sep 18 21:40:08 2025
+step:54900/101900 loss:0.0006 imps:6.5 lr: 0.0005 etc:Thu Sep 18 21:40:05 2025
+step:55000/101900 loss:0.0011 imps:7.2 lr: 0.0005 etc:Thu Sep 18 21:40:02 2025
+79.37548851966858
+Epoch 55/100
+step:55100/101900 loss:0.0021 imps:0.5 lr: 0.0005 etc:Thu Sep 18 21:40:28 2025
+step:55200/101900 loss:0.0004 imps:1.3 lr: 0.0005 etc:Thu Sep 18 21:40:24 2025
+step:55300/101900 loss:0.0010 imps:2.0 lr: 0.0005 etc:Thu Sep 18 21:40:21 2025
+step:55400/101900 loss:0.0017 imps:2.7 lr: 0.0005 etc:Thu Sep 18 21:40:18 2025
+step:55500/101900 loss:0.0025 imps:3.4 lr: 0.0005 etc:Thu Sep 18 21:40:15 2025
+step:55600/101900 loss:0.0008 imps:4.1 lr: 0.0005 etc:Thu Sep 18 21:40:11 2025
+step:55700/101900 loss:0.0005 imps:4.8 lr: 0.0005 etc:Thu Sep 18 21:40:08 2025
+step:55800/101900 loss:0.0013 imps:5.6 lr: 0.0005 etc:Thu Sep 18 21:40:05 2025
+step:55900/101900 loss:0.0005 imps:6.3 lr: 0.0005 etc:Thu Sep 18 21:40:02 2025
+step:56000/101900 loss:0.0004 imps:7.0 lr: 0.0005 etc:Thu Sep 18 21:39:59 2025
+79.3183171749115
+Epoch 56/100
+step:56100/101900 loss:0.0007 imps:0.4 lr: 0.0005 etc:Thu Sep 18 21:40:24 2025
+step:56200/101900 loss:0.0001 imps:1.1 lr: 0.0005 etc:Thu Sep 18 21:40:21 2025
+step:56300/101900 loss:0.0013 imps:1.8 lr: 0.0005 etc:Thu Sep 18 21:40:18 2025
+step:56400/101900 loss:0.0007 imps:2.5 lr: 0.0005 etc:Thu Sep 18 21:40:15 2025
+step:56500/101900 loss:0.0003 imps:3.2 lr: 0.0005 etc:Thu Sep 18 21:40:12 2025
+step:56600/101900 loss:0.0022 imps:3.9 lr: 0.0005 etc:Thu Sep 18 21:40:09 2025
+step:56700/101900 loss:0.0020 imps:4.6 lr: 0.0005 etc:Thu Sep 18 21:40:05 2025
+step:56800/101900 loss:0.0012 imps:5.3 lr: 0.0005 etc:Thu Sep 18 21:40:02 2025
+step:56900/101900 loss:0.0007 imps:6.0 lr: 0.0005 etc:Thu Sep 18 21:39:59 2025
+step:57000/101900 loss:0.0004 imps:6.7 lr: 0.0005 etc:Thu Sep 18 21:39:56 2025
+79.58575701713562
+Epoch 57/100
+step:57100/101900 loss:0.0019 imps:0.3 
