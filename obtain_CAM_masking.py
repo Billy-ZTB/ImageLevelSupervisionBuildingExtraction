@@ -83,7 +83,8 @@ def _work(process_id, model, dataset, args):
             #     continue
             # if img_name != "top_mosaic_09cm_area1_4_3":
             #     continue
-            size = pack['size']
+            #size = pack['size']
+            size = np.array([pack['size'][0][0], pack['size'][0][1]])
             # print(size)  # [tensor([256]), tensor([256])]
             strided_size = imutils.get_strided_size(size, 4)
             strided_up_size = imutils.get_strided_up_size(size, 16)
@@ -153,7 +154,7 @@ def _work(process_id, model, dataset, args):
 
                         valid_cat = torch.nonzero(pack['label'][0])[:, 0]
                         logit_loss = - 2 * (logit[:, c]).sum() + torch.sum(logit)
-                        print(logit_loss)
+                        #print(logit_loss)
 
                         expanded_mask = torch.zeros(regions.shape)
                         expanded_mask = add_discriminative(expanded_mask, regions, score_th=args.score_th)
@@ -161,7 +162,7 @@ def _work(process_id, model, dataset, args):
                         L_AD = torch.sum((torch.abs(regions - init_cam))*expanded_mask.cuda())
 
                         loss = - logit_loss - L_AD * args.AD_coeff
-                        print(loss)
+                        #print(loss)
                         model.zero_grad()
                         img_single.grad.zero_()
                         loss.backward()
