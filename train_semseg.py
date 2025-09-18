@@ -34,8 +34,7 @@ from tools.ai.evaluate_utils import *
 from tools.ai.augment_utils import *
 from tools.ai.randaugment import *
 
-from model_loss_semseg_gatedcrf import ModelLossSemsegGatedCRF
-from DenseEnergyLoss import DenseEnergyLoss
+
 from hrnet import HRNet
 from torch.cuda.amp import autocast as autocast
 

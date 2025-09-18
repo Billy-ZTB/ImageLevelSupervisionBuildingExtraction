@@ -81,6 +81,18 @@ if __name__ == '__main__':
     parser.add_argument("--make_sem_seg_pass", type=str2bool, default=False)  # check power
     parser.add_argument("--eval_sem_seg_pass", type=str2bool, default=False)
 
+    # Train semantic segmentation using pseudo labels
+    parser.add_argument('--train_pseudo', type=str2bool, default=False)
+    parser.add_argument('--valid_list',type=str, help='validation set list for pss.')
+    parser.add_argument('--pss_label_dir',type=str, help='pseudo label directory for pss.')
+    parser.add_argument('--pss_batch_size', default=16, type=int, help='batch size for pss.')
+    parser.add_argument('--pss_crop_size', default=256, type=int, help='crop size for pss.')
+    parser.add_argument('--pss_num_epochs', default=100, type=int, help='number of epochs for pss.')
+    parser.add_argument('--pss_backbone', default='resnet50', type=str, help='backbone for pss.')
+    parser.add_argument('--pss_lr', default=0.007, type=float, help='learning rate for pss.')
+    parser.add_argument('--pss_wd', default=4e-5, type=float, help='weight decay for pss.')
+    parser.add_argument('--print_ratio', default=0.1, type=float)
+    parser.add_argument('--tag', default=r'pseudo_label_vaihingen', type=str)
     args = parser.parse_args()
 
     os.makedirs("sess", exist_ok=True)
@@ -154,3 +166,8 @@ if __name__ == '__main__':
         timer = pyutils.Timer('step.eval_sem_seg:')
         step.eval_sem_seg.run(args)
 
+    if args.train_pseudo is True:
+        import step.train_sem_seg
+
+        timer = pyutils.Timer('step.train_sem_seg:')
+        step.train_sem_seg.run(args)

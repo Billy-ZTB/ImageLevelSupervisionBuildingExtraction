@@ -189,13 +189,15 @@ class VOC12SegmentationDataset(Dataset):
 
     def __init__(self, img_name_list_path, label_dir, crop_size, voc12_root,
                  rescale=None, img_normal=TorchvisionNormalize(), hor_flip=False,
-                 crop_method = 'random'):
+                 crop_method = 'random', split='train'):
 
         self.img_name_list = load_img_name_list(img_name_list_path)
         self.voc12_root = voc12_root
-
-        self.label_dir = label_dir
-
+        self.split = split
+        if split == 'train':
+            self.label_dir = label_dir
+        else:
+            self.label_dir = os.path.join(voc12_root, 'SegmentationClassAug')
         self.rescale = rescale
         self.crop_size = crop_size
         self.img_normal = img_normal
@@ -213,7 +215,10 @@ class VOC12SegmentationDataset(Dataset):
 
         if os.path.exists(os.path.join(self.label_dir, name_str + '.png')):
             label = imageio.imread(os.path.join(self.label_dir, name_str + '.png'))
+            if self.split!='train':
+                label = (label/255).astype(np.float32)
         else:
+            #print("Label file not exists: {}".format(os.path.join(self.label_dir, name_str + '.png')))
             label = np.zeros((img.shape[0], img.shape[1]), dtype=np.uint8)
         img = np.asarray(img)
 
