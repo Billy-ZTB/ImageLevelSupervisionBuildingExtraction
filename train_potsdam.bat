@@ -6,13 +6,13 @@ set IR_LABEL_OUT=result/ir_label_potsdam
 set IRN_WEIGHTS=sess/res50_irn_potsdam.pth
 set SEM_SEG_OUT=result/sem_seg_potsdam
 
-python run_sample.py --train_cam_pass True ^
-    --cam_batch_size 32 ^
-    --cam_num_epoches 60 ^
-    --voc12_root %DATA_ROOT% ^
-    --train_list %TRAIN_LIST% ^
-    --cam_learning_rate 0.001 ^
-    --cam_weights_name %CAM_WEIGHTS%
+::python run_sample.py --train_cam_pass True ^
+::    --cam_batch_size 32 ^
+::    --cam_num_epoches 60 ^
+::    --voc12_root %DATA_ROOT% ^
+::    --train_list %TRAIN_LIST% ^
+::    --cam_learning_rate 0.001 ^
+::    --cam_weights_name %CAM_WEIGHTS%
 
 python obtain_CAM_masking.py --adv_iter 2 --AD_coeff 7 --AD_stepsize 0.08 --score_th 0.6 ^
     --voc12_root %DATA_ROOT% ^
