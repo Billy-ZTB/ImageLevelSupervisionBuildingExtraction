@@ -142,7 +142,7 @@ def run(args):
     writer = SummaryWriter(tensorboard_dir)
     train_iterator = Iterator(train_loader)
 
-    torch.autograd.set_detect_anomaly(True)
+    torch.autograd.set_detect_anomaly(False)
 
     for iteration in range(max_iteration):
         batch = train_iterator.get()

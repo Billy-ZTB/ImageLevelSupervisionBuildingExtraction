@@ -3,6 +3,7 @@ import os
 import numpy as np
 
 from misc import pyutils
+
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 if __name__ == '__main__':
     def str2bool(v):
@@ -15,10 +16,11 @@ if __name__ == '__main__':
         else:
             raise argparse.ArgumentTypeError('Boolean value expected.')
 
+
     parser = argparse.ArgumentParser()
 
     # Environment
-    parser.add_argument("--num_workers", default=os.cpu_count()//2, type=int)
+    parser.add_argument("--num_workers", default=os.cpu_count() // 2, type=int)
     parser.add_argument("--voc12_root", default='/home/ubt/devdata/VOCdevkit/VOC2012/', type=str,
                         help="Path to VOC 2012 Devkit, must contain ./JPEGImages as subdirectory.")
 
@@ -33,7 +35,7 @@ if __name__ == '__main__':
     # Class Activation Map
     parser.add_argument("--cam_network", default="net.resnet50_cam", type=str)
     parser.add_argument("--cam_crop_size", default=512, type=int)
-    parser.add_argument("--cam_batch_size", default=16, type=int) # original: 16
+    parser.add_argument("--cam_batch_size", default=16, type=int)  # original: 16
     parser.add_argument("--cam_num_epoches", default=5, type=int)
     parser.add_argument("--cam_learning_rate", default=0.1, type=float)
     parser.add_argument("--cam_weight_decay", default=1e-4, type=float)
@@ -65,10 +67,10 @@ if __name__ == '__main__':
     parser.add_argument("--log_name", default="sample_train_eval", type=str)
     parser.add_argument("--cam_weights_name", default="sess/res50_cam.pth", type=str)
     parser.add_argument("--irn_weights_name", default="sess/res50_irn.pth", type=str)
-    parser.add_argument("--cam_out_dir", default="result/cam_adv_mask", type=str)
-    parser.add_argument("--ir_label_out_dir", default="result/ir_label", type=str)
-    parser.add_argument("--sem_seg_out_dir", default="result/sem_seg", type=str)
-    parser.add_argument("--ins_seg_out_dir", default="result/ins_seg", type=str)
+    parser.add_argument("--cam_out_dir", type=str)
+    parser.add_argument("--ir_label_out_dir", type=str)
+    parser.add_argument("--sem_seg_out_dir", type=str)
+    parser.add_argument("--ins_seg_out_dir", type=str)
 
     # Step
     parser.add_argument("--train_cam_pass", type=str2bool, default=False)
@@ -83,8 +85,8 @@ if __name__ == '__main__':
 
     # Train semantic segmentation using pseudo labels
     parser.add_argument('--train_pseudo', type=str2bool, default=False)
-    parser.add_argument('--valid_list',type=str, help='validation set list for pss.')
-    parser.add_argument('--pss_label_dir',type=str, help='pseudo label directory for pss.')
+    parser.add_argument('--valid_list', type=str, help='validation set list for pss.')
+    parser.add_argument('--pss_label_dir', type=str, help='pseudo label directory for pss.')
     parser.add_argument('--pss_batch_size', default=16, type=int, help='batch size for pss.')
     parser.add_argument('--pss_crop_size', default=256, type=int, help='crop size for pss.')
     parser.add_argument('--pss_num_epochs', default=100, type=int, help='number of epochs for pss.')
@@ -96,11 +98,16 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     os.makedirs("sess", exist_ok=True)
-    os.makedirs(args.cam_out_dir, exist_ok=True)
-    os.makedirs(args.ir_label_out_dir, exist_ok=True)
-    os.makedirs(args.sem_seg_out_dir, exist_ok=True)
-    os.makedirs(args.ins_seg_out_dir, exist_ok=True)
-    pyutils.Logger(args.log_name + '.log')
+    if args.cam_out_dir:
+        os.makedirs(args.cam_out_dir, exist_ok=True)
+    if args.ir_label_out_dir:
+        os.makedirs(args.ir_label_out_dir, exist_ok=True)
+    if args.sem_seg_out_dir:
+        os.makedirs(args.sem_seg_out_dir, exist_ok=True)
+    if args.ins_seg_out_dir:
+        os.makedirs(args.ins_seg_out_dir, exist_ok=True)
+    os.makedirs('./logs', exist_ok=True)
+    pyutils.Logger('./logs/' + args.log_name + '.log')
     print(vars(args))
 
     if args.train_cam_pass is True:
@@ -121,7 +128,7 @@ if __name__ == '__main__':
         timer = pyutils.Timer('step.eval_cam:')
         final_miou = []
         for i in range(33, 70):
-            t = i/100.0
+            t = i / 100.0
             args.cam_eval_thres = t
             miou = step.eval_cam.run(args)
             final_miou.append(miou)
@@ -154,6 +161,7 @@ if __name__ == '__main__':
 
     if args.make_sem_seg_pass is True:
         import step.make_sem_seg_labels
+
         args.sem_seg_bg_thres = float(args.sem_seg_bg_thres)
         # args.train_list = 'voc12/train.txt'
         # args.infer_list = 'voc12/train.txt'

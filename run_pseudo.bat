@@ -6,4 +6,4 @@ python run_sample.py --train_pseudo True ^
 --pss_crop_size 256 ^
 --pss_batch_size 16 ^
 --pss_num_epochs 100 ^
---tag pseudo_label_vaihingen
+--tag pseudo_label_vaihingen2
