@@ -1,127 +1,165 @@
-import torch
-from torch.backends import cudnn
+import os
+import sys
+import copy
+import shutil
+import random
+import argparse
+import numpy as np
 
-cudnn.enabled = True
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+from torchvision import transforms
+from torch.utils.tensorboard import SummaryWriter
+
 from torch.utils.data import DataLoader
-import voc12.dataloader
-from misc import pyutils, torchutils, indexing
-import importlib
-from PIL import ImageFile
-#from core
-ImageFile.LOAD_TRUNCATED_IMAGES = True
+
+from core.networks import *
+from core.datasets import *
+
+from tools.general.io_utils import *
+from tools.general.time_utils import *
+from tools.general.json_utils import *
+
+from tools.ai.log_utils import *
+from tools.ai.demo_utils import *
+from tools.ai.optim_utils import *
+from tools.ai.torch_utils import *
+from tools.ai.evaluate_utils import *
+
+from tools.ai.augment_utils import *
+from tools.ai.randaugment import *
+from voc12.dataloader import *
+from chainercv.evaluations import calc_semantic_segmentation_confusion
+from model_loss_semseg_gatedcrf import ModelLossSemsegGatedCRF
+from DenseEnergyLoss import DenseEnergyLoss
+from hrnet import HRNet
+from torch.cuda.amp import autocast as autocast
+
+parser = argparse.ArgumentParser()
+
+
+def evaluate(model, loader):
+    model.eval()
+
+    pred_list, label_list = [], []
+
+    with torch.no_grad():
+        length = len(loader)
+        for step, data in enumerate(loader):
+            image = data['img']
+            label = data['label'].numpy().astype(np.int64)
+            name = data['name'][0]
+
+            logits = model(image)
+            prediction = torch.sigmoid(logits).squeeze()
+            prediction = torch.where(prediction > 0.5, 1, 0).cpu().detach().numpy().astype(np.int64)
+
+            pred_list.append(prediction)
+            label_list.append(label)
+
+            pred2save = Image.fromarray(np.uint8(prediction))
+            pred2save.save(os.path.join(args.sem_seg_out_dir, name + '.png'))
+
+    confusion = calc_semantic_segmentation_confusion(pred_list, label_list)[:2, :2]
+    gtj = confusion.sum(axis=1)
+    resj = confusion.sum(axis=0)
+    gtjresj = np.diag(confusion)
+    denominator = gtj + resj - gtjresj
+    fp = 1. - gtj / denominator
+    fn = 1. - resj / denominator
+    iou = gtjresj / denominator
+    print("total images", length)
+    precision = gtjresj / (fp * denominator + gtjresj)
+    recall = gtjresj / (fn * denominator + gtjresj)
+    F_score = 2 * (precision * recall) / (precision + recall)
+    print({'precision': precision, 'recall': recall, 'F_score': F_score})
+    print({'iou': iou, 'miou': np.nanmean(iou)})
+    return {'precision': precision, 'recall': recall, 'F_score': F_score, 'iou': iou, 'miou': np.nanmean(iou)}
 
 
 def run(args):
-    path_index = indexing.PathIndex(radius=10, default_size=(args.irn_crop_size // 4, args.irn_crop_size // 4))
+    torch.manual_seed(0)
+    np.random.seed(0)
+    random.seed(0)
 
-    model = getattr(importlib.import_module(args.irn_network), 'AffinityDisplacementLoss')(
-        path_index)
+    if not os.path.exists(args.sem_seg_out_dir):
+        os.makedirs(args.sem_seg_out_dir)
 
-    train_dataset = voc12.dataloader.VOC12AffinityDataset(args.train_list,
-                                                          label_dir=args.ir_label_out_dir,
-                                                          voc12_root=args.voc12_root,
-                                                          indices_from=path_index.src_indices,
-                                                          indices_to=path_index.dst_indices,
-                                                          hor_flip=True,
-                                                          crop_size=args.irn_crop_size,
-                                                          crop_method="random",
-                                                          rescale=(0.5, 1.5)
-                                                          )
-    train_data_loader = DataLoader(train_dataset, batch_size=args.irn_batch_size,
-                                   shuffle=True, num_workers=args.num_workers, pin_memory=True, drop_last=True)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    max_step = (len(train_dataset) // args.irn_batch_size) * args.irn_num_epoches
-    print(len(train_dataset), args.irn_batch_size, args.irn_num_epoches, max_step)
-    param_groups = model.trainable_parameters()
-    optimizer = torchutils.PolyOptimizer([
-        {'params': param_groups[0], 'lr': 1 * args.irn_learning_rate, 'weight_decay': args.irn_weight_decay},
-        {'params': param_groups[1], 'lr': 10 * args.irn_learning_rate, 'weight_decay': args.irn_weight_decay}
-    ], lr=args.irn_learning_rate, weight_decay=args.irn_weight_decay, max_step=max_step)
-
-    model = torch.nn.DataParallel(model).cuda()
+    model = DeepLabv3_Plus(model_name=args.backbone, num_classes=1, use_group_norm=True).to(device)
+    param_groups = model.get_parameter_groups(None)
+    params = [
+        {'params': param_groups[0], 'lr': args.lr, 'weight_decay': args.wd},
+        {'params': param_groups[1], 'lr': 2 * args.lr, 'weight_decay': 0},
+        {'params': param_groups[2], 'lr': 10 * args.lr, 'weight_decay': args.wd},
+        {'params': param_groups[3], 'lr': 20 * args.lr, 'weight_decay': 0},
+    ]
     model.train()
 
-    avg_meter = pyutils.AverageMeter()
-    print(len(train_dataset))
-    print(len(train_data_loader))
-    timer = pyutils.Timer()
-    # time_list = []
-    for ep in range(args.irn_num_epoches):
-        import time
-        begin = time.time()
-        # print(begin)
-        print('Epoch %d/%d' % (ep + 1, args.irn_num_epoches))
+    data_dic = {
+        'train': [],
+        'validation': [],
+    }
+    train_dataset = VOC12SegmentationDataset(img_name_list_path=args.train_list, voc12_root=args.voc12_root,
+                                             label_dir=args.sem_seg_out_dir,
+                                            crop_size=256, split='train', crop_method='none')
+    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=False, num_workers=1)
+    valid_dataset = VOC12SegmentationDataset(img_name_list_path=args.test_list, voc12_root=args.voc12_root,
+                                             label_dir='',
+                                            crop_size=256, split='valid', crop_method='none')
+    valid_loader = DataLoader(valid_dataset, batch_size=1, shuffle=False, num_workers=1)
 
-        for iter, pack in enumerate(train_data_loader):
+    val_iteration = len(train_loader)
+    log_iteration = int(val_iteration * args.print_ratio)
+    max_iteration = args.pss_epochs * val_iteration
 
-            img = pack['img'].cuda(non_blocking=True)
-            # print(iter, img.shape)
-            bg_pos_label = pack['aff_bg_pos_label'].cuda(non_blocking=True)
-            fg_pos_label = pack['aff_fg_pos_label'].cuda(non_blocking=True)
-            neg_label = pack['aff_neg_label'].cuda(non_blocking=True)
+    save_model_fn = lambda: save_model(model, args.pss_pth, parallel=False)
+    loss_fn = nn.BCEWithLogitsLoss()
+    optimizer = PolyOptimizer(params, lr=args.pss_lr, momentum=0.9, weight_decay=args.wd, max_step=args.pss_epochs,
+                              nesterov=True)
+    train_meter = Average_Meter(['loss'])
+    train_iterator = Iterator(train_loader)
+    scaler = torch.cuda.amp.GradScaler()
+    for i in range(max_iteration):
+        print("PSS Epoch %d/%d" % (i + 1, args.pss_epochs))
+        data = train_iterator.get()
+        image = data['img'].to(device)
+        label = data['label'].to(device).float()
+        name = data['name'][0]
 
-            pos_aff_loss, neg_aff_loss, dp_fg_loss, dp_bg_loss = model(img, True)
+        with autocast():
+            logits = model(image)
+            loss = loss_fn(logits, label)
 
-            bg_pos_aff_loss = torch.sum(bg_pos_label * pos_aff_loss) / (torch.sum(bg_pos_label) + 1e-5)
-            fg_pos_aff_loss = torch.sum(fg_pos_label * pos_aff_loss) / (torch.sum(fg_pos_label) + 1e-5)
-            pos_aff_loss = bg_pos_aff_loss / 2 + fg_pos_aff_loss / 2
-            neg_aff_loss = torch.sum(neg_label * neg_aff_loss) / (torch.sum(neg_label) + 1e-5)
+        scaler.scale(loss).backward()
+        scaler.step(optimizer)
+        scaler.update()
 
-            dp_fg_loss = torch.sum(dp_fg_loss * torch.unsqueeze(fg_pos_label, 1)) / (2 * torch.sum(fg_pos_label) + 1e-5)
-            dp_bg_loss = torch.sum(dp_bg_loss * torch.unsqueeze(bg_pos_label, 1)) / (2 * torch.sum(bg_pos_label) + 1e-5)
+        train_meter.add({
+            'loss': loss.item(),
+        })
 
-            avg_meter.add({'loss1': pos_aff_loss.item(), 'loss2': neg_aff_loss.item(),
-                           'loss3': dp_fg_loss.item(), 'loss4': dp_bg_loss.item()})
+        if (i + 1) % log_iteration == 0:
+            loss = train_meter.get(clear=True)
+            learning_rate = float(get_learning_rate_from_optimizer(optimizer))
 
-            total_loss = (pos_aff_loss + neg_aff_loss) / 2 + (dp_fg_loss + dp_bg_loss) / 2
+            data = {
+                'iteration': i + 1,
+                'learning_rate': learning_rate,
+                'loss': loss,
+            }
+            data_dic['train'].append(data)
+            write_json(data_path, data_dic)
 
-            optimizer.zero_grad()
-            total_loss.backward()
-            optimizer.step()
+            log_func('[i] \
+                iteration={iteration:,}, \
+                learning_rate={learning_rate:.4f}, \
+                loss={loss:.4f}, \
+                time={time:.0f}sec'.format(**data)
+                     )
 
-            if (optimizer.global_step - 1) % 50 == 0:
-                timer.update_progress(optimizer.global_step / max_step)
-
-                print('step:%5d/%5d' % (optimizer.global_step - 1, max_step),
-                      'loss:%.4f %.4f %.4f %.4f' % (
-                          avg_meter.pop('loss1'), avg_meter.pop('loss2'), avg_meter.pop('loss3'),
-                          avg_meter.pop('loss4')),
-                      'imps:%.1f' % ((iter + 1) * args.irn_batch_size / timer.get_stage_elapsed()),
-                      'lr: %.4f' % (optimizer.param_groups[0]['lr']),
-                      'etc:%s' % (timer.str_estimated_complete()), flush=True)
-
-        else:
-            end = time.time()
-            print(end - begin)
-            # time_list.append(end - begin)
-            timer.reset_stage()
-
-    # total_time = 0.0
-    # for time in time_list:
-    #     total_time += time
-    # print(total_time/len(time_list))
-    infer_dataset = voc12.dataloader.VOC12ImageDataset(args.infer_list,
-                                                       voc12_root=args.voc12_root,
-                                                       crop_size=args.irn_crop_size,
-                                                       crop_method="top_left")
-    infer_data_loader = DataLoader(infer_dataset, batch_size=args.irn_batch_size,
-                                   shuffle=False, num_workers=args.num_workers, pin_memory=True, drop_last=True)
-
-    model.eval()
-    print('Analyzing displacements mean ... ', end='')
-
-    dp_mean_list = []
-
-    with torch.no_grad():
-        for iter, pack in enumerate(infer_data_loader):
-            img = pack['img'].cuda(non_blocking=True)
-
-            aff, dp = model(img, False)
-
-            dp_mean_list.append(torch.mean(dp, dim=(0, 2, 3)).cpu())
-
-        model.module.mean_shift.running_mean = torch.mean(torch.stack(dp_mean_list), dim=0)
-    print('done.')
-
-    torch.save(model.module.state_dict(), args.irn_weights_name)
-    torch.cuda.empty_cache()
+            writer.add_scalar('Train/loss', loss, iteration)
+            writer.add_scalar('Train/learning_rate', learning_rate, iteration)
