@@ -91,3 +91,142 @@ among_predfg_bg 0.0921221372142799
 result/cam_adv_mask_potsdam_0.5_0.4
 [0.6021737075576465, 0.5941545847442011, 0.5858667145122327, 0.5773169968875675, 0.5685148270140616, 0.5594898289676439, 0.5502724835494515, 0.5409072301476625, 0.5314042323405341, 0.521792129199753, 0.5121177860429018, 0.5023981273110886, 0.49263654936982004, 0.4828591974487372, 0.4730912458031158, 0.4633432496334967, 0.45363456725341167, 0.4440003284870051, 0.4344429882335811, 0.4249742193098983, 0.4156242847303827, 0.406397693117477]
 0.6021737075576465
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.35, 'conf_bg_thres': 0.15, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'C:\\ZTB\\Code\\ImageLevelSupervisionBuildingSegmentation\\cam_dav_mask_potsdam_advth_0.4', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': False, 'make_cam_pass': False, 'eval_cam_pass': True, 'cam_to_ir_label_pass': False, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+step.eval_cam: Fri Sep 19 12:31:23 2025
+{'precision': array([0.62975826, 0.8763627 ]), 'recall': array([0.82993434, 0.71186222]), 'F_score': array([0.71612065, 0.78559339])}
+{'iou': array([0.55777878, 0.64689485]), 'miou': 0.6023368136325036}
+threshold: 0.33 iou: [0.55777878 0.64689485] miou: 0.6023368136325036 i_imgs 15525
+among_predfg_bg 0.12363730315243245
+{'precision': array([0.61926695, 0.8786758 ]), 'recall': array([0.83726004, 0.6960179 ]), 'F_score': array([0.71195038, 0.77675308])}
+{'iou': array([0.55273521, 0.63499287]), 'miou': 0.5938640401518638}
+threshold: 0.34 iou: [0.55273521 0.63499287] miou: 0.5938640401518638 i_imgs 15525
+among_predfg_bg 0.12132419664009364
+{'precision': array([0.60902502, 0.88090663]), 'recall': array([0.8443458 , 0.67990482]), 'F_score': array([0.70763457, 0.76746319])}
+{'iou': array([0.54754991, 0.62266959]), 'miou': 0.5851097475300149}
+threshold: 0.35 iou: [0.54754991 0.62266959] miou: 0.5851097475300149 i_imgs 15525
+among_predfg_bg 0.11909336787744976
+{'precision': array([0.59905867, 0.88306284]), 'recall': array([0.85119882, 0.66357563]), 'F_score': array([0.70321034, 0.75774525])}
+{'iou': array([0.54227016, 0.60997574]), 'miou': 0.576122949398647}
+threshold: 0.36 iou: [0.54227016 0.60997574] miou: 0.576122949398647 i_imgs 15525
+among_predfg_bg 0.11693715817742
+{'precision': array([0.5893803, 0.8851472]), 'recall': array([0.85782156, 0.64707202]), 'F_score': array([0.69870437, 0.74761363])}
+{'iou': array([0.53692977, 0.59695127]), 'miou': 0.5669405217786578}
+threshold: 0.37 iou: [0.53692977 0.59695127] miou: 0.5669405217786578 i_imgs 15525
+among_predfg_bg 0.11485279736320386
+{'precision': array([0.57998142, 0.8871635 ]), 'recall': array([0.86422475, 0.63040501]), 'F_score': array([0.69413123, 0.73706368])}
+{'iou': array([0.53154746, 0.58361112]), 'miou': 0.5575792879072514}
+threshold: 0.38 iou: [0.53154746 0.58361112] miou: 0.5575792879072514 i_imgs 15525
+among_predfg_bg 0.11283649594936142
+{'precision': array([0.57086251, 0.88911874]), 'recall': array([0.87042008, 0.6135985 ]), 'F_score': array([0.68951113, 0.72610058])}
+{'iou': array([0.52614802, 0.56998265]), 'miou': 0.5480653375173116}
+threshold: 0.39 iou: [0.52614802 0.56998265] miou: 0.5480653375173116 i_imgs 15525
+among_predfg_bg 0.1108812565448195
+{'precision': array([0.56202231, 0.8910094 ]), 'recall': array([0.87640393, 0.5966819 ]), 'F_score': array([0.68485759, 0.71473051])}
+{'iou': array([0.52074785, 0.55609389]), 'miou': 0.5384208742153143}
+threshold: 0.4 iou: [0.52074785 0.55609389] miou: 0.5384208742153143 i_imgs 15525
+among_predfg_bg 0.10899060107053514
+{'precision': array([0.55346815, 0.89285008]), 'recall': array([0.88219479, 0.57969045]), 'F_score': array([0.68019687, 0.70297102])}
+{'iou': array([0.51537752, 0.5419856 ]), 'miou': 0.5286815594974876}
+threshold: 0.41 iou: [0.51537752 0.5419856 ] miou: 0.5286815594974876 i_imgs 15525
+among_predfg_bg 0.10714992298298752
+{'precision': array([0.54519769, 0.89463755]), 'recall': array([0.88778867, 0.56265596]), 'F_score': array([0.67554074, 0.69083289])}
+{'iou': array([0.51005022, 0.52768886]), 'miou': 0.5188695386426856}
+threshold: 0.42 iou: [0.51005022 0.52768886] miou: 0.5188695386426856 i_imgs 15525
+among_predfg_bg 0.10536245469584594
+{'precision': array([0.53720504, 0.89637404]), 'recall': array([0.89319066, 0.54560067]), 'F_score': array([0.6709004 , 0.67832296])}
+{'iou': array([0.50477812, 0.51322898]), 'miou': 0.5090035496962206}
+threshold: 0.43 iou: [0.50477812 0.51322898] miou: 0.5090035496962206 i_imgs 15525
+among_predfg_bg 0.1036259629257932
+{'precision': array([0.52949002, 0.89806451]), 'recall': array([0.89840674, 0.52855718]), 'F_score': array([0.66629103, 0.66545805])}
+{'iou': array([0.49957753, 0.49864153]), 'miou': 0.49910953072944925}
+threshold: 0.44 iou: [0.49957753 0.49864153] miou: 0.49910953072944925 i_imgs 15525
+among_predfg_bg 0.10193549401904355
+{'precision': array([0.52205042, 0.8997115 ]), 'recall': array([0.90344009, 0.51155692]), 'F_score': array([0.66172489, 0.65225529])}
+{'iou': array([0.49446103, 0.48396056]), 'miou': 0.4892107973877159}
+threshold: 0.45 iou: [0.49446103 0.48396056] miou: 0.4892107973877159 i_imgs 15525
+among_predfg_bg 0.10028849916318719
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train_aug.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.4, 'conf_bg_thres': 0.3, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'C:\\ZTB\\Code\\ImageLevelSupervisionBuildingSegmentation\\cam_dav_mask_potsdam_advth_0.4', 'ir_label_out_dir': 'result/ir_label_potsdam_0.4_0.3', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': False, 'make_cam_pass': False, 'eval_cam_pass': False, 'cam_to_ir_label_pass': True, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+step.cam_to_ir_label: Fri Sep 19 12:48:18 2025
+[ ]
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train_aug.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.4, 'conf_bg_thres': 0.3, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'C:\\ZTB\\Code\\ImageLevelSupervisionBuildingSegmentation\\result\\cam_dav_mask_potsdam_advth_0.4', 'ir_label_out_dir': 'result/ir_label_potsdam_0.4_0.3', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': False, 'make_cam_pass': False, 'eval_cam_pass': False, 'cam_to_ir_label_pass': True, 'train_irn_pass': False, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+step.cam_to_ir_label: Fri Sep 19 12:49:21 2025
+[ ]
+{'num_workers': 16, 'voc12_root': 'C:\\ZTB\\Dataset\\VOC_potsdam', 'train_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'C:\\ZTB\\Dataset\\VOC_potsdam\\train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.35, 'conf_bg_thres': 0.15, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 256, 'irn_batch_size': 32, 'irn_num_epoches': 10, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 9, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn_potsdam_0.4_0.3.pth', 'cam_out_dir': 'result/cam_adv_mask', 'ir_label_out_dir': 'C:\\ZTB\\Code\\ImageLevelSupervisionBuildingSegmentation\\result\\ir_label_potsdam_0.4_0.3', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': False, 'make_cam_pass': False, 'eval_cam_pass': False, 'cam_to_ir_label_pass': False, 'train_irn_pass': True, 'make_ins_seg_pass': False, 'eval_ins_seg_pass': False, 'make_sem_seg_pass': False, 'eval_sem_seg_pass': False}
+step.train_irn: Fri Sep 19 13:02:37 2025
+model pretrained initialized
+32613 32 10 10190
+32613
+1019
+Epoch 1/10
+step:    0/10190 loss:1.2115 0.3051 4.1133 0.1863 imps:1.8 lr: 0.1000 etc:Sun Sep 21 14:58:30 2025
+step:   50/10190 loss:0.6151 0.5044 4.0925 0.0152 imps:74.7 lr: 0.0996 etc:Fri Sep 19 14:15:21 2025
+step:  100/10190 loss:0.5189 0.4733 4.0943 0.0045 imps:123.3 lr: 0.0991 etc:Fri Sep 19 13:46:43 2025
+step:  150/10190 loss:0.4874 0.4372 4.0961 0.0040 imps:156.9 lr: 0.0987 etc:Fri Sep 19 13:37:17 2025
+step:  200/10190 loss:0.4683 0.4188 4.0856 0.0108 imps:181.5 lr: 0.0982 etc:Fri Sep 19 13:32:34 2025
+step:  250/10190 loss:0.4692 0.4238 3.9827 0.0908 imps:201.3 lr: 0.0978 etc:Fri Sep 19 13:29:38 2025
+step:  300/10190 loss:0.4478 0.3975 3.8089 0.1534 imps:214.9 lr: 0.0973 etc:Fri Sep 19 13:27:55 2025
+step:  350/10190 loss:0.4444 0.4025 3.6860 0.1555 imps:226.9 lr: 0.0969 etc:Fri Sep 19 13:26:35 2025
+step:  400/10190 loss:0.4516 0.4018 3.6527 0.1795 imps:236.4 lr: 0.0965 etc:Fri Sep 19 13:25:38 2025
+step:  450/10190 loss:0.4500 0.4070 3.5713 0.1866 imps:244.5 lr: 0.0960 etc:Fri Sep 19 13:24:52 2025
+step:  500/10190 loss:0.4393 0.3896 3.5529 0.1779 imps:251.0 lr: 0.0956 etc:Fri Sep 19 13:24:17 2025
+step:  550/10190 loss:0.4435 0.3909 3.5151 0.1762 imps:257.0 lr: 0.0951 etc:Fri Sep 19 13:23:47 2025
+step:  600/10190 loss:0.4300 0.3753 3.4959 0.1857 imps:262.0 lr: 0.0947 etc:Fri Sep 19 13:23:23 2025
+step:  650/10190 loss:0.4280 0.3779 3.4854 0.1902 imps:266.7 lr: 0.0942 etc:Fri Sep 19 13:23:01 2025
+step:  700/10190 loss:0.4226 0.3689 3.4707 0.1853 imps:270.8 lr: 0.0938 etc:Fri Sep 19 13:22:42 2025
+step:  750/10190 loss:0.4384 0.3880 3.4533 0.1973 imps:274.4 lr: 0.0934 etc:Fri Sep 19 13:22:26 2025
+step:  800/10190 loss:0.4240 0.3713 3.3567 0.2282 imps:278.5 lr: 0.0929 etc:Fri Sep 19 13:22:09 2025
+step:  850/10190 loss:0.4303 0.3724 3.2993 0.2601 imps:281.0 lr: 0.0925 etc:Fri Sep 19 13:21:59 2025
+step:  900/10190 loss:0.4208 0.3698 3.2161 0.2790 imps:283.9 lr: 0.0920 etc:Fri Sep 19 13:21:47 2025
+step:  950/10190 loss:0.4165 0.3570 3.1426 0.2670 imps:286.3 lr: 0.0916 etc:Fri Sep 19 13:21:37 2025
+step: 1000/10190 loss:0.4271 0.3831 3.1388 0.2861 imps:289.5 lr: 0.0911 etc:Fri Sep 19 13:21:25 2025
+112.54985499382019
+Epoch 2/10
+step: 1050/10190 loss:0.4140 0.3522 3.1032 0.2649 imps:52.3 lr: 0.0907 etc:Fri Sep 19 13:23:59 2025
+step: 1100/10190 loss:0.4155 0.3730 3.0692 0.2924 imps:109.9 lr: 0.0902 etc:Fri Sep 19 13:23:41 2025
+step: 1150/10190 loss:0.4175 0.3706 3.0252 0.2938 imps:149.3 lr: 0.0898 etc:Fri Sep 19 13:23:25 2025
+step: 1200/10190 loss:0.4160 0.3624 3.0197 0.3201 imps:177.7 lr: 0.0893 etc:Fri Sep 19 13:23:11 2025
+step: 1250/10190 loss:0.4190 0.3709 3.0322 0.2839 imps:200.5 lr: 0.0889 etc:Fri Sep 19 13:22:57 2025
+step: 1300/10190 loss:0.4215 0.3685 3.0334 0.2765 imps:216.4 lr: 0.0884 etc:Fri Sep 19 13:22:46 2025
+step: 1350/10190 loss:0.4128 0.3677 2.9913 0.2826 imps:230.5 lr: 0.0880 etc:Fri Sep 19 13:22:35 2025
+step: 1400/10190 loss:0.4090 0.3639 3.0078 0.2970 imps:241.9 lr: 0.0875 etc:Fri Sep 19 13:22:24 2025
+step: 1450/10190 loss:0.4136 0.3695 2.9891 0.2873 imps:250.5 lr: 0.0871 etc:Fri Sep 19 13:22:16 2025
+step: 1500/10190 loss:0.4105 0.3613 2.9944 0.2725 imps:258.5 lr: 0.0866 etc:Fri Sep 19 13:22:07 2025
+step: 1550/10190 loss:0.4123 0.3666 2.9826 0.2646 imps:265.5 lr: 0.0862 etc:Fri Sep 19 13:21:59 2025
+step: 1600/10190 loss:0.4148 0.3709 2.9885 0.2640 imps:271.1 lr: 0.0858 etc:Fri Sep 19 13:21:52 2025
+step: 1650/10190 loss:0.4014 0.3442 2.9628 0.2697 imps:275.7 lr: 0.0853 etc:Fri Sep 19 13:21:46 2025
+step: 1700/10190 loss:0.4110 0.3631 2.9054 0.3014 imps:279.3 lr: 0.0849 etc:Fri Sep 19 13:21:41 2025
+step: 1750/10190 loss:0.4064 0.3597 2.9557 0.2532 imps:283.1 lr: 0.0844 etc:Fri Sep 19 13:21:35 2025
+step: 1800/10190 loss:0.4031 0.3581 2.9536 0.2856 imps:287.0 lr: 0.0840 etc:Fri Sep 19 13:21:28 2025
+step: 1850/10190 loss:0.3989 0.3602 2.8651 0.2794 imps:289.5 lr: 0.0835 etc:Fri Sep 19 13:21:24 2025
+step: 1900/10190 loss:0.4151 0.3669 2.9097 0.3032 imps:292.1 lr: 0.0831 etc:Fri Sep 19 13:21:19 2025
+step: 1950/10190 loss:0.4064 0.3720 2.8894 0.2803 imps:294.8 lr: 0.0826 etc:Fri Sep 19 13:21:15 2025
+step: 2000/10190 loss:0.3990 0.3393 2.9108 0.2800 imps:297.2 lr: 0.0821 etc:Fri Sep 19 13:21:10 2025
+109.33029246330261
+Epoch 3/10
+step: 2050/10190 loss:0.4102 0.3642 2.9136 0.2668 imps:23.1 lr: 0.0817 etc:Fri Sep 19 13:22:30 2025
+step: 2100/10190 loss:0.4033 0.3605 2.8946 0.3028 imps:91.3 lr: 0.0812 etc:Fri Sep 19 13:22:21 2025
+step: 2150/10190 loss:0.4033 0.3606 2.9592 0.2646 imps:137.5 lr: 0.0808 etc:Fri Sep 19 13:22:14 2025
+step: 2200/10190 loss:0.4150 0.3652 2.9013 0.2865 imps:169.5 lr: 0.0803 etc:Fri Sep 19 13:22:08 2025
+step: 2250/10190 loss:0.4048 0.3638 2.8495 0.2738 imps:194.2 lr: 0.0799 etc:Fri Sep 19 13:22:02 2025
+step: 2300/10190 loss:0.3998 0.3527 2.8620 0.2593 imps:213.4 lr: 0.0794 etc:Fri Sep 19 13:21:55 2025
+step: 2350/10190 loss:0.3919 0.3445 2.9118 0.2743 imps:227.2 lr: 0.0790 etc:Fri Sep 19 13:21:51 2025
+step: 2400/10190 loss:0.3925 0.3449 2.8076 0.2810 imps:239.9 lr: 0.0785 etc:Fri Sep 19 13:21:45 2025
+step: 2450/10190 loss:0.4020 0.3584 2.7997 0.2917 imps:250.2 lr: 0.0781 etc:Fri Sep 19 13:21:40 2025
+step: 2500/10190 loss:0.3914 0.3368 2.7997 0.2918 imps:259.5 lr: 0.0776 etc:Fri Sep 19 13:21:35 2025
+step: 2550/10190 loss:0.3993 0.3582 2.8264 0.2808 imps:266.5 lr: 0.0772 etc:Fri Sep 19 13:21:31 2025
+step: 2600/10190 loss:0.4021 0.3579 2.8777 0.2830 imps:273.4 lr: 0.0767 etc:Fri Sep 19 13:21:26 2025
+step: 2650/10190 loss:0.3952 0.3465 2.7870 0.2918 imps:279.1 lr: 0.0763 etc:Fri Sep 19 13:21:21 2025
+step: 2700/10190 loss:0.4089 0.3522 2.8347 0.2995 imps:284.3 lr: 0.0758 etc:Fri Sep 19 13:21:17 2025
+step: 2750/10190 loss:0.3920 0.3448 2.7821 0.2732 imps:287.3 lr: 0.0753 etc:Fri Sep 19 13:21:14 2025
+step: 2800/10190 loss:0.3922 0.3403 2.8306 0.2721 imps:290.1 lr: 0.0749 etc:Fri Sep 19 13:21:12 2025
+step: 2850/10190 loss:0.3914 0.3409 2.8181 0.2562 imps:290.6 lr: 0.0744 etc:Fri Sep 19 13:21:11 2025
+step: 2900/10190 loss:0.4044 0.3511 2.8425 0.2784 imps:288.4 lr: 0.0740 etc:Fri Sep 19 13:21:14 2025
+step: 2950/10190 loss:0.3928 0.3526 2.8307 0.2693 imps:287.8 lr: 0.0735 etc:Fri Sep 19 13:21:15 2025
+step: 3000/10190 loss:0.3902 0.3439 2.7723 0.2808 imps:286.6 lr: 0.0731 etc:Fri Sep 19 13:21:17 2025
+step: 3050/10190 loss:0.3980 0.3593 2.7927 0.2748 imps:287.0 lr: 0.0726 etc:Fri Sep 19 13:21:17 2025
+114.0865330696106
+Epoch 4/10
+step: 3100/10190 loss:0.4069 0.3446 2.7723 0.2675 imps:63.3 lr: 0.0721 etc:Fri Sep 19 13:22:15 2025
+step: 3150/10190 loss:0.3879 0.3421 2.7774 0.2778 imps:108.9 lr: 0.0717 etc:Fri Sep 19 13:22:14 2025
+step: 3200/10190 loss:0.3864 0.3392 2.7441 0.2796 imps:137.6 lr: 0.0712 etc:Fri Sep 19 13:22:14 2025
+step: 3250/10190 
