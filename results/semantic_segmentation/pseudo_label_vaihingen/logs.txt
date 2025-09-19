@@ -1,0 +1,1188 @@
+[i] pseudo_label_vaihingen
+
+[i] pseudo_label_vaihingen
+
+[i] pseudo_label_vaihingen
+
+[i] pseudo_label_vaihingen
+
+[i] pseudo_label_vaihingen
+
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 0
+[i] val_iteration : 8
+[i] max_iteration : 800
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 0
+[i] val_iteration : 8
+[i] max_iteration : 800
+[i] pseudo_label_vaihingen
+
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8559,                     time=10sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.5876,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4840,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4333,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4309,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3751,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4252,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3733,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3571,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.3583,                     time=1sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8561,                     time=9sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.5995,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4859,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4490,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4303,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3799,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4276,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3910,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3578,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.3656,                     time=1sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8584,                     time=8sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.6092,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4846,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4305,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4299,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3741,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4407,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3607,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3539,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.2989,                     time=1sec
+[i] save model
+[i]                     iteration=125,                     mIoU=50.00%,                     best_valid_mIoU=50.00%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=23sec
+[i]                     iteration=132,                     learning_rate=0.0069,                     loss=0.3870,                     time=12sec
+[i]                     iteration=144,                     learning_rate=0.0069,                     loss=0.3508,                     time=1sec
+[i]                     iteration=156,                     learning_rate=0.0069,                     loss=0.3071,                     time=1sec
+[i]                     iteration=168,                     learning_rate=0.0069,                     loss=0.2360,                     time=1sec
+[i]                     iteration=180,                     learning_rate=0.0069,                     loss=0.3222,                     time=1sec
+[i]                     iteration=192,                     learning_rate=0.0069,                     loss=0.2363,                     time=1sec
+[i]                     iteration=204,                     learning_rate=0.0069,                     loss=0.2534,                     time=1sec
+[i]                     iteration=216,                     learning_rate=0.0069,                     loss=0.2733,                     time=1sec
+[i]                     iteration=228,                     learning_rate=0.0069,                     loss=0.2593,                     time=1sec
+[i]                     iteration=240,                     learning_rate=0.0069,                     loss=0.2563,                     time=1sec
+[i]                     iteration=250,                     mIoU=50.00%,                     best_valid_mIoU=50.00%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=22sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8576,                     time=8sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.5938,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4842,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4262,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4327,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3639,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4339,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3921,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3583,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.3225,                     time=1sec
+[i] save model
+[i]                     iteration=125,                     mIoU=50.00%,                     best_valid_mIoU=50.00%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=23sec
+[i]                     iteration=132,                     learning_rate=0.0069,                     loss=0.5139,                     time=12sec
+[i]                     iteration=144,                     learning_rate=0.0069,                     loss=0.3309,                     time=1sec
+[i]                     iteration=156,                     learning_rate=0.0069,                     loss=0.3128,                     time=1sec
+[i]                     iteration=168,                     learning_rate=0.0069,                     loss=0.2335,                     time=1sec
+[i]                     iteration=180,                     learning_rate=0.0069,                     loss=0.3171,                     time=1sec
+[i]                     iteration=192,                     learning_rate=0.0069,                     loss=0.2291,                     time=1sec
+[i]                     iteration=204,                     learning_rate=0.0069,                     loss=0.2742,                     time=1sec
+[i]                     iteration=216,                     learning_rate=0.0069,                     loss=0.2734,                     time=1sec
+[i]                     iteration=228,                     learning_rate=0.0069,                     loss=0.2570,                     time=1sec
+[i]                     iteration=240,                     learning_rate=0.0069,                     loss=0.2459,                     time=1sec
+[i]                     iteration=250,                     mIoU=50.00%,                     best_valid_mIoU=50.00%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=22sec
+[i]                     iteration=252,                     learning_rate=0.0069,                     loss=0.2647,                     time=11sec
+[i]                     iteration=264,                     learning_rate=0.0069,                     loss=0.2283,                     time=1sec
+[i]                     iteration=276,                     learning_rate=0.0069,                     loss=0.2571,                     time=1sec
+[i]                     iteration=288,                     learning_rate=0.0069,                     loss=0.2310,                     time=1sec
+[i]                     iteration=300,                     learning_rate=0.0068,                     loss=0.2890,                     time=1sec
+[i]                     iteration=312,                     learning_rate=0.0068,                     loss=0.2400,                     time=1sec
+[i]                     iteration=324,                     learning_rate=0.0068,                     loss=0.2178,                     time=1sec
+[i]                     iteration=336,                     learning_rate=0.0068,                     loss=0.2022,                     time=1sec
+[i]                     iteration=348,                     learning_rate=0.0068,                     loss=0.2645,                     time=1sec
+[i]                     iteration=360,                     learning_rate=0.0068,                     loss=0.2478,                     time=1sec
+[i]                     iteration=372,                     learning_rate=0.0068,                     loss=0.2305,                     time=1sec
+[i]                     iteration=375,                     mIoU=50.00%,                     best_valid_mIoU=50.00%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=22sec
+[i]                     iteration=384,                     learning_rate=0.0068,                     loss=0.2273,                     time=11sec
+[i]                     iteration=396,                     learning_rate=0.0068,                     loss=0.2586,                     time=1sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8573,                     time=8sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.6119,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4860,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4288,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4373,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3761,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4199,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3506,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3643,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.3428,                     time=1sec
+[i] save model
+[i]                     iteration=125,                     mIoU=50.00%,                     best_valid_mIoU=50.00%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=22sec
+[i]                     iteration=132,                     learning_rate=0.0069,                     loss=0.4401,                     time=11sec
+[i]                     iteration=144,                     learning_rate=0.0069,                     loss=0.3299,                     time=1sec
+[i]                     iteration=156,                     learning_rate=0.0069,                     loss=0.3249,                     time=1sec
+[i]                     iteration=168,                     learning_rate=0.0069,                     loss=0.2366,                     time=1sec
+[i]                     iteration=180,                     learning_rate=0.0069,                     loss=0.3243,                     time=1sec
+[i]                     iteration=192,                     learning_rate=0.0069,                     loss=0.2300,                     time=1sec
+[i]                     iteration=204,                     learning_rate=0.0069,                     loss=0.2627,                     time=1sec
+[i]                     iteration=216,                     learning_rate=0.0069,                     loss=0.2740,                     time=1sec
+[i]                     iteration=228,                     learning_rate=0.0069,                     loss=0.2753,                     time=1sec
+[i]                     iteration=240,                     learning_rate=0.0069,                     loss=0.2445,                     time=1sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8561,                     time=8sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.6185,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4747,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4422,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4281,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3890,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4751,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3710,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3679,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.3387,                     time=1sec
+[i] save model
+[i]                     iteration=125,                     mIoU=32.31%,                     best_valid_mIoU=32.31%,                     IoU_fg=0.00%,                     best_valid_mIoU_fg=0.00%,                     time=22sec
+[i]                     iteration=132,                     learning_rate=0.0069,                     loss=0.4052,                     time=11sec
+[i]                     iteration=144,                     learning_rate=0.0069,                     loss=0.3353,                     time=1sec
+[i]                     iteration=156,                     learning_rate=0.0069,                     loss=0.3122,                     time=1sec
+[i]                     iteration=168,                     learning_rate=0.0069,                     loss=0.2403,                     time=1sec
+[i]                     iteration=180,                     learning_rate=0.0069,                     loss=0.3151,                     time=1sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8560,                     time=8sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.6142,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4920,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4365,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4325,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3822,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4277,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3541,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3562,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.2807,                     time=1sec
+[i] pseudo_label_vaihingen
+
+[i] log_iteration : 12
+[i] val_iteration : 125
+[i] max_iteration : 12,500
+[i]                     iteration=12,                     learning_rate=0.0070,                     loss=0.8575,                     time=8sec
+[i]                     iteration=24,                     learning_rate=0.0070,                     loss=0.5978,                     time=1sec
+[i]                     iteration=36,                     learning_rate=0.0070,                     loss=0.4878,                     time=1sec
+[i]                     iteration=48,                     learning_rate=0.0070,                     loss=0.4344,                     time=1sec
+[i]                     iteration=60,                     learning_rate=0.0070,                     loss=0.4260,                     time=1sec
+[i]                     iteration=72,                     learning_rate=0.0070,                     loss=0.3669,                     time=1sec
+[i]                     iteration=84,                     learning_rate=0.0070,                     loss=0.4226,                     time=1sec
+[i]                     iteration=96,                     learning_rate=0.0070,                     loss=0.3740,                     time=1sec
+[i]                     iteration=108,                     learning_rate=0.0069,                     loss=0.3473,                     time=1sec
+[i]                     iteration=120,                     learning_rate=0.0069,                     loss=0.3377,                     time=1sec
+[i] save model
+[i]                     iteration=125,                     mIoU=67.91%,                     best_valid_mIoU=67.91%,                     IoU_fg=56.25%,                     best_valid_mIoU_fg=56.25%,                     time=22sec
+[i]                     iteration=132,                     learning_rate=0.0069,                     loss=0.4789,                     time=11sec
+[i]                     iteration=144,                     learning_rate=0.0069,                     loss=0.3508,                     time=1sec
+[i]                     iteration=156,                     learning_rate=0.0069,                     loss=0.3360,                     time=1sec
+[i]                     iteration=168,                     learning_rate=0.0069,                     loss=0.2391,                     time=1sec
+[i]                     iteration=180,                     learning_rate=0.0069,                     loss=0.3120,                     time=1sec
+[i]                     iteration=192,                     learning_rate=0.0069,                     loss=0.2301,                     time=1sec
+[i]                     iteration=204,                     learning_rate=0.0069,                     loss=0.2820,                     time=1sec
+[i]                     iteration=216,                     learning_rate=0.0069,                     loss=0.2821,                     time=1sec
+[i]                     iteration=228,                     learning_rate=0.0069,                     loss=0.2672,                     time=1sec
+[i]                     iteration=240,                     learning_rate=0.0069,                     loss=0.2481,                     time=1sec
+[i] save model
+[i]                     iteration=250,                     mIoU=77.84%,                     best_valid_mIoU=77.84%,                     IoU_fg=70.27%,                     best_valid_mIoU_fg=70.27%,                     time=22sec
+[i]                     iteration=252,                     learning_rate=0.0069,                     loss=0.2586,                     time=11sec
+[i]                     iteration=264,                     learning_rate=0.0069,                     loss=0.2257,                     time=1sec
+[i]                     iteration=276,                     learning_rate=0.0069,                     loss=0.2583,                     time=1sec
+[i]                     iteration=288,                     learning_rate=0.0069,                     loss=0.2326,                     time=1sec
+[i]                     iteration=300,                     learning_rate=0.0068,                     loss=0.2664,                     time=1sec
+[i]                     iteration=312,                     learning_rate=0.0068,                     loss=0.2401,                     time=1sec
+[i]                     iteration=324,                     learning_rate=0.0068,                     loss=0.2181,                     time=1sec
+[i]                     iteration=336,                     learning_rate=0.0068,                     loss=0.2057,                     time=1sec
+[i]                     iteration=348,                     learning_rate=0.0068,                     loss=0.2647,                     time=1sec
+[i]                     iteration=360,                     learning_rate=0.0068,                     loss=0.2534,                     time=1sec
+[i]                     iteration=372,                     learning_rate=0.0068,                     loss=0.2264,                     time=1sec
+[i] save model
+[i]                     iteration=375,                     mIoU=82.59%,                     best_valid_mIoU=82.59%,                     IoU_fg=77.55%,                     best_valid_mIoU_fg=77.55%,                     time=22sec
+[i]                     iteration=384,                     learning_rate=0.0068,                     loss=0.2257,                     time=11sec
+[i]                     iteration=396,                     learning_rate=0.0068,                     loss=0.2460,                     time=1sec
+[i]                     iteration=408,                     learning_rate=0.0068,                     loss=0.2321,                     time=1sec
+[i]                     iteration=420,                     learning_rate=0.0068,                     loss=0.1861,                     time=1sec
+[i]                     iteration=432,                     learning_rate=0.0068,                     loss=0.2413,                     time=1sec
+[i]                     iteration=444,                     learning_rate=0.0068,                     loss=0.2239,                     time=1sec
+[i]                     iteration=456,                     learning_rate=0.0068,                     loss=0.2018,                     time=1sec
+[i]                     iteration=468,                     learning_rate=0.0068,                     loss=0.2069,                     time=1sec
+[i]                     iteration=480,                     learning_rate=0.0068,                     loss=0.2012,                     time=1sec
+[i]                     iteration=492,                     learning_rate=0.0068,                     loss=0.1900,                     time=1sec
+[i]                     iteration=500,                     mIoU=80.02%,                     best_valid_mIoU=82.59%,                     IoU_fg=73.32%,                     best_valid_mIoU_fg=77.55%,                     time=21sec
+[i]                     iteration=504,                     learning_rate=0.0067,                     loss=0.1980,                     time=11sec
+[i]                     iteration=516,                     learning_rate=0.0067,                     loss=0.1895,                     time=1sec
+[i]                     iteration=528,                     learning_rate=0.0067,                     loss=0.2095,                     time=1sec
+[i]                     iteration=540,                     learning_rate=0.0067,                     loss=0.2234,                     time=1sec
+[i]                     iteration=552,                     learning_rate=0.0067,                     loss=0.1812,                     time=1sec
+[i]                     iteration=564,                     learning_rate=0.0067,                     loss=0.2537,                     time=1sec
+[i]                     iteration=576,                     learning_rate=0.0067,                     loss=0.2018,                     time=1sec
+[i]                     iteration=588,                     learning_rate=0.0067,                     loss=0.2198,                     time=1sec
+[i]                     iteration=600,                     learning_rate=0.0067,                     loss=0.1958,                     time=1sec
+[i]                     iteration=612,                     learning_rate=0.0067,                     loss=0.2124,                     time=1sec
+[i]                     iteration=624,                     learning_rate=0.0067,                     loss=0.1970,                     time=1sec
+[i] save model
+[i]                     iteration=625,                     mIoU=83.45%,                     best_valid_mIoU=83.45%,                     IoU_fg=79.01%,                     best_valid_mIoU_fg=79.01%,                     time=21sec
+[i]                     iteration=636,                     learning_rate=0.0067,                     loss=0.2262,                     time=11sec
+[i]                     iteration=648,                     learning_rate=0.0067,                     loss=0.2068,                     time=1sec
+[i]                     iteration=660,                     learning_rate=0.0067,                     loss=0.1863,                     time=1sec
+[i]                     iteration=672,                     learning_rate=0.0067,                     loss=0.2022,                     time=1sec
+[i]                     iteration=684,                     learning_rate=0.0067,                     loss=0.1768,                     time=1sec
+[i]                     iteration=696,                     learning_rate=0.0066,                     loss=0.1748,                     time=1sec
+[i]                     iteration=708,                     learning_rate=0.0066,                     loss=0.1753,                     time=1sec
+[i]                     iteration=720,                     learning_rate=0.0066,                     loss=0.1862,                     time=1sec
+[i]                     iteration=732,                     learning_rate=0.0066,                     loss=0.1660,                     time=1sec
+[i]                     iteration=744,                     learning_rate=0.0066,                     loss=0.1916,                     time=1sec
+[i] save model
+[i]                     iteration=750,                     mIoU=84.40%,                     best_valid_mIoU=84.40%,                     IoU_fg=79.55%,                     best_valid_mIoU_fg=79.55%,                     time=21sec
+[i]                     iteration=756,                     learning_rate=0.0066,                     loss=0.1880,                     time=11sec
+[i]                     iteration=768,                     learning_rate=0.0066,                     loss=0.1786,                     time=1sec
+[i]                     iteration=780,                     learning_rate=0.0066,                     loss=0.1787,                     time=1sec
+[i]                     iteration=792,                     learning_rate=0.0066,                     loss=0.2208,                     time=1sec
+[i]                     iteration=804,                     learning_rate=0.0066,                     loss=0.1880,                     time=1sec
+[i]                     iteration=816,                     learning_rate=0.0066,                     loss=0.1863,                     time=1sec
+[i]                     iteration=828,                     learning_rate=0.0066,                     loss=0.1675,                     time=1sec
+[i]                     iteration=840,                     learning_rate=0.0066,                     loss=0.1911,                     time=1sec
+[i]                     iteration=852,                     learning_rate=0.0066,                     loss=0.1809,                     time=1sec
+[i]                     iteration=864,                     learning_rate=0.0066,                     loss=0.1631,                     time=1sec
+[i]                     iteration=875,                     mIoU=84.00%,                     best_valid_mIoU=84.40%,                     IoU_fg=79.18%,                     best_valid_mIoU_fg=79.55%,                     time=21sec
+[i]                     iteration=876,                     learning_rate=0.0066,                     loss=0.1657,                     time=11sec
+[i]                     iteration=888,                     learning_rate=0.0066,                     loss=0.1434,                     time=1sec
+[i]                     iteration=900,                     learning_rate=0.0065,                     loss=0.1771,                     time=1sec
+[i]                     iteration=912,                     learning_rate=0.0065,                     loss=0.1785,                     time=1sec
+[i]                     iteration=924,                     learning_rate=0.0065,                     loss=0.1889,                     time=1sec
+[i]                     iteration=936,                     learning_rate=0.0065,                     loss=0.1752,                     time=1sec
+[i]                     iteration=948,                     learning_rate=0.0065,                     loss=0.2093,                     time=1sec
+[i]                     iteration=960,                     learning_rate=0.0065,                     loss=0.1674,                     time=1sec
+[i]                     iteration=972,                     learning_rate=0.0065,                     loss=0.1693,                     time=1sec
+[i]                     iteration=984,                     learning_rate=0.0065,                     loss=0.1662,                     time=1sec
+[i]                     iteration=996,                     learning_rate=0.0065,                     loss=0.2107,                     time=1sec
+[i]                     iteration=1,000,                     mIoU=84.03%,                     best_valid_mIoU=84.40%,                     IoU_fg=79.08%,                     best_valid_mIoU_fg=79.55%,                     time=21sec
+[i]                     iteration=1,008,                     learning_rate=0.0065,                     loss=0.1533,                     time=11sec
+[i]                     iteration=1,020,                     learning_rate=0.0065,                     loss=0.1653,                     time=1sec
+[i]                     iteration=1,032,                     learning_rate=0.0065,                     loss=0.1597,                     time=1sec
+[i]                     iteration=1,044,                     learning_rate=0.0065,                     loss=0.1667,                     time=1sec
+[i]                     iteration=1,056,                     learning_rate=0.0065,                     loss=0.1635,                     time=1sec
+[i]                     iteration=1,068,                     learning_rate=0.0065,                     loss=0.1551,                     time=1sec
+[i]                     iteration=1,080,                     learning_rate=0.0065,                     loss=0.1447,                     time=1sec
+[i]                     iteration=1,092,                     learning_rate=0.0064,                     loss=0.2197,                     time=1sec
+[i]                     iteration=1,104,                     learning_rate=0.0064,                     loss=0.1733,                     time=1sec
+[i]                     iteration=1,116,                     learning_rate=0.0064,                     loss=0.1651,                     time=1sec
+[i] save model
+[i]                     iteration=1,125,                     mIoU=84.62%,                     best_valid_mIoU=84.62%,                     IoU_fg=80.13%,                     best_valid_mIoU_fg=80.13%,                     time=21sec
+[i]                     iteration=1,128,                     learning_rate=0.0064,                     loss=0.1505,                     time=11sec
+[i]                     iteration=1,140,                     learning_rate=0.0064,                     loss=0.1575,                     time=1sec
+[i]                     iteration=1,152,                     learning_rate=0.0064,                     loss=0.1461,                     time=1sec
+[i]                     iteration=1,164,                     learning_rate=0.0064,                     loss=0.1481,                     time=1sec
+[i]                     iteration=1,176,                     learning_rate=0.0064,                     loss=0.1319,                     time=1sec
+[i]                     iteration=1,188,                     learning_rate=0.0064,                     loss=0.1557,                     time=1sec
+[i]                     iteration=1,200,                     learning_rate=0.0064,                     loss=0.1594,                     time=1sec
+[i]                     iteration=1,212,                     learning_rate=0.0064,                     loss=0.1663,                     time=1sec
+[i]                     iteration=1,224,                     learning_rate=0.0064,                     loss=0.1948,                     time=1sec
+[i]                     iteration=1,236,                     learning_rate=0.0064,                     loss=0.1557,                     time=1sec
+[i]                     iteration=1,248,                     learning_rate=0.0064,                     loss=0.1518,                     time=1sec
+[i] save model
+[i]                     iteration=1,250,                     mIoU=84.64%,                     best_valid_mIoU=84.64%,                     IoU_fg=80.20%,                     best_valid_mIoU_fg=80.20%,                     time=21sec
+[i]                     iteration=1,260,                     learning_rate=0.0064,                     loss=0.1404,                     time=11sec
+[i]                     iteration=1,272,                     learning_rate=0.0064,                     loss=0.1343,                     time=1sec
+[i]                     iteration=1,284,                     learning_rate=0.0064,                     loss=0.1584,                     time=1sec
+[i]                     iteration=1,296,                     learning_rate=0.0063,                     loss=0.1299,                     time=1sec
+[i]                     iteration=1,308,                     learning_rate=0.0063,                     loss=0.1425,                     time=1sec
+[i]                     iteration=1,320,                     learning_rate=0.0063,                     loss=0.1753,                     time=1sec
+[i]                     iteration=1,332,                     learning_rate=0.0063,                     loss=0.1533,                     time=1sec
+[i]                     iteration=1,344,                     learning_rate=0.0063,                     loss=0.1415,                     time=1sec
+[i]                     iteration=1,356,                     learning_rate=0.0063,                     loss=0.1646,                     time=1sec
+[i]                     iteration=1,368,                     learning_rate=0.0063,                     loss=0.1397,                     time=1sec
+[i]                     iteration=1,375,                     mIoU=79.61%,                     best_valid_mIoU=84.64%,                     IoU_fg=72.74%,                     best_valid_mIoU_fg=80.20%,                     time=21sec
+[i]                     iteration=1,380,                     learning_rate=0.0063,                     loss=0.1466,                     time=11sec
+[i]                     iteration=1,392,                     learning_rate=0.0063,                     loss=0.1282,                     time=1sec
+[i]                     iteration=1,404,                     learning_rate=0.0063,                     loss=0.1529,                     time=1sec
+[i]                     iteration=1,416,                     learning_rate=0.0063,                     loss=0.1369,                     time=1sec
+[i]                     iteration=1,428,                     learning_rate=0.0063,                     loss=0.1604,                     time=1sec
+[i]                     iteration=1,440,                     learning_rate=0.0063,                     loss=0.1292,                     time=1sec
+[i]                     iteration=1,452,                     learning_rate=0.0063,                     loss=0.1446,                     time=1sec
+[i]                     iteration=1,464,                     learning_rate=0.0063,                     loss=0.1786,                     time=1sec
+[i]                     iteration=1,476,                     learning_rate=0.0063,                     loss=0.1502,                     time=1sec
+[i]                     iteration=1,488,                     learning_rate=0.0062,                     loss=0.1424,                     time=1sec
+[i]                     iteration=1,500,                     learning_rate=0.0062,                     loss=0.1241,                     time=1sec
+[i]                     iteration=1,500,                     mIoU=83.34%,                     best_valid_mIoU=84.64%,                     IoU_fg=78.23%,                     best_valid_mIoU_fg=80.20%,                     time=21sec
+[i]                     iteration=1,512,                     learning_rate=0.0062,                     loss=0.1302,                     time=11sec
+[i]                     iteration=1,524,                     learning_rate=0.0062,                     loss=0.1504,                     time=1sec
+[i]                     iteration=1,536,                     learning_rate=0.0062,                     loss=0.1336,                     time=1sec
+[i]                     iteration=1,548,                     learning_rate=0.0062,                     loss=0.1739,                     time=1sec
+[i]                     iteration=1,560,                     learning_rate=0.0062,                     loss=0.1194,                     time=1sec
+[i]                     iteration=1,572,                     learning_rate=0.0062,                     loss=0.1236,                     time=1sec
+[i]                     iteration=1,584,                     learning_rate=0.0062,                     loss=0.1294,                     time=1sec
+[i]                     iteration=1,596,                     learning_rate=0.0062,                     loss=0.1307,                     time=1sec
+[i]                     iteration=1,608,                     learning_rate=0.0062,                     loss=0.1379,                     time=1sec
+[i]                     iteration=1,620,                     learning_rate=0.0062,                     loss=0.1599,                     time=1sec
+[i] save model
+[i]                     iteration=1,625,                     mIoU=84.88%,                     best_valid_mIoU=84.88%,                     IoU_fg=80.98%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=1,632,                     learning_rate=0.0062,                     loss=0.1375,                     time=11sec
+[i]                     iteration=1,644,                     learning_rate=0.0062,                     loss=0.1317,                     time=1sec
+[i]                     iteration=1,656,                     learning_rate=0.0062,                     loss=0.1201,                     time=1sec
+[i]                     iteration=1,668,                     learning_rate=0.0062,                     loss=0.1123,                     time=1sec
+[i]                     iteration=1,680,                     learning_rate=0.0061,                     loss=0.2316,                     time=1sec
+[i]                     iteration=1,692,                     learning_rate=0.0061,                     loss=0.1676,                     time=1sec
+[i]                     iteration=1,704,                     learning_rate=0.0061,                     loss=0.1323,                     time=1sec
+[i]                     iteration=1,716,                     learning_rate=0.0061,                     loss=0.1255,                     time=1sec
+[i]                     iteration=1,728,                     learning_rate=0.0061,                     loss=0.1210,                     time=1sec
+[i]                     iteration=1,740,                     learning_rate=0.0061,                     loss=0.1300,                     time=1sec
+[i]                     iteration=1,750,                     mIoU=84.97%,                     best_valid_mIoU=84.97%,                     IoU_fg=80.92%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=1,752,                     learning_rate=0.0061,                     loss=0.1179,                     time=11sec
+[i]                     iteration=1,764,                     learning_rate=0.0061,                     loss=0.1059,                     time=1sec
+[i]                     iteration=1,776,                     learning_rate=0.0061,                     loss=0.1170,                     time=1sec
+[i]                     iteration=1,788,                     learning_rate=0.0061,                     loss=0.1746,                     time=1sec
+[i]                     iteration=1,800,                     learning_rate=0.0061,                     loss=0.1210,                     time=1sec
+[i]                     iteration=1,812,                     learning_rate=0.0061,                     loss=0.1064,                     time=1sec
+[i]                     iteration=1,824,                     learning_rate=0.0061,                     loss=0.1296,                     time=1sec
+[i]                     iteration=1,836,                     learning_rate=0.0061,                     loss=0.1208,                     time=1sec
+[i]                     iteration=1,848,                     learning_rate=0.0061,                     loss=0.1300,                     time=1sec
+[i]                     iteration=1,860,                     learning_rate=0.0061,                     loss=0.1190,                     time=1sec
+[i]                     iteration=1,872,                     learning_rate=0.0061,                     loss=0.1222,                     time=1sec
+[i]                     iteration=1,875,                     mIoU=82.80%,                     best_valid_mIoU=84.97%,                     IoU_fg=77.56%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=1,884,                     learning_rate=0.0060,                     loss=0.1550,                     time=11sec
+[i]                     iteration=1,896,                     learning_rate=0.0060,                     loss=0.1594,                     time=1sec
+[i]                     iteration=1,908,                     learning_rate=0.0060,                     loss=0.1114,                     time=1sec
+[i]                     iteration=1,920,                     learning_rate=0.0060,                     loss=0.1128,                     time=1sec
+[i]                     iteration=1,932,                     learning_rate=0.0060,                     loss=0.1399,                     time=1sec
+[i]                     iteration=1,944,                     learning_rate=0.0060,                     loss=0.1379,                     time=1sec
+[i]                     iteration=1,956,                     learning_rate=0.0060,                     loss=0.0987,                     time=1sec
+[i]                     iteration=1,968,                     learning_rate=0.0060,                     loss=0.1154,                     time=1sec
+[i]                     iteration=1,980,                     learning_rate=0.0060,                     loss=0.1220,                     time=1sec
+[i]                     iteration=1,992,                     learning_rate=0.0060,                     loss=0.1145,                     time=1sec
+[i]                     iteration=2,000,                     mIoU=84.03%,                     best_valid_mIoU=84.97%,                     IoU_fg=79.55%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=2,004,                     learning_rate=0.0060,                     loss=0.1074,                     time=11sec
+[i]                     iteration=2,016,                     learning_rate=0.0060,                     loss=0.1028,                     time=1sec
+[i]                     iteration=2,028,                     learning_rate=0.0060,                     loss=0.0933,                     time=1sec
+[i]                     iteration=2,040,                     learning_rate=0.0060,                     loss=0.2951,                     time=1sec
+[i]                     iteration=2,052,                     learning_rate=0.0060,                     loss=0.1930,                     time=1sec
+[i]                     iteration=2,064,                     learning_rate=0.0060,                     loss=0.1438,                     time=1sec
+[i]                     iteration=2,076,                     learning_rate=0.0059,                     loss=0.1289,                     time=1sec
+[i]                     iteration=2,088,                     learning_rate=0.0059,                     loss=0.1211,                     time=1sec
+[i]                     iteration=2,100,                     learning_rate=0.0059,                     loss=0.1162,                     time=1sec
+[i]                     iteration=2,112,                     learning_rate=0.0059,                     loss=0.1127,                     time=1sec
+[i]                     iteration=2,124,                     learning_rate=0.0059,                     loss=0.1252,                     time=1sec
+[i]                     iteration=2,125,                     mIoU=83.95%,                     best_valid_mIoU=84.97%,                     IoU_fg=79.61%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=2,136,                     learning_rate=0.0059,                     loss=0.1106,                     time=11sec
+[i]                     iteration=2,148,                     learning_rate=0.0059,                     loss=0.1080,                     time=1sec
+[i]                     iteration=2,160,                     learning_rate=0.0059,                     loss=0.0957,                     time=1sec
+[i]                     iteration=2,172,                     learning_rate=0.0059,                     loss=0.1177,                     time=1sec
+[i]                     iteration=2,184,                     learning_rate=0.0059,                     loss=0.1124,                     time=1sec
+[i]                     iteration=2,196,                     learning_rate=0.0059,                     loss=0.1143,                     time=1sec
+[i]                     iteration=2,208,                     learning_rate=0.0059,                     loss=0.1132,                     time=1sec
+[i]                     iteration=2,220,                     learning_rate=0.0059,                     loss=0.1019,                     time=1sec
+[i]                     iteration=2,232,                     learning_rate=0.0059,                     loss=0.1145,                     time=1sec
+[i]                     iteration=2,244,                     learning_rate=0.0059,                     loss=0.0996,                     time=1sec
+[i]                     iteration=2,250,                     mIoU=85.01%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.77%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=2,256,                     learning_rate=0.0059,                     loss=0.1229,                     time=11sec
+[i]                     iteration=2,268,                     learning_rate=0.0058,                     loss=0.0971,                     time=1sec
+[i]                     iteration=2,280,                     learning_rate=0.0058,                     loss=0.0990,                     time=1sec
+[i]                     iteration=2,292,                     learning_rate=0.0058,                     loss=0.0972,                     time=1sec
+[i]                     iteration=2,304,                     learning_rate=0.0058,                     loss=0.0967,                     time=1sec
+[i]                     iteration=2,316,                     learning_rate=0.0058,                     loss=0.0933,                     time=1sec
+[i]                     iteration=2,328,                     learning_rate=0.0058,                     loss=0.0954,                     time=1sec
+[i]                     iteration=2,340,                     learning_rate=0.0058,                     loss=0.1148,                     time=1sec
+[i]                     iteration=2,352,                     learning_rate=0.0058,                     loss=0.0966,                     time=1sec
+[i]                     iteration=2,364,                     learning_rate=0.0058,                     loss=0.0935,                     time=1sec
+[i]                     iteration=2,375,                     mIoU=84.28%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.75%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=2,376,                     learning_rate=0.0058,                     loss=0.1123,                     time=11sec
+[i]                     iteration=2,388,                     learning_rate=0.0058,                     loss=0.0887,                     time=1sec
+[i]                     iteration=2,400,                     learning_rate=0.0058,                     loss=0.0870,                     time=1sec
+[i]                     iteration=2,412,                     learning_rate=0.0058,                     loss=0.1124,                     time=1sec
+[i]                     iteration=2,424,                     learning_rate=0.0058,                     loss=0.0898,                     time=1sec
+[i]                     iteration=2,436,                     learning_rate=0.0058,                     loss=0.0856,                     time=1sec
+[i]                     iteration=2,448,                     learning_rate=0.0058,                     loss=0.0940,                     time=1sec
+[i]                     iteration=2,460,                     learning_rate=0.0057,                     loss=0.0898,                     time=1sec
+[i]                     iteration=2,472,                     learning_rate=0.0057,                     loss=0.1241,                     time=1sec
+[i]                     iteration=2,484,                     learning_rate=0.0057,                     loss=0.1075,                     time=1sec
+[i]                     iteration=2,496,                     learning_rate=0.0057,                     loss=0.0962,                     time=1sec
+[i]                     iteration=2,500,                     mIoU=84.87%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.52%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=2,508,                     learning_rate=0.0057,                     loss=0.0814,                     time=11sec
+[i]                     iteration=2,520,                     learning_rate=0.0057,                     loss=0.0799,                     time=1sec
+[i]                     iteration=2,532,                     learning_rate=0.0057,                     loss=0.0868,                     time=1sec
+[i]                     iteration=2,544,                     learning_rate=0.0057,                     loss=0.0837,                     time=1sec
+[i]                     iteration=2,556,                     learning_rate=0.0057,                     loss=0.0900,                     time=1sec
+[i]                     iteration=2,568,                     learning_rate=0.0057,                     loss=0.0877,                     time=1sec
+[i]                     iteration=2,580,                     learning_rate=0.0057,                     loss=0.0947,                     time=1sec
+[i]                     iteration=2,592,                     learning_rate=0.0057,                     loss=0.1036,                     time=1sec
+[i]                     iteration=2,604,                     learning_rate=0.0057,                     loss=0.0994,                     time=1sec
+[i]                     iteration=2,616,                     learning_rate=0.0057,                     loss=0.0823,                     time=1sec
+[i]                     iteration=2,625,                     mIoU=84.39%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.71%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=2,628,                     learning_rate=0.0057,                     loss=0.0947,                     time=11sec
+[i]                     iteration=2,640,                     learning_rate=0.0057,                     loss=0.0886,                     time=1sec
+[i]                     iteration=2,652,                     learning_rate=0.0056,                     loss=0.0863,                     time=1sec
+[i]                     iteration=2,664,                     learning_rate=0.0056,                     loss=0.0777,                     time=1sec
+[i]                     iteration=2,676,                     learning_rate=0.0056,                     loss=0.0912,                     time=1sec
+[i]                     iteration=2,688,                     learning_rate=0.0056,                     loss=0.0868,                     time=1sec
+[i]                     iteration=2,700,                     learning_rate=0.0056,                     loss=0.0785,                     time=1sec
+[i]                     iteration=2,712,                     learning_rate=0.0056,                     loss=0.0755,                     time=1sec
+[i]                     iteration=2,724,                     learning_rate=0.0056,                     loss=0.0865,                     time=1sec
+[i]                     iteration=2,736,                     learning_rate=0.0056,                     loss=0.0855,                     time=1sec
+[i]                     iteration=2,748,                     learning_rate=0.0056,                     loss=0.0879,                     time=1sec
+[i]                     iteration=2,750,                     mIoU=84.59%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.09%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=2,760,                     learning_rate=0.0056,                     loss=0.0748,                     time=11sec
+[i]                     iteration=2,772,                     learning_rate=0.0056,                     loss=0.0738,                     time=1sec
+[i]                     iteration=2,784,                     learning_rate=0.0056,                     loss=0.0720,                     time=1sec
+[i]                     iteration=2,796,                     learning_rate=0.0056,                     loss=0.0797,                     time=1sec
+[i]                     iteration=2,808,                     learning_rate=0.0056,                     loss=0.0784,                     time=1sec
+[i]                     iteration=2,820,                     learning_rate=0.0056,                     loss=0.0734,                     time=1sec
+[i]                     iteration=2,832,                     learning_rate=0.0056,                     loss=0.0775,                     time=1sec
+[i]                     iteration=2,844,                     learning_rate=0.0055,                     loss=0.0747,                     time=1sec
+[i]                     iteration=2,856,                     learning_rate=0.0055,                     loss=0.0736,                     time=1sec
+[i]                     iteration=2,868,                     learning_rate=0.0055,                     loss=0.0823,                     time=1sec
+[i]                     iteration=2,875,                     mIoU=84.59%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.05%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=2,880,                     learning_rate=0.0055,                     loss=0.0724,                     time=11sec
+[i]                     iteration=2,892,                     learning_rate=0.0055,                     loss=0.0728,                     time=1sec
+[i]                     iteration=2,904,                     learning_rate=0.0055,                     loss=0.0719,                     time=1sec
+[i]                     iteration=2,916,                     learning_rate=0.0055,                     loss=0.0716,                     time=1sec
+[i]                     iteration=2,928,                     learning_rate=0.0055,                     loss=0.0803,                     time=1sec
+[i]                     iteration=2,940,                     learning_rate=0.0055,                     loss=0.0726,                     time=1sec
+[i]                     iteration=2,952,                     learning_rate=0.0055,                     loss=0.0652,                     time=1sec
+[i]                     iteration=2,964,                     learning_rate=0.0055,                     loss=0.0705,                     time=1sec
+[i]                     iteration=2,976,                     learning_rate=0.0055,                     loss=0.0797,                     time=1sec
+[i]                     iteration=2,988,                     learning_rate=0.0055,                     loss=0.0683,                     time=1sec
+[i]                     iteration=3,000,                     learning_rate=0.0055,                     loss=0.0749,                     time=1sec
+[i]                     iteration=3,000,                     mIoU=83.83%,                     best_valid_mIoU=85.01%,                     IoU_fg=78.99%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=3,012,                     learning_rate=0.0055,                     loss=0.0771,                     time=11sec
+[i]                     iteration=3,024,                     learning_rate=0.0055,                     loss=0.0665,                     time=1sec
+[i]                     iteration=3,036,                     learning_rate=0.0055,                     loss=0.0605,                     time=1sec
+[i]                     iteration=3,048,                     learning_rate=0.0054,                     loss=0.0789,                     time=1sec
+[i]                     iteration=3,060,                     learning_rate=0.0054,                     loss=0.0638,                     time=1sec
+[i]                     iteration=3,072,                     learning_rate=0.0054,                     loss=0.1491,                     time=1sec
+[i]                     iteration=3,084,                     learning_rate=0.0054,                     loss=0.0752,                     time=1sec
+[i]                     iteration=3,096,                     learning_rate=0.0054,                     loss=0.0748,                     time=1sec
+[i]                     iteration=3,108,                     learning_rate=0.0054,                     loss=0.0667,                     time=1sec
+[i]                     iteration=3,120,                     learning_rate=0.0054,                     loss=0.0710,                     time=1sec
+[i]                     iteration=3,125,                     mIoU=84.15%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.54%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=3,132,                     learning_rate=0.0054,                     loss=0.0748,                     time=11sec
+[i]                     iteration=3,144,                     learning_rate=0.0054,                     loss=0.0610,                     time=1sec
+[i]                     iteration=3,156,                     learning_rate=0.0054,                     loss=0.0865,                     time=1sec
+[i]                     iteration=3,168,                     learning_rate=0.0054,                     loss=0.0799,                     time=1sec
+[i]                     iteration=3,180,                     learning_rate=0.0054,                     loss=0.0689,                     time=1sec
+[i]                     iteration=3,192,                     learning_rate=0.0054,                     loss=0.0621,                     time=1sec
+[i]                     iteration=3,204,                     learning_rate=0.0054,                     loss=0.0675,                     time=1sec
+[i]                     iteration=3,216,                     learning_rate=0.0054,                     loss=0.0603,                     time=1sec
+[i]                     iteration=3,228,                     learning_rate=0.0054,                     loss=0.0604,                     time=1sec
+[i]                     iteration=3,240,                     learning_rate=0.0053,                     loss=0.0647,                     time=1sec
+[i]                     iteration=3,250,                     mIoU=84.62%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.26%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=3,252,                     learning_rate=0.0053,                     loss=0.0647,                     time=11sec
+[i]                     iteration=3,264,                     learning_rate=0.0053,                     loss=0.0622,                     time=1sec
+[i]                     iteration=3,276,                     learning_rate=0.0053,                     loss=0.0594,                     time=1sec
+[i]                     iteration=3,288,                     learning_rate=0.0053,                     loss=0.0611,                     time=1sec
+[i]                     iteration=3,300,                     learning_rate=0.0053,                     loss=0.0614,                     time=1sec
+[i]                     iteration=3,312,                     learning_rate=0.0053,                     loss=0.0636,                     time=1sec
+[i]                     iteration=3,324,                     learning_rate=0.0053,                     loss=0.0595,                     time=1sec
+[i]                     iteration=3,336,                     learning_rate=0.0053,                     loss=0.0602,                     time=1sec
+[i]                     iteration=3,348,                     learning_rate=0.0053,                     loss=0.0709,                     time=1sec
+[i]                     iteration=3,360,                     learning_rate=0.0053,                     loss=0.0611,                     time=1sec
+[i]                     iteration=3,372,                     learning_rate=0.0053,                     loss=0.0709,                     time=1sec
+[i]                     iteration=3,375,                     mIoU=84.77%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.41%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=3,384,                     learning_rate=0.0053,                     loss=0.0622,                     time=11sec
+[i]                     iteration=3,396,                     learning_rate=0.0053,                     loss=0.0606,                     time=1sec
+[i]                     iteration=3,408,                     learning_rate=0.0053,                     loss=0.0649,                     time=1sec
+[i]                     iteration=3,420,                     learning_rate=0.0053,                     loss=0.0642,                     time=1sec
+[i]                     iteration=3,432,                     learning_rate=0.0052,                     loss=0.0576,                     time=1sec
+[i]                     iteration=3,444,                     learning_rate=0.0052,                     loss=0.0555,                     time=1sec
+[i]                     iteration=3,456,                     learning_rate=0.0052,                     loss=0.0589,                     time=1sec
+[i]                     iteration=3,468,                     learning_rate=0.0052,                     loss=0.0632,                     time=1sec
+[i]                     iteration=3,480,                     learning_rate=0.0052,                     loss=0.0635,                     time=1sec
+[i]                     iteration=3,492,                     learning_rate=0.0052,                     loss=0.0649,                     time=1sec
+[i]                     iteration=3,500,                     mIoU=84.63%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.24%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=3,504,                     learning_rate=0.0052,                     loss=0.0608,                     time=11sec
+[i]                     iteration=3,516,                     learning_rate=0.0052,                     loss=0.0600,                     time=1sec
+[i]                     iteration=3,528,                     learning_rate=0.0052,                     loss=0.0594,                     time=1sec
+[i]                     iteration=3,540,                     learning_rate=0.0052,                     loss=0.0509,                     time=1sec
+[i]                     iteration=3,552,                     learning_rate=0.0052,                     loss=0.0639,                     time=1sec
+[i]                     iteration=3,564,                     learning_rate=0.0052,                     loss=0.0639,                     time=1sec
+[i]                     iteration=3,576,                     learning_rate=0.0052,                     loss=0.0626,                     time=1sec
+[i]                     iteration=3,588,                     learning_rate=0.0052,                     loss=0.0557,                     time=1sec
+[i]                     iteration=3,600,                     learning_rate=0.0052,                     loss=0.0542,                     time=1sec
+[i]                     iteration=3,612,                     learning_rate=0.0052,                     loss=0.0579,                     time=1sec
+[i]                     iteration=3,624,                     learning_rate=0.0051,                     loss=0.0545,                     time=1sec
+[i]                     iteration=3,625,                     mIoU=84.43%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.90%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=3,636,                     learning_rate=0.0051,                     loss=0.0578,                     time=11sec
+[i]                     iteration=3,648,                     learning_rate=0.0051,                     loss=0.0540,                     time=1sec
+[i]                     iteration=3,660,                     learning_rate=0.0051,                     loss=0.0545,                     time=1sec
+[i]                     iteration=3,672,                     learning_rate=0.0051,                     loss=0.0513,                     time=1sec
+[i]                     iteration=3,684,                     learning_rate=0.0051,                     loss=0.0610,                     time=1sec
+[i]                     iteration=3,696,                     learning_rate=0.0051,                     loss=0.0592,                     time=1sec
+[i]                     iteration=3,708,                     learning_rate=0.0051,                     loss=0.0514,                     time=1sec
+[i]                     iteration=3,720,                     learning_rate=0.0051,                     loss=0.0582,                     time=1sec
+[i]                     iteration=3,732,                     learning_rate=0.0051,                     loss=0.0628,                     time=1sec
+[i]                     iteration=3,744,                     learning_rate=0.0051,                     loss=0.0579,                     time=1sec
+[i]                     iteration=3,750,                     mIoU=84.47%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.02%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=3,756,                     learning_rate=0.0051,                     loss=0.0534,                     time=11sec
+[i]                     iteration=3,768,                     learning_rate=0.0051,                     loss=0.0561,                     time=1sec
+[i]                     iteration=3,780,                     learning_rate=0.0051,                     loss=0.0473,                     time=1sec
+[i]                     iteration=3,792,                     learning_rate=0.0051,                     loss=0.0550,                     time=1sec
+[i]                     iteration=3,804,                     learning_rate=0.0051,                     loss=0.0625,                     time=1sec
+[i]                     iteration=3,816,                     learning_rate=0.0050,                     loss=0.0772,                     time=1sec
+[i]                     iteration=3,828,                     learning_rate=0.0050,                     loss=0.0556,                     time=1sec
+[i]                     iteration=3,840,                     learning_rate=0.0050,                     loss=0.0573,                     time=1sec
+[i]                     iteration=3,852,                     learning_rate=0.0050,                     loss=0.0580,                     time=1sec
+[i]                     iteration=3,864,                     learning_rate=0.0050,                     loss=0.0590,                     time=1sec
+[i]                     iteration=3,875,                     mIoU=84.48%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.11%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=3,876,                     learning_rate=0.0050,                     loss=0.0555,                     time=11sec
+[i]                     iteration=3,888,                     learning_rate=0.0050,                     loss=0.0583,                     time=1sec
+[i]                     iteration=3,900,                     learning_rate=0.0050,                     loss=0.0560,                     time=1sec
+[i]                     iteration=3,912,                     learning_rate=0.0050,                     loss=0.0511,                     time=1sec
+[i]                     iteration=3,924,                     learning_rate=0.0050,                     loss=0.0585,                     time=1sec
+[i]                     iteration=3,936,                     learning_rate=0.0050,                     loss=0.0540,                     time=1sec
+[i]                     iteration=3,948,                     learning_rate=0.0050,                     loss=0.0499,                     time=1sec
+[i]                     iteration=3,960,                     learning_rate=0.0050,                     loss=0.0488,                     time=1sec
+[i]                     iteration=3,972,                     learning_rate=0.0050,                     loss=0.0557,                     time=1sec
+[i]                     iteration=3,984,                     learning_rate=0.0050,                     loss=0.0549,                     time=1sec
+[i]                     iteration=3,996,                     learning_rate=0.0050,                     loss=0.0512,                     time=1sec
+[i]                     iteration=4,000,                     mIoU=84.15%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.53%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=4,008,                     learning_rate=0.0049,                     loss=0.0565,                     time=11sec
+[i]                     iteration=4,020,                     learning_rate=0.0049,                     loss=0.0494,                     time=1sec
+[i]                     iteration=4,032,                     learning_rate=0.0049,                     loss=0.0496,                     time=1sec
+[i]                     iteration=4,044,                     learning_rate=0.0049,                     loss=0.0606,                     time=1sec
+[i]                     iteration=4,056,                     learning_rate=0.0049,                     loss=0.0483,                     time=1sec
+[i]                     iteration=4,068,                     learning_rate=0.0049,                     loss=0.0521,                     time=1sec
+[i]                     iteration=4,080,                     learning_rate=0.0049,                     loss=0.0517,                     time=1sec
+[i]                     iteration=4,092,                     learning_rate=0.0049,                     loss=0.0505,                     time=1sec
+[i]                     iteration=4,104,                     learning_rate=0.0049,                     loss=0.0500,                     time=1sec
+[i]                     iteration=4,116,                     learning_rate=0.0049,                     loss=0.0517,                     time=1sec
+[i]                     iteration=4,125,                     mIoU=84.64%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.33%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=4,128,                     learning_rate=0.0049,                     loss=0.0527,                     time=11sec
+[i]                     iteration=4,140,                     learning_rate=0.0049,                     loss=0.0514,                     time=1sec
+[i]                     iteration=4,152,                     learning_rate=0.0049,                     loss=0.0467,                     time=1sec
+[i]                     iteration=4,164,                     learning_rate=0.0049,                     loss=0.0535,                     time=1sec
+[i]                     iteration=4,176,                     learning_rate=0.0049,                     loss=0.0518,                     time=1sec
+[i]                     iteration=4,188,                     learning_rate=0.0048,                     loss=0.0544,                     time=1sec
+[i]                     iteration=4,200,                     learning_rate=0.0048,                     loss=0.0489,                     time=1sec
+[i]                     iteration=4,212,                     learning_rate=0.0048,                     loss=0.0547,                     time=1sec
+[i]                     iteration=4,224,                     learning_rate=0.0048,                     loss=0.0521,                     time=1sec
+[i]                     iteration=4,236,                     learning_rate=0.0048,                     loss=0.0479,                     time=1sec
+[i]                     iteration=4,248,                     learning_rate=0.0048,                     loss=0.0476,                     time=1sec
+[i]                     iteration=4,250,                     mIoU=84.05%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.41%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=4,260,                     learning_rate=0.0048,                     loss=0.0514,                     time=11sec
+[i]                     iteration=4,272,                     learning_rate=0.0048,                     loss=0.0447,                     time=1sec
+[i]                     iteration=4,284,                     learning_rate=0.0048,                     loss=0.0493,                     time=1sec
+[i]                     iteration=4,296,                     learning_rate=0.0048,                     loss=0.0489,                     time=1sec
+[i]                     iteration=4,308,                     learning_rate=0.0048,                     loss=0.0468,                     time=1sec
+[i]                     iteration=4,320,                     learning_rate=0.0048,                     loss=0.0504,                     time=1sec
+[i]                     iteration=4,332,                     learning_rate=0.0048,                     loss=0.0495,                     time=1sec
+[i]                     iteration=4,344,                     learning_rate=0.0048,                     loss=0.0471,                     time=1sec
+[i]                     iteration=4,356,                     learning_rate=0.0048,                     loss=0.0481,                     time=1sec
+[i]                     iteration=4,368,                     learning_rate=0.0048,                     loss=0.0524,                     time=1sec
+[i]                     iteration=4,375,                     mIoU=84.29%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.77%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=4,380,                     learning_rate=0.0047,                     loss=0.0512,                     time=11sec
+[i]                     iteration=4,392,                     learning_rate=0.0047,                     loss=0.0487,                     time=1sec
+[i]                     iteration=4,404,                     learning_rate=0.0047,                     loss=0.0467,                     time=1sec
+[i]                     iteration=4,416,                     learning_rate=0.0047,                     loss=0.0522,                     time=1sec
+[i]                     iteration=4,428,                     learning_rate=0.0047,                     loss=0.0452,                     time=1sec
+[i]                     iteration=4,440,                     learning_rate=0.0047,                     loss=0.0498,                     time=1sec
+[i]                     iteration=4,452,                     learning_rate=0.0047,                     loss=0.0537,                     time=1sec
+[i]                     iteration=4,464,                     learning_rate=0.0047,                     loss=0.0458,                     time=1sec
+[i]                     iteration=4,476,                     learning_rate=0.0047,                     loss=0.0496,                     time=1sec
+[i]                     iteration=4,488,                     learning_rate=0.0047,                     loss=0.0423,                     time=1sec
+[i]                     iteration=4,500,                     learning_rate=0.0047,                     loss=0.0491,                     time=1sec
+[i]                     iteration=4,500,                     mIoU=84.53%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.19%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=4,512,                     learning_rate=0.0047,                     loss=0.0459,                     time=12sec
+[i]                     iteration=4,524,                     learning_rate=0.0047,                     loss=0.0485,                     time=1sec
+[i]                     iteration=4,536,                     learning_rate=0.0047,                     loss=0.0446,                     time=1sec
+[i]                     iteration=4,548,                     learning_rate=0.0047,                     loss=0.0466,                     time=1sec
+[i]                     iteration=4,560,                     learning_rate=0.0047,                     loss=0.0517,                     time=1sec
+[i]                     iteration=4,572,                     learning_rate=0.0046,                     loss=0.0455,                     time=1sec
+[i]                     iteration=4,584,                     learning_rate=0.0046,                     loss=0.0461,                     time=1sec
+[i]                     iteration=4,596,                     learning_rate=0.0046,                     loss=0.0450,                     time=1sec
+[i]                     iteration=4,608,                     learning_rate=0.0046,                     loss=0.0487,                     time=1sec
+[i]                     iteration=4,620,                     learning_rate=0.0046,                     loss=0.0511,                     time=1sec
+[i]                     iteration=4,625,                     mIoU=84.61%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.40%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=4,632,                     learning_rate=0.0046,                     loss=0.0503,                     time=11sec
+[i]                     iteration=4,644,                     learning_rate=0.0046,                     loss=0.0482,                     time=1sec
+[i]                     iteration=4,656,                     learning_rate=0.0046,                     loss=0.0451,                     time=1sec
+[i]                     iteration=4,668,                     learning_rate=0.0046,                     loss=0.0477,                     time=1sec
+[i]                     iteration=4,680,                     learning_rate=0.0046,                     loss=0.0448,                     time=1sec
+[i]                     iteration=4,692,                     learning_rate=0.0046,                     loss=0.0462,                     time=1sec
+[i]                     iteration=4,704,                     learning_rate=0.0046,                     loss=0.0456,                     time=1sec
+[i]                     iteration=4,716,                     learning_rate=0.0046,                     loss=0.0460,                     time=1sec
+[i]                     iteration=4,728,                     learning_rate=0.0046,                     loss=0.0450,                     time=1sec
+[i]                     iteration=4,740,                     learning_rate=0.0046,                     loss=0.0465,                     time=1sec
+[i]                     iteration=4,750,                     mIoU=84.25%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.68%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=4,752,                     learning_rate=0.0046,                     loss=0.0535,                     time=12sec
+[i]                     iteration=4,764,                     learning_rate=0.0045,                     loss=0.0459,                     time=1sec
+[i]                     iteration=4,776,                     learning_rate=0.0045,                     loss=0.0426,                     time=1sec
+[i]                     iteration=4,788,                     learning_rate=0.0045,                     loss=0.0477,                     time=1sec
+[i]                     iteration=4,800,                     learning_rate=0.0045,                     loss=0.0481,                     time=1sec
+[i]                     iteration=4,812,                     learning_rate=0.0045,                     loss=0.0439,                     time=1sec
+[i]                     iteration=4,824,                     learning_rate=0.0045,                     loss=0.0445,                     time=1sec
+[i]                     iteration=4,836,                     learning_rate=0.0045,                     loss=0.0441,                     time=1sec
+[i]                     iteration=4,848,                     learning_rate=0.0045,                     loss=0.0438,                     time=1sec
+[i]                     iteration=4,860,                     learning_rate=0.0045,                     loss=0.0482,                     time=1sec
+[i]                     iteration=4,872,                     learning_rate=0.0045,                     loss=0.0458,                     time=1sec
+[i]                     iteration=4,875,                     mIoU=84.54%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.13%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=4,884,                     learning_rate=0.0045,                     loss=0.0435,                     time=11sec
+[i]                     iteration=4,896,                     learning_rate=0.0045,                     loss=0.0443,                     time=1sec
+[i]                     iteration=4,908,                     learning_rate=0.0045,                     loss=0.0465,                     time=1sec
+[i]                     iteration=4,920,                     learning_rate=0.0045,                     loss=0.0429,                     time=1sec
+[i]                     iteration=4,932,                     learning_rate=0.0045,                     loss=0.0442,                     time=1sec
+[i]                     iteration=4,944,                     learning_rate=0.0045,                     loss=0.0456,                     time=1sec
+[i]                     iteration=4,956,                     learning_rate=0.0044,                     loss=0.0422,                     time=1sec
+[i]                     iteration=4,968,                     learning_rate=0.0044,                     loss=0.0445,                     time=1sec
+[i]                     iteration=4,980,                     learning_rate=0.0044,                     loss=0.0470,                     time=1sec
+[i]                     iteration=4,992,                     learning_rate=0.0044,                     loss=0.0446,                     time=1sec
+[i]                     iteration=5,000,                     mIoU=84.59%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.21%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=5,004,                     learning_rate=0.0044,                     loss=0.0458,                     time=11sec
+[i]                     iteration=5,016,                     learning_rate=0.0044,                     loss=0.0422,                     time=1sec
+[i]                     iteration=5,028,                     learning_rate=0.0044,                     loss=0.0453,                     time=1sec
+[i]                     iteration=5,040,                     learning_rate=0.0044,                     loss=0.0430,                     time=1sec
+[i]                     iteration=5,052,                     learning_rate=0.0044,                     loss=0.0441,                     time=1sec
+[i]                     iteration=5,064,                     learning_rate=0.0044,                     loss=0.0441,                     time=1sec
+[i]                     iteration=5,076,                     learning_rate=0.0044,                     loss=0.0450,                     time=1sec
+[i]                     iteration=5,088,                     learning_rate=0.0044,                     loss=0.0461,                     time=1sec
+[i]                     iteration=5,100,                     learning_rate=0.0044,                     loss=0.0450,                     time=1sec
+[i]                     iteration=5,112,                     learning_rate=0.0044,                     loss=0.0450,                     time=1sec
+[i]                     iteration=5,124,                     learning_rate=0.0044,                     loss=0.0426,                     time=1sec
+[i]                     iteration=5,125,                     mIoU=84.46%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.07%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=5,136,                     learning_rate=0.0043,                     loss=0.0440,                     time=11sec
+[i]                     iteration=5,148,                     learning_rate=0.0043,                     loss=0.0403,                     time=1sec
+[i]                     iteration=5,160,                     learning_rate=0.0043,                     loss=0.0467,                     time=1sec
+[i]                     iteration=5,172,                     learning_rate=0.0043,                     loss=0.0406,                     time=1sec
+[i]                     iteration=5,184,                     learning_rate=0.0043,                     loss=0.0461,                     time=1sec
+[i]                     iteration=5,196,                     learning_rate=0.0043,                     loss=0.0420,                     time=1sec
+[i]                     iteration=5,208,                     learning_rate=0.0043,                     loss=0.0399,                     time=1sec
+[i]                     iteration=5,220,                     learning_rate=0.0043,                     loss=0.0461,                     time=1sec
+[i]                     iteration=5,232,                     learning_rate=0.0043,                     loss=0.0456,                     time=1sec
+[i]                     iteration=5,244,                     learning_rate=0.0043,                     loss=0.0460,                     time=1sec
+[i]                     iteration=5,250,                     mIoU=84.50%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.09%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=5,256,                     learning_rate=0.0043,                     loss=0.0425,                     time=11sec
+[i]                     iteration=5,268,                     learning_rate=0.0043,                     loss=0.0429,                     time=1sec
+[i]                     iteration=5,280,                     learning_rate=0.0043,                     loss=0.0423,                     time=1sec
+[i]                     iteration=5,292,                     learning_rate=0.0043,                     loss=0.0393,                     time=1sec
+[i]                     iteration=5,304,                     learning_rate=0.0043,                     loss=0.0463,                     time=1sec
+[i]                     iteration=5,316,                     learning_rate=0.0043,                     loss=0.0430,                     time=1sec
+[i]                     iteration=5,328,                     learning_rate=0.0042,                     loss=0.0472,                     time=1sec
+[i]                     iteration=5,340,                     learning_rate=0.0042,                     loss=0.0430,                     time=1sec
+[i]                     iteration=5,352,                     learning_rate=0.0042,                     loss=0.0421,                     time=1sec
+[i]                     iteration=5,364,                     learning_rate=0.0042,                     loss=0.0421,                     time=1sec
+[i]                     iteration=5,375,                     mIoU=84.42%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.96%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=5,376,                     learning_rate=0.0042,                     loss=0.0413,                     time=12sec
+[i]                     iteration=5,388,                     learning_rate=0.0042,                     loss=0.0430,                     time=1sec
+[i]                     iteration=5,400,                     learning_rate=0.0042,                     loss=0.0437,                     time=1sec
+[i]                     iteration=5,412,                     learning_rate=0.0042,                     loss=0.0428,                     time=1sec
+[i]                     iteration=5,424,                     learning_rate=0.0042,                     loss=0.0467,                     time=1sec
+[i]                     iteration=5,436,                     learning_rate=0.0042,                     loss=0.0417,                     time=1sec
+[i]                     iteration=5,448,                     learning_rate=0.0042,                     loss=0.0440,                     time=1sec
+[i]                     iteration=5,460,                     learning_rate=0.0042,                     loss=0.0412,                     time=1sec
+[i]                     iteration=5,472,                     learning_rate=0.0042,                     loss=0.0402,                     time=1sec
+[i]                     iteration=5,484,                     learning_rate=0.0042,                     loss=0.0401,                     time=1sec
+[i]                     iteration=5,496,                     learning_rate=0.0042,                     loss=0.0417,                     time=1sec
+[i]                     iteration=5,500,                     mIoU=84.55%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.23%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=5,508,                     learning_rate=0.0042,                     loss=0.0395,                     time=11sec
+[i]                     iteration=5,520,                     learning_rate=0.0041,                     loss=0.0446,                     time=1sec
+[i]                     iteration=5,532,                     learning_rate=0.0041,                     loss=0.0406,                     time=1sec
+[i]                     iteration=5,544,                     learning_rate=0.0041,                     loss=0.0422,                     time=1sec
+[i]                     iteration=5,556,                     learning_rate=0.0041,                     loss=0.0380,                     time=1sec
+[i]                     iteration=5,568,                     learning_rate=0.0041,                     loss=0.0450,                     time=1sec
+[i]                     iteration=5,580,                     learning_rate=0.0041,                     loss=0.0410,                     time=1sec
+[i]                     iteration=5,592,                     learning_rate=0.0041,                     loss=0.0402,                     time=1sec
+[i]                     iteration=5,604,                     learning_rate=0.0041,                     loss=0.0381,                     time=1sec
+[i]                     iteration=5,616,                     learning_rate=0.0041,                     loss=0.0434,                     time=1sec
+[i]                     iteration=5,625,                     mIoU=84.33%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.84%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=5,628,                     learning_rate=0.0041,                     loss=0.0438,                     time=11sec
+[i]                     iteration=5,640,                     learning_rate=0.0041,                     loss=0.0406,                     time=1sec
+[i]                     iteration=5,652,                     learning_rate=0.0041,                     loss=0.0371,                     time=1sec
+[i]                     iteration=5,664,                     learning_rate=0.0041,                     loss=0.0399,                     time=1sec
+[i]                     iteration=5,676,                     learning_rate=0.0041,                     loss=0.0405,                     time=1sec
+[i]                     iteration=5,688,                     learning_rate=0.0041,                     loss=0.0410,                     time=1sec
+[i]                     iteration=5,700,                     learning_rate=0.0040,                     loss=0.0421,                     time=1sec
+[i]                     iteration=5,712,                     learning_rate=0.0040,                     loss=0.0412,                     time=1sec
+[i]                     iteration=5,724,                     learning_rate=0.0040,                     loss=0.0436,                     time=1sec
+[i]                     iteration=5,736,                     learning_rate=0.0040,                     loss=0.0439,                     time=1sec
+[i]                     iteration=5,748,                     learning_rate=0.0040,                     loss=0.0408,                     time=1sec
+[i]                     iteration=5,750,                     mIoU=84.66%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.34%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=5,760,                     learning_rate=0.0040,                     loss=0.0453,                     time=11sec
+[i]                     iteration=5,772,                     learning_rate=0.0040,                     loss=0.0417,                     time=1sec
+[i]                     iteration=5,784,                     learning_rate=0.0040,                     loss=0.0370,                     time=1sec
+[i]                     iteration=5,796,                     learning_rate=0.0040,                     loss=0.0378,                     time=1sec
+[i]                     iteration=5,808,                     learning_rate=0.0040,                     loss=0.0399,                     time=1sec
+[i]                     iteration=5,820,                     learning_rate=0.0040,                     loss=0.0450,                     time=1sec
+[i]                     iteration=5,832,                     learning_rate=0.0040,                     loss=0.0426,                     time=1sec
+[i]                     iteration=5,844,                     learning_rate=0.0040,                     loss=0.0422,                     time=1sec
+[i]                     iteration=5,856,                     learning_rate=0.0040,                     loss=0.0404,                     time=1sec
+[i]                     iteration=5,868,                     learning_rate=0.0040,                     loss=0.0404,                     time=1sec
+[i]                     iteration=5,875,                     mIoU=84.43%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.04%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=5,880,                     learning_rate=0.0040,                     loss=0.0348,                     time=11sec
+[i]                     iteration=5,892,                     learning_rate=0.0039,                     loss=0.0426,                     time=1sec
+[i]                     iteration=5,904,                     learning_rate=0.0039,                     loss=0.0415,                     time=1sec
+[i]                     iteration=5,916,                     learning_rate=0.0039,                     loss=0.0383,                     time=1sec
+[i]                     iteration=5,928,                     learning_rate=0.0039,                     loss=0.0385,                     time=1sec
+[i]                     iteration=5,940,                     learning_rate=0.0039,                     loss=0.0385,                     time=1sec
+[i]                     iteration=5,952,                     learning_rate=0.0039,                     loss=0.0439,                     time=1sec
+[i]                     iteration=5,964,                     learning_rate=0.0039,                     loss=0.0405,                     time=1sec
+[i]                     iteration=5,976,                     learning_rate=0.0039,                     loss=0.0376,                     time=1sec
+[i]                     iteration=5,988,                     learning_rate=0.0039,                     loss=0.0435,                     time=1sec
+[i]                     iteration=6,000,                     learning_rate=0.0039,                     loss=0.0421,                     time=1sec
+[i]                     iteration=6,000,                     mIoU=84.16%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.55%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=6,012,                     learning_rate=0.0039,                     loss=0.0407,                     time=11sec
+[i]                     iteration=6,024,                     learning_rate=0.0039,                     loss=0.0391,                     time=1sec
+[i]                     iteration=6,036,                     learning_rate=0.0039,                     loss=0.0440,                     time=1sec
+[i]                     iteration=6,048,                     learning_rate=0.0039,                     loss=0.0391,                     time=1sec
+[i]                     iteration=6,060,                     learning_rate=0.0039,                     loss=0.0386,                     time=1sec
+[i]                     iteration=6,072,                     learning_rate=0.0038,                     loss=0.0375,                     time=1sec
+[i]                     iteration=6,084,                     learning_rate=0.0038,                     loss=0.0397,                     time=1sec
+[i]                     iteration=6,096,                     learning_rate=0.0038,                     loss=0.0381,                     time=1sec
+[i]                     iteration=6,108,                     learning_rate=0.0038,                     loss=0.0409,                     time=1sec
+[i]                     iteration=6,120,                     learning_rate=0.0038,                     loss=0.0408,                     time=1sec
+[i]                     iteration=6,125,                     mIoU=84.43%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.95%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=6,132,                     learning_rate=0.0038,                     loss=0.0404,                     time=11sec
+[i]                     iteration=6,144,                     learning_rate=0.0038,                     loss=0.0423,                     time=1sec
+[i]                     iteration=6,156,                     learning_rate=0.0038,                     loss=0.0388,                     time=1sec
+[i]                     iteration=6,168,                     learning_rate=0.0038,                     loss=0.0397,                     time=1sec
+[i]                     iteration=6,180,                     learning_rate=0.0038,                     loss=0.0395,                     time=1sec
+[i]                     iteration=6,192,                     learning_rate=0.0038,                     loss=0.0400,                     time=1sec
+[i]                     iteration=6,204,                     learning_rate=0.0038,                     loss=0.0366,                     time=1sec
+[i]                     iteration=6,216,                     learning_rate=0.0038,                     loss=0.0409,                     time=1sec
+[i]                     iteration=6,228,                     learning_rate=0.0038,                     loss=0.0381,                     time=1sec
+[i]                     iteration=6,240,                     learning_rate=0.0038,                     loss=0.0400,                     time=1sec
+[i]                     iteration=6,250,                     mIoU=84.48%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.12%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=6,252,                     learning_rate=0.0038,                     loss=0.0387,                     time=12sec
+[i]                     iteration=6,264,                     learning_rate=0.0037,                     loss=0.0382,                     time=1sec
+[i]                     iteration=6,276,                     learning_rate=0.0037,                     loss=0.0409,                     time=1sec
+[i]                     iteration=6,288,                     learning_rate=0.0037,                     loss=0.0362,                     time=1sec
+[i]                     iteration=6,300,                     learning_rate=0.0037,                     loss=0.0409,                     time=1sec
+[i]                     iteration=6,312,                     learning_rate=0.0037,                     loss=0.0391,                     time=1sec
+[i]                     iteration=6,324,                     learning_rate=0.0037,                     loss=0.0401,                     time=1sec
+[i]                     iteration=6,336,                     learning_rate=0.0037,                     loss=0.0384,                     time=1sec
+[i]                     iteration=6,348,                     learning_rate=0.0037,                     loss=0.0385,                     time=1sec
+[i]                     iteration=6,360,                     learning_rate=0.0037,                     loss=0.0384,                     time=1sec
+[i]                     iteration=6,372,                     learning_rate=0.0037,                     loss=0.0394,                     time=1sec
+[i]                     iteration=6,375,                     mIoU=84.49%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.04%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=6,384,                     learning_rate=0.0037,                     loss=0.0381,                     time=11sec
+[i]                     iteration=6,396,                     learning_rate=0.0037,                     loss=0.0371,                     time=1sec
+[i]                     iteration=6,408,                     learning_rate=0.0037,                     loss=0.0355,                     time=1sec
+[i]                     iteration=6,420,                     learning_rate=0.0037,                     loss=0.0391,                     time=1sec
+[i]                     iteration=6,432,                     learning_rate=0.0037,                     loss=0.0389,                     time=1sec
+[i]                     iteration=6,444,                     learning_rate=0.0036,                     loss=0.0395,                     time=1sec
+[i]                     iteration=6,456,                     learning_rate=0.0036,                     loss=0.0378,                     time=1sec
+[i]                     iteration=6,468,                     learning_rate=0.0036,                     loss=0.0365,                     time=1sec
+[i]                     iteration=6,480,                     learning_rate=0.0036,                     loss=0.0403,                     time=1sec
+[i]                     iteration=6,492,                     learning_rate=0.0036,                     loss=0.0398,                     time=1sec
+[i]                     iteration=6,500,                     mIoU=84.44%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.01%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=6,504,                     learning_rate=0.0036,                     loss=0.0380,                     time=11sec
+[i]                     iteration=6,516,                     learning_rate=0.0036,                     loss=0.0369,                     time=1sec
+[i]                     iteration=6,528,                     learning_rate=0.0036,                     loss=0.0401,                     time=1sec
+[i]                     iteration=6,540,                     learning_rate=0.0036,                     loss=0.0352,                     time=1sec
+[i]                     iteration=6,552,                     learning_rate=0.0036,                     loss=0.0375,                     time=1sec
+[i]                     iteration=6,564,                     learning_rate=0.0036,                     loss=0.0373,                     time=1sec
+[i]                     iteration=6,576,                     learning_rate=0.0036,                     loss=0.0368,                     time=1sec
+[i]                     iteration=6,588,                     learning_rate=0.0036,                     loss=0.0403,                     time=1sec
+[i]                     iteration=6,600,                     learning_rate=0.0036,                     loss=0.0414,                     time=1sec
+[i]                     iteration=6,612,                     learning_rate=0.0036,                     loss=0.0408,                     time=1sec
+[i]                     iteration=6,624,                     learning_rate=0.0035,                     loss=0.0361,                     time=1sec
+[i]                     iteration=6,625,                     mIoU=84.33%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.76%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=6,636,                     learning_rate=0.0035,                     loss=0.0377,                     time=12sec
+[i]                     iteration=6,648,                     learning_rate=0.0035,                     loss=0.0401,                     time=1sec
+[i]                     iteration=6,660,                     learning_rate=0.0035,                     loss=0.0333,                     time=1sec
+[i]                     iteration=6,672,                     learning_rate=0.0035,                     loss=0.0359,                     time=1sec
+[i]                     iteration=6,684,                     learning_rate=0.0035,                     loss=0.0361,                     time=1sec
+[i]                     iteration=6,696,                     learning_rate=0.0035,                     loss=0.0407,                     time=1sec
+[i]                     iteration=6,708,                     learning_rate=0.0035,                     loss=0.0402,                     time=1sec
+[i]                     iteration=6,720,                     learning_rate=0.0035,                     loss=0.0402,                     time=1sec
+[i]                     iteration=6,732,                     learning_rate=0.0035,                     loss=0.0373,                     time=1sec
+[i]                     iteration=6,744,                     learning_rate=0.0035,                     loss=0.0400,                     time=1sec
+[i]                     iteration=6,750,                     mIoU=84.56%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.16%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=6,756,                     learning_rate=0.0035,                     loss=0.0378,                     time=11sec
+[i]                     iteration=6,768,                     learning_rate=0.0035,                     loss=0.0408,                     time=1sec
+[i]                     iteration=6,780,                     learning_rate=0.0035,                     loss=0.0387,                     time=1sec
+[i]                     iteration=6,792,                     learning_rate=0.0035,                     loss=0.0363,                     time=1sec
+[i]                     iteration=6,804,                     learning_rate=0.0035,                     loss=0.0389,                     time=1sec
+[i]                     iteration=6,816,                     learning_rate=0.0034,                     loss=0.0369,                     time=1sec
+[i]                     iteration=6,828,                     learning_rate=0.0034,                     loss=0.0377,                     time=1sec
+[i]                     iteration=6,840,                     learning_rate=0.0034,                     loss=0.0364,                     time=1sec
+[i]                     iteration=6,852,                     learning_rate=0.0034,                     loss=0.0339,                     time=1sec
+[i]                     iteration=6,864,                     learning_rate=0.0034,                     loss=0.0394,                     time=1sec
+[i]                     iteration=6,875,                     mIoU=84.44%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.00%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=6,876,                     learning_rate=0.0034,                     loss=0.0371,                     time=11sec
+[i]                     iteration=6,888,                     learning_rate=0.0034,                     loss=0.0384,                     time=1sec
+[i]                     iteration=6,900,                     learning_rate=0.0034,                     loss=0.0361,                     time=1sec
+[i]                     iteration=6,912,                     learning_rate=0.0034,                     loss=0.0365,                     time=1sec
+[i]                     iteration=6,924,                     learning_rate=0.0034,                     loss=0.0341,                     time=1sec
+[i]                     iteration=6,936,                     learning_rate=0.0034,                     loss=0.0372,                     time=1sec
+[i]                     iteration=6,948,                     learning_rate=0.0034,                     loss=0.0378,                     time=1sec
+[i]                     iteration=6,960,                     learning_rate=0.0034,                     loss=0.0369,                     time=1sec
+[i]                     iteration=6,972,                     learning_rate=0.0034,                     loss=0.0402,                     time=1sec
+[i]                     iteration=6,984,                     learning_rate=0.0034,                     loss=0.0369,                     time=1sec
+[i]                     iteration=6,996,                     learning_rate=0.0033,                     loss=0.0413,                     time=1sec
+[i]                     iteration=7,000,                     mIoU=84.38%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.91%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=7,008,                     learning_rate=0.0033,                     loss=0.0340,                     time=11sec
+[i]                     iteration=7,020,                     learning_rate=0.0033,                     loss=0.0370,                     time=1sec
+[i]                     iteration=7,032,                     learning_rate=0.0033,                     loss=0.0379,                     time=1sec
+[i]                     iteration=7,044,                     learning_rate=0.0033,                     loss=0.0361,                     time=1sec
+[i]                     iteration=7,056,                     learning_rate=0.0033,                     loss=0.0368,                     time=1sec
+[i]                     iteration=7,068,                     learning_rate=0.0033,                     loss=0.0371,                     time=1sec
+[i]                     iteration=7,080,                     learning_rate=0.0033,                     loss=0.0380,                     time=1sec
+[i]                     iteration=7,092,                     learning_rate=0.0033,                     loss=0.0401,                     time=1sec
+[i]                     iteration=7,104,                     learning_rate=0.0033,                     loss=0.0382,                     time=1sec
+[i]                     iteration=7,116,                     learning_rate=0.0033,                     loss=0.0361,                     time=1sec
+[i]                     iteration=7,125,                     mIoU=84.42%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.96%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=7,128,                     learning_rate=0.0033,                     loss=0.0369,                     time=11sec
+[i]                     iteration=7,140,                     learning_rate=0.0033,                     loss=0.0377,                     time=1sec
+[i]                     iteration=7,152,                     learning_rate=0.0033,                     loss=0.0373,                     time=1sec
+[i]                     iteration=7,164,                     learning_rate=0.0033,                     loss=0.0374,                     time=1sec
+[i]                     iteration=7,176,                     learning_rate=0.0032,                     loss=0.0369,                     time=1sec
+[i]                     iteration=7,188,                     learning_rate=0.0032,                     loss=0.0364,                     time=1sec
+[i]                     iteration=7,200,                     learning_rate=0.0032,                     loss=0.0404,                     time=1sec
+[i]                     iteration=7,212,                     learning_rate=0.0032,                     loss=0.0341,                     time=1sec
+[i]                     iteration=7,224,                     learning_rate=0.0032,                     loss=0.0339,                     time=1sec
+[i]                     iteration=7,236,                     learning_rate=0.0032,                     loss=0.0362,                     time=1sec
+[i]                     iteration=7,248,                     learning_rate=0.0032,                     loss=0.0386,                     time=1sec
+[i]                     iteration=7,250,                     mIoU=84.41%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.97%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=7,260,                     learning_rate=0.0032,                     loss=0.0370,                     time=11sec
+[i]                     iteration=7,272,                     learning_rate=0.0032,                     loss=0.0342,                     time=1sec
+[i]                     iteration=7,284,                     learning_rate=0.0032,                     loss=0.0369,                     time=1sec
+[i]                     iteration=7,296,                     learning_rate=0.0032,                     loss=0.0359,                     time=1sec
+[i]                     iteration=7,308,                     learning_rate=0.0032,                     loss=0.0391,                     time=1sec
+[i]                     iteration=7,320,                     learning_rate=0.0032,                     loss=0.0361,                     time=1sec
+[i]                     iteration=7,332,                     learning_rate=0.0032,                     loss=0.0383,                     time=1sec
+[i]                     iteration=7,344,                     learning_rate=0.0032,                     loss=0.0350,                     time=1sec
+[i]                     iteration=7,356,                     learning_rate=0.0031,                     loss=0.0368,                     time=1sec
+[i]                     iteration=7,368,                     learning_rate=0.0031,                     loss=0.0362,                     time=1sec
+[i]                     iteration=7,375,                     mIoU=84.44%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.98%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=7,380,                     learning_rate=0.0031,                     loss=0.0366,                     time=11sec
+[i]                     iteration=7,392,                     learning_rate=0.0031,                     loss=0.0346,                     time=1sec
+[i]                     iteration=7,404,                     learning_rate=0.0031,                     loss=0.0336,                     time=1sec
+[i]                     iteration=7,416,                     learning_rate=0.0031,                     loss=0.0345,                     time=1sec
+[i]                     iteration=7,428,                     learning_rate=0.0031,                     loss=0.0375,                     time=1sec
+[i]                     iteration=7,440,                     learning_rate=0.0031,                     loss=0.0380,                     time=1sec
+[i]                     iteration=7,452,                     learning_rate=0.0031,                     loss=0.0374,                     time=1sec
+[i]                     iteration=7,464,                     learning_rate=0.0031,                     loss=0.0369,                     time=1sec
+[i]                     iteration=7,476,                     learning_rate=0.0031,                     loss=0.0377,                     time=1sec
+[i]                     iteration=7,488,                     learning_rate=0.0031,                     loss=0.0371,                     time=1sec
+[i]                     iteration=7,500,                     learning_rate=0.0031,                     loss=0.0348,                     time=1sec
+[i]                     iteration=7,500,                     mIoU=84.47%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.02%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=7,512,                     learning_rate=0.0031,                     loss=0.0374,                     time=11sec
+[i]                     iteration=7,524,                     learning_rate=0.0031,                     loss=0.0347,                     time=1sec
+[i]                     iteration=7,536,                     learning_rate=0.0030,                     loss=0.0355,                     time=1sec
+[i]                     iteration=7,548,                     learning_rate=0.0030,                     loss=0.0333,                     time=1sec
+[i]                     iteration=7,560,                     learning_rate=0.0030,                     loss=0.0381,                     time=1sec
+[i]                     iteration=7,572,                     learning_rate=0.0030,                     loss=0.0337,                     time=1sec
+[i]                     iteration=7,584,                     learning_rate=0.0030,                     loss=0.0386,                     time=1sec
+[i]                     iteration=7,596,                     learning_rate=0.0030,                     loss=0.0374,                     time=1sec
+[i]                     iteration=7,608,                     learning_rate=0.0030,                     loss=0.0363,                     time=1sec
+[i]                     iteration=7,620,                     learning_rate=0.0030,                     loss=0.0355,                     time=1sec
+[i]                     iteration=7,625,                     mIoU=84.37%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.88%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=7,632,                     learning_rate=0.0030,                     loss=0.0390,                     time=11sec
+[i]                     iteration=7,644,                     learning_rate=0.0030,                     loss=0.0377,                     time=1sec
+[i]                     iteration=7,656,                     learning_rate=0.0030,                     loss=0.0340,                     time=1sec
+[i]                     iteration=7,668,                     learning_rate=0.0030,                     loss=0.0355,                     time=1sec
+[i]                     iteration=7,680,                     learning_rate=0.0030,                     loss=0.0347,                     time=1sec
+[i]                     iteration=7,692,                     learning_rate=0.0030,                     loss=0.0351,                     time=1sec
+[i]                     iteration=7,704,                     learning_rate=0.0030,                     loss=0.0365,                     time=1sec
+[i]                     iteration=7,716,                     learning_rate=0.0030,                     loss=0.0310,                     time=1sec
+[i]                     iteration=7,728,                     learning_rate=0.0029,                     loss=0.0377,                     time=1sec
+[i]                     iteration=7,740,                     learning_rate=0.0029,                     loss=0.0367,                     time=1sec
+[i]                     iteration=7,750,                     mIoU=84.43%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.00%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=7,752,                     learning_rate=0.0029,                     loss=0.0364,                     time=11sec
+[i]                     iteration=7,764,                     learning_rate=0.0029,                     loss=0.0366,                     time=1sec
+[i]                     iteration=7,776,                     learning_rate=0.0029,                     loss=0.0331,                     time=1sec
+[i]                     iteration=7,788,                     learning_rate=0.0029,                     loss=0.0385,                     time=1sec
+[i]                     iteration=7,800,                     learning_rate=0.0029,                     loss=0.0344,                     time=1sec
+[i]                     iteration=7,812,                     learning_rate=0.0029,                     loss=0.0383,                     time=1sec
+[i]                     iteration=7,824,                     learning_rate=0.0029,                     loss=0.0327,                     time=1sec
+[i]                     iteration=7,836,                     learning_rate=0.0029,                     loss=0.0375,                     time=1sec
+[i]                     iteration=7,848,                     learning_rate=0.0029,                     loss=0.0384,                     time=1sec
+[i]                     iteration=7,860,                     learning_rate=0.0029,                     loss=0.0353,                     time=1sec
+[i]                     iteration=7,872,                     learning_rate=0.0029,                     loss=0.0339,                     time=1sec
+[i]                     iteration=7,875,                     mIoU=84.48%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.04%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=7,884,                     learning_rate=0.0029,                     loss=0.0342,                     time=12sec
+[i]                     iteration=7,896,                     learning_rate=0.0029,                     loss=0.0360,                     time=1sec
+[i]                     iteration=7,908,                     learning_rate=0.0028,                     loss=0.0360,                     time=1sec
+[i]                     iteration=7,920,                     learning_rate=0.0028,                     loss=0.0352,                     time=1sec
+[i]                     iteration=7,932,                     learning_rate=0.0028,                     loss=0.0337,                     time=1sec
+[i]                     iteration=7,944,                     learning_rate=0.0028,                     loss=0.0375,                     time=1sec
+[i]                     iteration=7,956,                     learning_rate=0.0028,                     loss=0.0353,                     time=1sec
+[i]                     iteration=7,968,                     learning_rate=0.0028,                     loss=0.0371,                     time=1sec
+[i]                     iteration=7,980,                     learning_rate=0.0028,                     loss=0.0343,                     time=1sec
+[i]                     iteration=7,992,                     learning_rate=0.0028,                     loss=0.0335,                     time=1sec
+[i]                     iteration=8,000,                     mIoU=84.41%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.95%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=8,004,                     learning_rate=0.0028,                     loss=0.0368,                     time=12sec
+[i]                     iteration=8,016,                     learning_rate=0.0028,                     loss=0.0372,                     time=1sec
+[i]                     iteration=8,028,                     learning_rate=0.0028,                     loss=0.0353,                     time=1sec
+[i]                     iteration=8,040,                     learning_rate=0.0028,                     loss=0.0359,                     time=1sec
+[i]                     iteration=8,052,                     learning_rate=0.0028,                     loss=0.0378,                     time=1sec
+[i]                     iteration=8,064,                     learning_rate=0.0028,                     loss=0.0341,                     time=1sec
+[i]                     iteration=8,076,                     learning_rate=0.0027,                     loss=0.0332,                     time=1sec
+[i]                     iteration=8,088,                     learning_rate=0.0027,                     loss=0.0306,                     time=1sec
+[i]                     iteration=8,100,                     learning_rate=0.0027,                     loss=0.0355,                     time=1sec
+[i]                     iteration=8,112,                     learning_rate=0.0027,                     loss=0.0364,                     time=1sec
+[i]                     iteration=8,124,                     learning_rate=0.0027,                     loss=0.0372,                     time=1sec
+[i]                     iteration=8,125,                     mIoU=84.36%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.88%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=8,136,                     learning_rate=0.0027,                     loss=0.0371,                     time=12sec
+[i]                     iteration=8,148,                     learning_rate=0.0027,                     loss=0.0338,                     time=1sec
+[i]                     iteration=8,160,                     learning_rate=0.0027,                     loss=0.0356,                     time=1sec
+[i]                     iteration=8,172,                     learning_rate=0.0027,                     loss=0.0318,                     time=1sec
+[i]                     iteration=8,184,                     learning_rate=0.0027,                     loss=0.0312,                     time=1sec
+[i]                     iteration=8,196,                     learning_rate=0.0027,                     loss=0.0371,                     time=1sec
+[i]                     iteration=8,208,                     learning_rate=0.0027,                     loss=0.0376,                     time=1sec
+[i]                     iteration=8,220,                     learning_rate=0.0027,                     loss=0.0363,                     time=1sec
+[i]                     iteration=8,232,                     learning_rate=0.0027,                     loss=0.0353,                     time=1sec
+[i]                     iteration=8,244,                     learning_rate=0.0027,                     loss=0.0356,                     time=1sec
+[i]                     iteration=8,250,                     mIoU=84.45%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.03%,                     best_valid_mIoU_fg=80.98%,                     time=23sec
+[i]                     iteration=8,256,                     learning_rate=0.0026,                     loss=0.0353,                     time=11sec
+[i]                     iteration=8,268,                     learning_rate=0.0026,                     loss=0.0372,                     time=1sec
+[i]                     iteration=8,280,                     learning_rate=0.0026,                     loss=0.0340,                     time=1sec
+[i]                     iteration=8,292,                     learning_rate=0.0026,                     loss=0.0323,                     time=1sec
+[i]                     iteration=8,304,                     learning_rate=0.0026,                     loss=0.0342,                     time=1sec
+[i]                     iteration=8,316,                     learning_rate=0.0026,                     loss=0.0335,                     time=1sec
+[i]                     iteration=8,328,                     learning_rate=0.0026,                     loss=0.0335,                     time=1sec
+[i]                     iteration=8,340,                     learning_rate=0.0026,                     loss=0.0365,                     time=1sec
+[i]                     iteration=8,352,                     learning_rate=0.0026,                     loss=0.0355,                     time=1sec
+[i]                     iteration=8,364,                     learning_rate=0.0026,                     loss=0.0376,                     time=1sec
+[i]                     iteration=8,375,                     mIoU=84.46%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.04%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=8,376,                     learning_rate=0.0026,                     loss=0.0358,                     time=11sec
+[i]                     iteration=8,388,                     learning_rate=0.0026,                     loss=0.0342,                     time=1sec
+[i]                     iteration=8,400,                     learning_rate=0.0026,                     loss=0.0351,                     time=1sec
+[i]                     iteration=8,412,                     learning_rate=0.0026,                     loss=0.0347,                     time=1sec
+[i]                     iteration=8,424,                     learning_rate=0.0026,                     loss=0.0367,                     time=1sec
+[i]                     iteration=8,436,                     learning_rate=0.0025,                     loss=0.0356,                     time=1sec
+[i]                     iteration=8,448,                     learning_rate=0.0025,                     loss=0.0379,                     time=1sec
+[i]                     iteration=8,460,                     learning_rate=0.0025,                     loss=0.0349,                     time=1sec
+[i]                     iteration=8,472,                     learning_rate=0.0025,                     loss=0.0372,                     time=1sec
+[i]                     iteration=8,484,                     learning_rate=0.0025,                     loss=0.0333,                     time=1sec
+[i]                     iteration=8,496,                     learning_rate=0.0025,                     loss=0.0302,                     time=1sec
+[i]                     iteration=8,500,                     mIoU=84.39%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.92%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=8,508,                     learning_rate=0.0025,                     loss=0.0323,                     time=11sec
+[i]                     iteration=8,520,                     learning_rate=0.0025,                     loss=0.0317,                     time=1sec
+[i]                     iteration=8,532,                     learning_rate=0.0025,                     loss=0.0330,                     time=1sec
+[i]                     iteration=8,544,                     learning_rate=0.0025,                     loss=0.0357,                     time=1sec
+[i]                     iteration=8,556,                     learning_rate=0.0025,                     loss=0.0348,                     time=1sec
+[i]                     iteration=8,568,                     learning_rate=0.0025,                     loss=0.0338,                     time=1sec
+[i]                     iteration=8,580,                     learning_rate=0.0025,                     loss=0.0338,                     time=1sec
+[i]                     iteration=8,592,                     learning_rate=0.0025,                     loss=0.0360,                     time=1sec
+[i]                     iteration=8,604,                     learning_rate=0.0025,                     loss=0.0354,                     time=1sec
+[i]                     iteration=8,616,                     learning_rate=0.0024,                     loss=0.0356,                     time=1sec
+[i]                     iteration=8,625,                     mIoU=84.36%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.87%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=8,628,                     learning_rate=0.0024,                     loss=0.0376,                     time=11sec
+[i]                     iteration=8,640,                     learning_rate=0.0024,                     loss=0.0323,                     time=1sec
+[i]                     iteration=8,652,                     learning_rate=0.0024,                     loss=0.0325,                     time=1sec
+[i]                     iteration=8,664,                     learning_rate=0.0024,                     loss=0.0350,                     time=1sec
+[i]                     iteration=8,676,                     learning_rate=0.0024,                     loss=0.0330,                     time=1sec
+[i]                     iteration=8,688,                     learning_rate=0.0024,                     loss=0.0353,                     time=1sec
+[i]                     iteration=8,700,                     learning_rate=0.0024,                     loss=0.0360,                     time=1sec
+[i]                     iteration=8,712,                     learning_rate=0.0024,                     loss=0.0347,                     time=1sec
+[i]                     iteration=8,724,                     learning_rate=0.0024,                     loss=0.0325,                     time=1sec
+[i]                     iteration=8,736,                     learning_rate=0.0024,                     loss=0.0367,                     time=1sec
+[i]                     iteration=8,748,                     learning_rate=0.0024,                     loss=0.0365,                     time=1sec
+[i]                     iteration=8,750,                     mIoU=84.47%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.03%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=8,760,                     learning_rate=0.0024,                     loss=0.0380,                     time=11sec
+[i]                     iteration=8,772,                     learning_rate=0.0024,                     loss=0.0345,                     time=1sec
+[i]                     iteration=8,784,                     learning_rate=0.0024,                     loss=0.0351,                     time=1sec
+[i]                     iteration=8,796,                     learning_rate=0.0023,                     loss=0.0326,                     time=1sec
+[i]                     iteration=8,808,                     learning_rate=0.0023,                     loss=0.0329,                     time=1sec
+[i]                     iteration=8,820,                     learning_rate=0.0023,                     loss=0.0347,                     time=1sec
+[i]                     iteration=8,832,                     learning_rate=0.0023,                     loss=0.0333,                     time=1sec
+[i]                     iteration=8,844,                     learning_rate=0.0023,                     loss=0.0339,                     time=1sec
+[i]                     iteration=8,856,                     learning_rate=0.0023,                     loss=0.0334,                     time=1sec
+[i]                     iteration=8,868,                     learning_rate=0.0023,                     loss=0.0350,                     time=1sec
+[i]                     iteration=8,875,                     mIoU=84.38%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.92%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=8,880,                     learning_rate=0.0023,                     loss=0.0339,                     time=11sec
+[i]                     iteration=8,892,                     learning_rate=0.0023,                     loss=0.0344,                     time=1sec
+[i]                     iteration=8,904,                     learning_rate=0.0023,                     loss=0.0333,                     time=1sec
+[i]                     iteration=8,916,                     learning_rate=0.0023,                     loss=0.0358,                     time=1sec
+[i]                     iteration=8,928,                     learning_rate=0.0023,                     loss=0.0333,                     time=1sec
+[i]                     iteration=8,940,                     learning_rate=0.0023,                     loss=0.0346,                     time=1sec
+[i]                     iteration=8,952,                     learning_rate=0.0023,                     loss=0.0330,                     time=1sec
+[i]                     iteration=8,964,                     learning_rate=0.0022,                     loss=0.0324,                     time=1sec
+[i]                     iteration=8,976,                     learning_rate=0.0022,                     loss=0.0334,                     time=1sec
+[i]                     iteration=8,988,                     learning_rate=0.0022,                     loss=0.0368,                     time=1sec
+[i]                     iteration=9,000,                     learning_rate=0.0022,                     loss=0.0357,                     time=1sec
+[i]                     iteration=9,000,                     mIoU=84.41%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.94%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,012,                     learning_rate=0.0022,                     loss=0.0350,                     time=11sec
+[i]                     iteration=9,024,                     learning_rate=0.0022,                     loss=0.0345,                     time=1sec
+[i]                     iteration=9,036,                     learning_rate=0.0022,                     loss=0.0326,                     time=1sec
+[i]                     iteration=9,048,                     learning_rate=0.0022,                     loss=0.0348,                     time=1sec
+[i]                     iteration=9,060,                     learning_rate=0.0022,                     loss=0.0347,                     time=1sec
+[i]                     iteration=9,072,                     learning_rate=0.0022,                     loss=0.0307,                     time=1sec
+[i]                     iteration=9,084,                     learning_rate=0.0022,                     loss=0.0377,                     time=1sec
+[i]                     iteration=9,096,                     learning_rate=0.0022,                     loss=0.0325,                     time=1sec
+[i]                     iteration=9,108,                     learning_rate=0.0022,                     loss=0.0357,                     time=1sec
+[i]                     iteration=9,120,                     learning_rate=0.0022,                     loss=0.0339,                     time=1sec
+[i]                     iteration=9,125,                     mIoU=84.41%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.94%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,132,                     learning_rate=0.0022,                     loss=0.0335,                     time=11sec
+[i]                     iteration=9,144,                     learning_rate=0.0021,                     loss=0.0322,                     time=1sec
+[i]                     iteration=9,156,                     learning_rate=0.0021,                     loss=0.0351,                     time=1sec
+[i]                     iteration=9,168,                     learning_rate=0.0021,                     loss=0.0324,                     time=1sec
+[i]                     iteration=9,180,                     learning_rate=0.0021,                     loss=0.0326,                     time=1sec
+[i]                     iteration=9,192,                     learning_rate=0.0021,                     loss=0.0320,                     time=1sec
+[i]                     iteration=9,204,                     learning_rate=0.0021,                     loss=0.0329,                     time=1sec
+[i]                     iteration=9,216,                     learning_rate=0.0021,                     loss=0.0350,                     time=1sec
+[i]                     iteration=9,228,                     learning_rate=0.0021,                     loss=0.0373,                     time=1sec
+[i]                     iteration=9,240,                     learning_rate=0.0021,                     loss=0.0354,                     time=1sec
+[i]                     iteration=9,250,                     mIoU=84.51%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.08%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,252,                     learning_rate=0.0021,                     loss=0.0338,                     time=11sec
+[i]                     iteration=9,264,                     learning_rate=0.0021,                     loss=0.0357,                     time=1sec
+[i]                     iteration=9,276,                     learning_rate=0.0021,                     loss=0.0311,                     time=1sec
+[i]                     iteration=9,288,                     learning_rate=0.0021,                     loss=0.0353,                     time=1sec
+[i]                     iteration=9,300,                     learning_rate=0.0021,                     loss=0.0367,                     time=1sec
+[i]                     iteration=9,312,                     learning_rate=0.0020,                     loss=0.0335,                     time=1sec
+[i]                     iteration=9,324,                     learning_rate=0.0020,                     loss=0.0301,                     time=1sec
+[i]                     iteration=9,336,                     learning_rate=0.0020,                     loss=0.0337,                     time=1sec
+[i]                     iteration=9,348,                     learning_rate=0.0020,                     loss=0.0319,                     time=1sec
+[i]                     iteration=9,360,                     learning_rate=0.0020,                     loss=0.0343,                     time=1sec
+[i]                     iteration=9,372,                     learning_rate=0.0020,                     loss=0.0356,                     time=1sec
+[i]                     iteration=9,375,                     mIoU=84.48%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.06%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,384,                     learning_rate=0.0020,                     loss=0.0315,                     time=11sec
+[i]                     iteration=9,396,                     learning_rate=0.0020,                     loss=0.0310,                     time=1sec
+[i]                     iteration=9,408,                     learning_rate=0.0020,                     loss=0.0359,                     time=1sec
+[i]                     iteration=9,420,                     learning_rate=0.0020,                     loss=0.0328,                     time=1sec
+[i]                     iteration=9,432,                     learning_rate=0.0020,                     loss=0.0339,                     time=1sec
+[i]                     iteration=9,444,                     learning_rate=0.0020,                     loss=0.0302,                     time=1sec
+[i]                     iteration=9,456,                     learning_rate=0.0020,                     loss=0.0373,                     time=1sec
+[i]                     iteration=9,468,                     learning_rate=0.0020,                     loss=0.0349,                     time=1sec
+[i]                     iteration=9,480,                     learning_rate=0.0020,                     loss=0.0355,                     time=1sec
+[i]                     iteration=9,492,                     learning_rate=0.0019,                     loss=0.0358,                     time=1sec
+[i]                     iteration=9,500,                     mIoU=84.45%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.00%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,504,                     learning_rate=0.0019,                     loss=0.0314,                     time=11sec
+[i]                     iteration=9,516,                     learning_rate=0.0019,                     loss=0.0323,                     time=1sec
+[i]                     iteration=9,528,                     learning_rate=0.0019,                     loss=0.0331,                     time=1sec
+[i]                     iteration=9,540,                     learning_rate=0.0019,                     loss=0.0335,                     time=1sec
+[i]                     iteration=9,552,                     learning_rate=0.0019,                     loss=0.0343,                     time=1sec
+[i]                     iteration=9,564,                     learning_rate=0.0019,                     loss=0.0334,                     time=1sec
+[i]                     iteration=9,576,                     learning_rate=0.0019,                     loss=0.0370,                     time=1sec
+[i]                     iteration=9,588,                     learning_rate=0.0019,                     loss=0.0342,                     time=1sec
+[i]                     iteration=9,600,                     learning_rate=0.0019,                     loss=0.0329,                     time=1sec
+[i]                     iteration=9,612,                     learning_rate=0.0019,                     loss=0.0312,                     time=1sec
+[i]                     iteration=9,624,                     learning_rate=0.0019,                     loss=0.0346,                     time=1sec
+[i]                     iteration=9,625,                     mIoU=84.38%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.93%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,636,                     learning_rate=0.0019,                     loss=0.0354,                     time=11sec
+[i]                     iteration=9,648,                     learning_rate=0.0019,                     loss=0.0327,                     time=1sec
+[i]                     iteration=9,660,                     learning_rate=0.0018,                     loss=0.0337,                     time=1sec
+[i]                     iteration=9,672,                     learning_rate=0.0018,                     loss=0.0344,                     time=1sec
+[i]                     iteration=9,684,                     learning_rate=0.0018,                     loss=0.0341,                     time=1sec
+[i]                     iteration=9,696,                     learning_rate=0.0018,                     loss=0.0300,                     time=1sec
+[i]                     iteration=9,708,                     learning_rate=0.0018,                     loss=0.0336,                     time=1sec
+[i]                     iteration=9,720,                     learning_rate=0.0018,                     loss=0.0336,                     time=1sec
+[i]                     iteration=9,732,                     learning_rate=0.0018,                     loss=0.0331,                     time=1sec
+[i]                     iteration=9,744,                     learning_rate=0.0018,                     loss=0.0317,                     time=1sec
+[i]                     iteration=9,750,                     mIoU=84.40%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.91%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=9,756,                     learning_rate=0.0018,                     loss=0.0369,                     time=11sec
+[i]                     iteration=9,768,                     learning_rate=0.0018,                     loss=0.0338,                     time=1sec
+[i]                     iteration=9,780,                     learning_rate=0.0018,                     loss=0.0343,                     time=1sec
+[i]                     iteration=9,792,                     learning_rate=0.0018,                     loss=0.0332,                     time=1sec
+[i]                     iteration=9,804,                     learning_rate=0.0018,                     loss=0.0334,                     time=1sec
+[i]                     iteration=9,816,                     learning_rate=0.0018,                     loss=0.0352,                     time=1sec
+[i]                     iteration=9,828,                     learning_rate=0.0017,                     loss=0.0379,                     time=1sec
+[i]                     iteration=9,840,                     learning_rate=0.0017,                     loss=0.0315,                     time=1sec
+[i]                     iteration=9,852,                     learning_rate=0.0017,                     loss=0.0312,                     time=1sec
+[i]                     iteration=9,864,                     learning_rate=0.0017,                     loss=0.0315,                     time=1sec
+[i]                     iteration=9,875,                     mIoU=84.42%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.95%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=9,876,                     learning_rate=0.0017,                     loss=0.0299,                     time=11sec
+[i]                     iteration=9,888,                     learning_rate=0.0017,                     loss=0.0307,                     time=1sec
+[i]                     iteration=9,900,                     learning_rate=0.0017,                     loss=0.0348,                     time=1sec
+[i]                     iteration=9,912,                     learning_rate=0.0017,                     loss=0.0331,                     time=1sec
+[i]                     iteration=9,924,                     learning_rate=0.0017,                     loss=0.0316,                     time=1sec
+[i]                     iteration=9,936,                     learning_rate=0.0017,                     loss=0.0318,                     time=1sec
+[i]                     iteration=9,948,                     learning_rate=0.0017,                     loss=0.0331,                     time=1sec
+[i]                     iteration=9,960,                     learning_rate=0.0017,                     loss=0.0361,                     time=1sec
+[i]                     iteration=9,972,                     learning_rate=0.0017,                     loss=0.0325,                     time=1sec
+[i]                     iteration=9,984,                     learning_rate=0.0017,                     loss=0.0336,                     time=1sec
+[i]                     iteration=9,996,                     learning_rate=0.0016,                     loss=0.0333,                     time=1sec
+[i]                     iteration=10,000,                     mIoU=84.42%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.98%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=10,008,                     learning_rate=0.0016,                     loss=0.0323,                     time=11sec
+[i]                     iteration=10,020,                     learning_rate=0.0016,                     loss=0.0303,                     time=1sec
+[i]                     iteration=10,032,                     learning_rate=0.0016,                     loss=0.0314,                     time=1sec
+[i]                     iteration=10,044,                     learning_rate=0.0016,                     loss=0.0308,                     time=1sec
+[i]                     iteration=10,056,                     learning_rate=0.0016,                     loss=0.0337,                     time=1sec
+[i]                     iteration=10,068,                     learning_rate=0.0016,                     loss=0.0342,                     time=1sec
+[i]                     iteration=10,080,                     learning_rate=0.0016,                     loss=0.0371,                     time=1sec
+[i]                     iteration=10,092,                     learning_rate=0.0016,                     loss=0.0364,                     time=1sec
+[i]                     iteration=10,104,                     learning_rate=0.0016,                     loss=0.0331,                     time=1sec
+[i]                     iteration=10,116,                     learning_rate=0.0016,                     loss=0.0317,                     time=1sec
+[i]                     iteration=10,125,                     mIoU=84.42%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.95%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=10,128,                     learning_rate=0.0016,                     loss=0.0337,                     time=11sec
+[i]                     iteration=10,140,                     learning_rate=0.0016,                     loss=0.0323,                     time=1sec
+[i]                     iteration=10,152,                     learning_rate=0.0016,                     loss=0.0351,                     time=1sec
+[i]                     iteration=10,164,                     learning_rate=0.0015,                     loss=0.0327,                     time=1sec
+[i]                     iteration=10,176,                     learning_rate=0.0015,                     loss=0.0363,                     time=1sec
+[i]                     iteration=10,188,                     learning_rate=0.0015,                     loss=0.0322,                     time=1sec
+[i]                     iteration=10,200,                     learning_rate=0.0015,                     loss=0.0317,                     time=1sec
+[i]                     iteration=10,212,                     learning_rate=0.0015,                     loss=0.0323,                     time=1sec
+[i]                     iteration=10,224,                     learning_rate=0.0015,                     loss=0.0342,                     time=1sec
+[i]                     iteration=10,236,                     learning_rate=0.0015,                     loss=0.0336,                     time=1sec
+[i]                     iteration=10,248,                     learning_rate=0.0015,                     loss=0.0314,                     time=1sec
+[i]                     iteration=10,250,                     mIoU=84.45%,                     best_valid_mIoU=85.01%,                     IoU_fg=80.02%,                     best_valid_mIoU_fg=80.98%,                     time=21sec
+[i]                     iteration=10,260,                     learning_rate=0.0015,                     loss=0.0335,                     time=11sec
+[i]                     iteration=10,272,                     learning_rate=0.0015,                     loss=0.0334,                     time=1sec
+[i]                     iteration=10,284,                     learning_rate=0.0015,                     loss=0.0321,                     time=1sec
+[i]                     iteration=10,296,                     learning_rate=0.0015,                     loss=0.0330,                     time=1sec
+[i]                     iteration=10,308,                     learning_rate=0.0015,                     loss=0.0348,                     time=1sec
+[i]                     iteration=10,320,                     learning_rate=0.0015,                     loss=0.0350,                     time=1sec
+[i]                     iteration=10,332,                     learning_rate=0.0014,                     loss=0.0329,                     time=1sec
+[i]                     iteration=10,344,                     learning_rate=0.0014,                     loss=0.0369,                     time=1sec
+[i]                     iteration=10,356,                     learning_rate=0.0014,                     loss=0.0300,                     time=1sec
+[i]                     iteration=10,368,                     learning_rate=0.0014,                     loss=0.0302,                     time=1sec
+[i]                     iteration=10,375,                     mIoU=84.42%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.97%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=10,380,                     learning_rate=0.0014,                     loss=0.0328,                     time=11sec
+[i]                     iteration=10,392,                     learning_rate=0.0014,                     loss=0.0332,                     time=1sec
+[i]                     iteration=10,404,                     learning_rate=0.0014,                     loss=0.0303,                     time=1sec
+[i]                     iteration=10,416,                     learning_rate=0.0014,                     loss=0.0344,                     time=1sec
+[i]                     iteration=10,428,                     learning_rate=0.0014,                     loss=0.0332,                     time=1sec
+[i]                     iteration=10,440,                     learning_rate=0.0014,                     loss=0.0316,                     time=1sec
+[i]                     iteration=10,452,                     learning_rate=0.0014,                     loss=0.0314,                     time=1sec
+[i]                     iteration=10,464,                     learning_rate=0.0014,                     loss=0.0335,                     time=1sec
+[i]                     iteration=10,476,                     learning_rate=0.0014,                     loss=0.0358,                     time=1sec
+[i]                     iteration=10,488,                     learning_rate=0.0014,                     loss=0.0320,                     time=1sec
+[i]                     iteration=10,500,                     learning_rate=0.0013,                     loss=0.0325,                     time=1sec
+[i]                     iteration=10,500,                     mIoU=84.41%,                     best_valid_mIoU=85.01%,                     IoU_fg=79.96%,                     best_valid_mIoU_fg=80.98%,                     time=22sec
+[i]                     iteration=10,512,                     learning_rate=0.0013,                     loss=0.0335,                     time=12sec
+[i]                     iteration=10,524,                     learning_rate=0.0013,                     loss=0.0341,                     time=1sec
+[i]                     iteration=10,536,                     learning_rate=0.0013,                     loss=0.0360,                     time=1sec
+[i]                     iteration=10,548,                     learning_rate=0.0013,                     loss=0.0315,                     time=1sec
+[i]                     iteration=10,560,                     learning_rate=0.0013,                     loss=0.0302,                     time=1sec
+[i]                     iteration=10,572,                     learning_rate=0.0013,                     loss=0.0332,                     time=1sec
+[i]                     iteration=10,584,                     learning_rate=0.0013,                     loss=0.0315,                     time=1sec
+[i]                     iteration=10,596,                     learning_rate=0.0013,                     loss=0.0304,                     time=1sec
+[i]                     iteration=10,608,                     learning_rate=0.0013,                     loss=0.0369,                     time=1sec
+[i]                     iteration=10,620,                     learning_rate=0.0013,                     loss=0.0308,                     time=1sec

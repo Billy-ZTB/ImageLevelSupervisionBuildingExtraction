@@ -188,14 +188,16 @@ class VOC12ClassificationDatasetMSF(VOC12ClassificationDataset):
 class VOC12SegmentationDataset(Dataset):
 
     def __init__(self, img_name_list_path, label_dir, crop_size, voc12_root,
-                 rescale=None, img_normal=TorchvisionNormalize(), hor_flip=False,
+                 rescale=None, img_normal=TorchvisionNormalize(), hor_flip=False, split=' ',
                  crop_method = 'random'):
 
         self.img_name_list = load_img_name_list(img_name_list_path)
         self.voc12_root = voc12_root
-
-        self.label_dir = label_dir
-
+        self.split = split
+        if split=='train':
+            self.label_dir = label_dir
+        else:
+            self.label_dir = os.path.join(voc12_root, 'SegmentationClassAug')
         self.rescale = rescale
         self.crop_size = crop_size
         self.img_normal = img_normal
