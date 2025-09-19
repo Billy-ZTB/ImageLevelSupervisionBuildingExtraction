@@ -1,7 +1,6 @@
 import argparse
 import os
 import numpy as np
-
 from misc import pyutils
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 if __name__ == '__main__':
@@ -81,13 +80,29 @@ if __name__ == '__main__':
     parser.add_argument("--make_sem_seg_pass", type=str2bool, default=False)  # check power
     parser.add_argument("--eval_sem_seg_pass", type=str2bool, default=False)
 
+    # for training Deeplabv3+ using pseudo label
+    parser.add_argument('--train_semseg_pass', type=str2bool, default=False)
+    parser.add_argument('--pss_batch_size', default=16, type=int)
+    parser.add_argument('--valid_list', default='voc12/val.txt', type=str)
+    parser.add_argument('--pss_backbone', default='resnet50', type=str)
+    parser.add_argument("--pss_epochs", default=80, type=int)
+    parser.add_argument("--pss_lr", default=0.007, type=float)
+    parser.add_argument('--pss_wd', default=4e-5, type=float)
+    parser.add_argument('--pss_results',type=str)
+    parser.add_argument('--tag',type=str)
     args = parser.parse_args()
 
     os.makedirs("sess", exist_ok=True)
-    os.makedirs(args.cam_out_dir, exist_ok=True)
-    os.makedirs(args.ir_label_out_dir, exist_ok=True)
-    os.makedirs(args.sem_seg_out_dir, exist_ok=True)
-    os.makedirs(args.ins_seg_out_dir, exist_ok=True)
+    if args.cam_out_dir:
+        os.makedirs(args.cam_out_dir, exist_ok=True)
+    if args.ir_label_out_dir:
+        os.makedirs(args.ir_label_out_dir, exist_ok=True)
+    if args.sem_seg_out_dir:
+        os.makedirs(args.sem_seg_out_dir, exist_ok=True)
+    if args.ins_seg_out_dir:
+        os.makedirs(args.ins_seg_out_dir, exist_ok=True)
+    if args.pss_results:
+        os.makedirs(args.pss_results, exist_ok=True)
     pyutils.Logger(args.log_name + '.log')
     print(vars(args))
 
@@ -154,3 +169,8 @@ if __name__ == '__main__':
         timer = pyutils.Timer('step.eval_sem_seg:')
         step.eval_sem_seg.run(args)
 
+    if args.train_semseg_pass is True:
+        import step.train_sem_seg
+
+        timer = pyutils.Timer('step.train_sem_seg:')
+        step.train_sem_seg.run(args)
